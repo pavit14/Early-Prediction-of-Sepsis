@@ -1,4 +1,4 @@
-# Early-Prediction-of-Sepsis
+# Early Prediction of Sepsis
 
 The aim of this project is to develop a machine learning model to predict sepsis among patients early on based on their clinical data.
 The data used for this project is from the 2019 PhysioNet Computing in Cardiology Challenge: https://physionet.org/content/challenge-2019/1.0.0/
