@@ -1,0 +1,15 @@
+stages:
+  load_data:
+    cmd: python src/load.py
+    deps:
+      - src/load.py  # Dependencies for the load_data stage (data folder, load_data.py)
+    outs:
+      - data/combined_data.csv  # Output produced by the load_data stage
+
+  preprocess_data:
+    cmd: python preprocess.py
+    deps:
+      - data/combined_data.csv  # Dependency on the output of load_data stage
+      - preprocess.py  # The preprocess.py script
+    outs:
+      - data/cleaned_data.csv  # Output produced by the preprocess_data stage
