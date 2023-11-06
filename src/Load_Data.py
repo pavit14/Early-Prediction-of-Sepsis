@@ -25,13 +25,15 @@ def load_challenge_data(file):
         data = np.loadtxt(f, delimiter='|')
     return data
 
-def train_test_valid_files(path):
+def train_test_valid_files(path, shuffle_files = False):
     files = []
     for f in os.listdir(path):
         if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
             files.append(f)
     
-    random.shuffle(files)
+    if shuffle_files == True:
+        random.shuffle(files)
+
     n_files = len(files)
     n_train = n_files * 6 // 10
     n_test = n_files * 2 // 10
@@ -43,7 +45,7 @@ def train_test_valid_files(path):
 
 path ="D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data\Downloaded_data"
 
-train_files, test_files, valid_files = train_test_valid_files(path)
+train_files, test_files, valid_files = train_test_valid_files(path, True)
 
 def add_file(files, directory_path):
     for f in files:
