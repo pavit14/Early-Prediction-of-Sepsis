@@ -1,0 +1,6 @@
+outs:
+- md5: e7c760abf064ae92d18eb93197e9cd05.dir
+  size: 384745
+  nfiles: 60
+  hash: md5
+  path: Downloaded_data

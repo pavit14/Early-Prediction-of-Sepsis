@@ -1,6 +1,18 @@
 import numpy as np, os, sys
+from collections import Counter
 import pandas as pd
+"""
+from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import MinMaxScaler
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import LSTM, Dense
+from sklearn.model_selection import train_test_split
+"""
 
 # Converting .psv file to np array
 def load_challenge_data(file):
@@ -10,6 +22,7 @@ def load_challenge_data(file):
         data = np.loadtxt(f, delimiter='|')
     return data
 
+"""
 # using forward filling for filling the null values. input and output in terms of df
 def f_fill(data):
     data = data.ffill()
@@ -135,7 +148,7 @@ y_train = np.array(y_train)
 y_test = np.array(y_test)
 y_valid = np.array(y_valid)
 
-
+"""
 
 
 
