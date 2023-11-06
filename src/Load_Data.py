@@ -1,6 +1,8 @@
 import numpy as np, os, sys
 from collections import Counter
 import pandas as pd
+import random
+import shutil
 """
 from sklearn.metrics import confusion_matrix
 from sklearn.preprocessing import MinMaxScaler
@@ -21,6 +23,75 @@ def load_challenge_data(file):
         column_names = header.split('|')
         data = np.loadtxt(f, delimiter='|')
     return data
+
+def train_test_valid_files(path):
+    files = []
+    for f in os.listdir(path):
+        if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
+            files.append(f)
+    
+    random.shuffle(files)
+    n_files = len(files)
+    n_train = n_files * 6 // 10
+    n_test = n_files * 2 // 10
+
+    train_files = files[:n_train]
+    test_files = files[n_train:n_train + n_test]
+    valid_files = files[n_train + n_test:]
+    return train_files, test_files, valid_files
+
+path ="D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data\Downloaded_data"
+
+train_files, test_files, valid_files = train_test_valid_files(path)
+
+def add_file(files, directory_path):
+    for f in files:
+        source_file_path = os.path.join(path, f)
+        destination_directory = new_directory_path
+        shutil.copy(source_file_path, destination_directory)
+
+
+##create a new training data direcory
+new_directory_name = "Train_data"
+# Create the full path to the new directory within the "data" folder
+data_folder = "data"  # Update with your actual data folder name
+new_directory_path = os.path.join(data_folder, new_directory_name)
+directory_path = new_directory_path
+shutil.rmtree(directory_path)
+if not os.path.exists(new_directory_path):
+    os.makedirs(new_directory_path)
+add_file(train_files, new_directory_path)
+
+
+
+
+##create a new testing data direcory
+new_directory_name = "Test_data"
+# Create the full path to the new directory within the "data" folder
+data_folder = "data"  # Update with your actual data folder name
+new_directory_path = os.path.join(data_folder, new_directory_name)
+directory_path = new_directory_path
+shutil.rmtree(directory_path)
+if not os.path.exists(new_directory_path):
+    os.makedirs(new_directory_path)
+add_file(test_files, new_directory_path)
+
+
+##create a new validation data direcory
+new_directory_name = "Valid_data"
+# Create the full path to the new directory within the "data" folder
+data_folder = "data"  # Update with your actual data folder name
+new_directory_path = os.path.join(data_folder, new_directory_name)
+directory_path = new_directory_path
+shutil.rmtree(directory_path)
+if not os.path.exists(new_directory_path):
+    os.makedirs(new_directory_path)
+add_file(valid_files, new_directory_path)
+
+
+
+
+
 
 """
 # using forward filling for filling the null values. input and output in terms of df
