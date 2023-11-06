@@ -31,7 +31,7 @@ def train_test_valid_files(path):
         if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
             files.append(f)
     
-    random.shuffle(files)
+    #random.shuffle(files)
     n_files = len(files)
     n_train = n_files * 6 // 10
     n_test = n_files * 2 // 10
@@ -134,7 +134,9 @@ def preprocess_ffill_mean_imput(files):   #provide the list of train, test, vali
         processed_data = np.vstack((processed_data, data)) 
     return processed_data
 
-preprocess_ffill_zero_imput(train_files)
+df = preprocess_ffill_zero_imput(train_files)
+file_path = os.path.join('D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data', 'my_train_data.csv')
+df.to_csv(file_path, index=False)
 
 
 
