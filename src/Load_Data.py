@@ -4,19 +4,6 @@ import pandas as pd
 import random
 import shutil
 
-"""
-from sklearn.metrics import confusion_matrix
-from sklearn.preprocessing import MinMaxScaler
-import seaborn as sns
-import matplotlib.pyplot as plt
-import numpy as np
-import tensorflow as tf
-from tensorflow import keras
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, Dense
-from sklearn.model_selection import train_test_split
-"""
-
 # Converting .psv file to np array
 def load_challenge_data(file):
     with open(file, 'r') as f:
@@ -41,7 +28,7 @@ def train_test_valid_files(path):
     valid_files = files[n_train + n_test:]
     return train_files, test_files, valid_files
 
-path ="/data/Dataset"
+path ="data/Dataset"
 
 train_files, test_files, valid_files = train_test_valid_files(path)
 
@@ -87,11 +74,9 @@ add_file(valid_files, new_directory_path)
 
 ### preprocessing 
 
-
-#train
-def train_preprocess_ffill_zero_imput(files):   #provide the list of train, test, valid files 
+def preprocess_ffill(files):   #provide the list of train, test, valid files 
     num_columns = 38
-    processed_data = np.empty((0, num_columns))
+    ffill_data = np.empty((0, num_columns))
     
     for f in files:
         # Load data.
@@ -101,36 +86,34 @@ def train_preprocess_ffill_zero_imput(files):   #provide the list of train, test
         
         data = data.ffill()
         data = data.drop([7, 20, 27, 32], axis=1)
-        data = data.fillna(0).values
-        
+
         id = int(f[1:7])
         new_column = np.full((len(data), 1), id)
         data = np.hstack((new_column, data))
         
-        processed_data = np.vstack((processed_data, data)) 
-    processed_data = pd.DataFrame(processed_data)
-    return processed_data
-df1=train_preprocess_ffill_zero_imput(train_files)
+        ffill_data = np.vstack((ffill_data, data)) 
+    ffill_data = pd.DataFrame(ffill_data)
+    return ffill_data
+
+def preprocess_zero_imput(df):
+    df = df.fillna(0)
+    return df
+
+def preprocess_mean_imput(df, train_ffill_df):
+    column_means = train_ffill_df.mean()
+    df_imputed = df.fillna(column_means)
+    return df
 
 def train_preprocesss_std(df):
-    #num_columns = 38
-    #data_list = np.empty((0, num_columns))
-
-        
     columns_to_normalize = df.columns[1:-1]
     df[columns_to_normalize] = (df[columns_to_normalize] - df[columns_to_normalize].mean()) / df[columns_to_normalize].std()
     mean_values = df[columns_to_normalize].mean()
     std_values = df[columns_to_normalize].std()
     mean_values.to_csv('mean_values.csv', header=False)
     std_values.to_csv('std_values.csv', header=False)
-        
-    #data_list = np.vstack((data_list, df)) 
-    #data_list = pd.DataFrame(data_list)
     return df
 
-train_preprocesss_std(df1)
-
-def train_preprocesss_norm(df):
+def preprocesss_norm(df):
     columns_to_normalize = df.columns[1:-1]
 
     def min_max_scaling(column):
@@ -141,33 +124,7 @@ def train_preprocesss_norm(df):
 
     for col in columns_to_normalize:
         df[col] = min_max_scaling(df[col])
-        #print(df[col])
     return df
-train_preprocesss_norm(df1)
-
-#test
-def test_preprocess_ffill_zero_imput(files):   #provide the list of train, test, valid files 
-    num_columns = 38
-    processed_data = np.empty((0, num_columns))
-    
-    for f in files:
-        # Load data.
-        input_file = os.path.join(path, f)
-        data = load_challenge_data(input_file)
-        data = pd.DataFrame(data)
-        
-        data = data.ffill()
-        data = data.drop([7, 20, 27, 32], axis=1)
-        data = data.fillna(0).values
-        
-        id = int(f[1:7])
-        new_column = np.full((len(data), 1), id)
-        data = np.hstack((new_column, data))
-        
-        processed_data = np.vstack((processed_data, data)) 
-    processed_data = pd.DataFrame(processed_data)
-    return processed_data
-df2=test_preprocess_ffill_zero_imput(test_files)
 
 def test_preprocesss_std(df):
 
@@ -178,18 +135,10 @@ def test_preprocesss_std(df):
     df[columns_to_normalize] = (df[columns_to_normalize] - mean_val['mean'].values) / std_val['std'].values
     return df
 
-test_preprocesss_std(df2)
-
-def test_preprocesss_norm(df):
-    columns_to_normalize = df.columns[1:-1]
-
-    def min_max_scaling(column):
-        min_val = column.min()
-        max_val = column.max()
-        scaled_column = (column - min_val) / (max_val - min_val)
-        return scaled_column
-
-    for col in columns_to_normalize:
-        df[col] = min_max_scaling(df[col])
-    return df
-test_preprocesss_norm(df2)
+train_df = preprocess_ffill(train_files)
+train_std=train_preprocesss_std(train_df)
+train_norm=preprocesss_norm(train_df)
+test_df = preprocess_ffill(test_files)
+test_std=test_preprocesss_std(test_df)
+test_norm=preprocesss_norm(test_df)
+df = preprocess_mean_imput(test_df, train_df)
