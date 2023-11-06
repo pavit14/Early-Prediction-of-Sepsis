@@ -31,7 +31,7 @@ def train_test_valid_files(path):
         if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
             files.append(f)
     
-    #random.shuffle(files)
+    random.shuffle(files)
     n_files = len(files)
     n_train = n_files * 6 // 10
     n_test = n_files * 2 // 10
