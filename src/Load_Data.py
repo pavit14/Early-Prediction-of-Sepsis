@@ -28,49 +28,11 @@ def train_test_valid_files(path):
     valid_files = files[n_train + n_test:]
     return train_files, test_files, valid_files
 
-path ="data/Dataset"
-
-train_files, test_files, valid_files = train_test_valid_files(path)
-
 def add_file(files, directory_path):
     for f in files:
         source_file_path = os.path.join(path, f)
         destination_directory = new_directory_path
         shutil.copy(source_file_path, destination_directory)
-
-
-##create a new training data direcory
-new_directory_name = "Train_data"
-data_folder = "data" 
-new_directory_path = os.path.join(data_folder, new_directory_name)
-directory_path = new_directory_path
-shutil.rmtree(directory_path)
-if not os.path.exists(new_directory_path):
-    os.makedirs(new_directory_path)
-add_file(train_files, new_directory_path)
-
-
-##create a new testing data direcory
-new_directory_name = "Test_data"
-data_folder = "data"  
-new_directory_path = os.path.join(data_folder, new_directory_name)
-directory_path = new_directory_path
-shutil.rmtree(directory_path)
-if not os.path.exists(new_directory_path):
-    os.makedirs(new_directory_path)
-add_file(test_files, new_directory_path)
-
-
-##create a new validation data direcory
-new_directory_name = "Valid_data"
-data_folder = "data" 
-new_directory_path = os.path.join(data_folder, new_directory_name)
-directory_path = new_directory_path
-shutil.rmtree(directory_path)
-if not os.path.exists(new_directory_path):
-    os.makedirs(new_directory_path)
-add_file(valid_files, new_directory_path)
-
 
 ### preprocessing 
 
@@ -134,6 +96,42 @@ def test_preprocesss_std(df):
     columns_to_normalize = df.columns[1:-1]
     df[columns_to_normalize] = (df[columns_to_normalize] - mean_val['mean'].values) / std_val['std'].values
     return df
+
+
+path ="data/Dataset"
+train_files, test_files, valid_files = train_test_valid_files(path)
+
+##create a new training data direcory
+new_directory_name = "Train_data"
+data_folder = "data" 
+new_directory_path = os.path.join(data_folder, new_directory_name)
+directory_path = new_directory_path
+shutil.rmtree(directory_path)
+if not os.path.exists(new_directory_path):
+    os.makedirs(new_directory_path)
+add_file(train_files, new_directory_path)
+
+
+##create a new testing data direcory
+new_directory_name = "Test_data"
+data_folder = "data"  
+new_directory_path = os.path.join(data_folder, new_directory_name)
+directory_path = new_directory_path
+shutil.rmtree(directory_path)
+if not os.path.exists(new_directory_path):
+    os.makedirs(new_directory_path)
+add_file(test_files, new_directory_path)
+
+
+##create a new validation data direcory
+new_directory_name = "Valid_data"
+data_folder = "data" 
+new_directory_path = os.path.join(data_folder, new_directory_name)
+directory_path = new_directory_path
+shutil.rmtree(directory_path)
+if not os.path.exists(new_directory_path):
+    os.makedirs(new_directory_path)
+add_file(valid_files, new_directory_path)
 
 train_df = preprocess_ffill(train_files)
 train_std=train_preprocesss_std(train_df)
