@@ -1,0 +1,771 @@
+[2023-11-07T21:33:51.796+0000] {processor.py:153} INFO - Started process (PID=64) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:33:51.803+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:33:51.805+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:51.804+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:33:54.270+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.270+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:33:54.271+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.271+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:33:54.272+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.272+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:33:54.273+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.273+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:33:54.274+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.274+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:33:54.274+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.274+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:33:54.298+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:33:54.719+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.719+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:your_python_dag
+[2023-11-07T21:33:54.730+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.730+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:your_python_dag
+[2023-11-07T21:33:54.738+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.737+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:your_python_dag
+[2023-11-07T21:33:54.739+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.739+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:33:54.754+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.753+0000] {dag.py:2711} INFO - Creating ORM DAG for your_python_dag
+[2023-11-07T21:33:54.765+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:33:54.765+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:33:54.784+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 2.993 seconds
+[2023-11-07T21:34:25.020+0000] {processor.py:153} INFO - Started process (PID=90) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:34:25.023+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:34:25.024+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:25.024+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:34:25.783+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:25.783+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:25.784+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:25.784+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:25.785+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:25.785+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:25.786+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:25.786+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:25.787+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:25.787+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:25.787+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:25.787+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:25.793+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:34:25.816+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:25.815+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:34:25.835+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:25.834+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:34:25.856+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.841 seconds
+[2023-11-07T21:34:56.176+0000] {processor.py:153} INFO - Started process (PID=128) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:34:56.179+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:34:56.180+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:56.180+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:34:56.766+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:56.766+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:56.767+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:56.767+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:56.768+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:56.767+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:56.768+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:56.768+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:56.769+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:56.769+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:56.769+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:56.769+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:34:56.775+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:34:56.795+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:56.795+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:34:56.814+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:34:56.814+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:34:56.827+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.657 seconds
+[2023-11-07T21:35:27.079+0000] {processor.py:153} INFO - Started process (PID=162) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:35:27.081+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:35:27.082+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:27.082+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:35:27.854+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:27.854+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:27.855+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:27.855+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:27.856+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:27.856+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:27.857+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:27.857+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:27.858+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:27.858+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:27.858+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:27.858+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:27.864+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:35:27.892+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:27.891+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:35:27.916+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:27.916+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:35:27.934+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.859 seconds
+[2023-11-07T21:35:58.157+0000] {processor.py:153} INFO - Started process (PID=193) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:35:58.160+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:35:58.161+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:58.161+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:35:58.874+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:58.874+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:58.875+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:58.875+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:58.876+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:58.876+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:58.877+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:58.877+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:58.878+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:58.878+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:58.878+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:58.878+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:35:58.884+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:35:58.909+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:58.908+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:35:58.931+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:35:58.931+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:35:58.946+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.793 seconds
+[2023-11-07T21:36:29.119+0000] {processor.py:153} INFO - Started process (PID=229) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:36:29.122+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:36:29.124+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:36:29.123+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:36:30.127+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:36:30.126+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:36:30.129+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:36:30.128+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:36:30.129+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:36:30.129+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:36:30.131+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:36:30.130+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:36:30.132+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:36:30.132+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:36:30.133+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:36:30.133+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:36:30.140+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:36:30.180+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:36:30.180+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:36:30.209+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:36:30.209+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:36:30.231+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.118 seconds
+[2023-11-07T21:37:00.334+0000] {processor.py:153} INFO - Started process (PID=258) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:37:00.338+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:37:00.339+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:00.339+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:37:00.942+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:00.942+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:00.943+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:00.943+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:00.943+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:00.943+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:00.944+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:00.944+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:00.945+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:00.945+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:00.945+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:00.945+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:00.950+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:37:00.972+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:00.972+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:37:00.993+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:00.993+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:37:01.007+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.680 seconds
+[2023-11-07T21:37:31.264+0000] {processor.py:153} INFO - Started process (PID=297) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:37:31.266+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:37:31.267+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:31.267+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:37:31.860+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:31.860+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:31.861+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:31.861+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:31.862+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:31.862+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:31.862+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:31.862+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:31.863+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:31.863+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:31.864+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:31.863+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:37:31.868+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:37:31.890+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:31.889+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:37:31.907+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:37:31.907+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:37:31.921+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.661 seconds
+[2023-11-07T21:38:02.224+0000] {processor.py:153} INFO - Started process (PID=323) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:38:02.226+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:38:02.227+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:02.226+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:38:02.832+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:02.831+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:02.833+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:02.833+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:02.834+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:02.834+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:02.834+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:02.834+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:02.835+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:02.835+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:02.836+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:02.835+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:02.841+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:38:02.861+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:02.861+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:38:02.879+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:02.879+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:38:02.893+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.673 seconds
+[2023-11-07T21:38:33.186+0000] {processor.py:153} INFO - Started process (PID=361) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:38:33.188+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:38:33.190+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:33.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:38:33.774+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:33.774+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:33.775+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:33.775+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:33.775+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:33.775+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:33.776+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:33.776+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:33.777+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:33.777+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:33.777+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:33.777+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:38:33.782+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:38:33.802+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:33.802+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:38:33.821+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:38:33.820+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:38:33.835+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.655 seconds
+[2023-11-07T21:39:04.099+0000] {processor.py:153} INFO - Started process (PID=397) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:39:04.101+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:39:04.102+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:04.102+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:39:04.716+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:04.716+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:04.717+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:04.717+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:04.718+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:04.718+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:04.719+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:04.719+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:04.719+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:04.719+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:04.720+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:04.720+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:04.725+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:39:04.745+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:04.745+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:39:04.765+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:04.764+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:39:04.779+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.684 seconds
+[2023-11-07T21:39:34.996+0000] {processor.py:153} INFO - Started process (PID=426) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:39:34.998+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:39:34.999+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:34.999+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:39:35.606+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:35.606+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:35.607+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:35.607+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:35.607+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:35.607+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:35.608+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:35.608+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:35.609+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:35.609+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:35.610+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:35.609+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:39:35.614+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:39:35.636+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:35.635+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:39:35.655+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:39:35.655+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:39:35.669+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.677 seconds
+[2023-11-07T21:40:05.984+0000] {processor.py:153} INFO - Started process (PID=464) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:40:05.987+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:40:05.988+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:05.988+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:40:06.589+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:06.589+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:06.591+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:06.590+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:06.591+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:06.591+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:06.592+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:06.592+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:06.592+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:06.592+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:06.593+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:06.593+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:06.598+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:40:06.618+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:06.618+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:40:06.637+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:06.637+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:40:06.651+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.673 seconds
+[2023-11-07T21:40:36.899+0000] {processor.py:153} INFO - Started process (PID=489) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:40:36.902+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:40:36.904+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:36.904+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:40:37.568+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:37.568+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:37.570+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:37.570+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:37.570+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:37.570+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:37.571+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:37.571+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:37.572+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:37.572+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:37.572+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:37.572+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:40:37.577+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:40:37.598+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:37.598+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:40:37.616+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:40:37.616+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:40:37.630+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.741 seconds
+[2023-11-07T21:41:07.766+0000] {processor.py:153} INFO - Started process (PID=527) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:41:07.768+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:41:07.769+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:07.769+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:41:08.433+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:08.433+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:08.434+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:08.434+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:08.435+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:08.435+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:08.436+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:08.436+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:08.437+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:08.436+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:08.437+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:08.437+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:08.443+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:41:08.467+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:08.466+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:41:08.486+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:08.486+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:41:08.502+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.740 seconds
+[2023-11-07T21:41:38.774+0000] {processor.py:153} INFO - Started process (PID=565) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:41:38.775+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:41:38.776+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:38.776+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:41:39.418+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:39.418+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:39.419+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:39.419+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:39.419+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:39.419+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:39.420+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:39.420+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:39.421+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:39.421+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:39.421+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:39.421+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:41:39.426+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:41:39.447+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:39.447+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:41:39.466+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:41:39.466+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:41:39.479+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.710 seconds
+[2023-11-07T21:42:09.724+0000] {processor.py:153} INFO - Started process (PID=591) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:42:09.725+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:42:09.727+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:09.727+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:42:10.327+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:10.327+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:10.328+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:10.328+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:10.329+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:10.329+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:10.329+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:10.329+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:10.330+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:10.330+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:10.331+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:10.331+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:10.335+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:42:10.356+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:10.356+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:42:10.374+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:10.374+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:42:10.389+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.673 seconds
+[2023-11-07T21:42:40.555+0000] {processor.py:153} INFO - Started process (PID=629) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:42:40.558+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:42:40.560+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:40.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:42:41.144+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:41.144+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:41.145+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:41.145+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:41.146+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:41.146+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:41.147+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:41.147+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:41.147+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:41.147+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:41.148+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:41.148+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:42:41.152+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:42:41.173+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:41.173+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:42:41.193+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:42:41.192+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:42:41.206+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.657 seconds
+[2023-11-07T21:43:11.472+0000] {processor.py:153} INFO - Started process (PID=655) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:43:11.475+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:43:11.477+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:11.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:43:12.320+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:12.320+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:12.321+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:12.321+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:12.323+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:12.323+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:12.324+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:12.324+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:12.324+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:12.324+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:12.325+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:12.325+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:12.331+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:43:12.354+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:12.354+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:43:12.375+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:12.374+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:43:12.389+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.922 seconds
+[2023-11-07T21:43:42.651+0000] {processor.py:153} INFO - Started process (PID=693) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:43:42.655+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:43:42.657+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:42.656+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:43:43.300+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:43.300+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:43.301+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:43.301+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:43.302+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:43.302+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:43.303+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:43.303+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:43.303+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:43.303+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:43.304+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:43.304+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:43:43.309+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:43:43.332+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:43.331+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:43:43.351+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:43:43.351+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:43:43.365+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.720 seconds
+[2023-11-07T21:44:13.634+0000] {processor.py:153} INFO - Started process (PID=731) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:44:13.638+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:44:13.639+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:13.639+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:44:14.392+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:14.392+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:14.393+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:14.393+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:14.394+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:14.393+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:14.394+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:14.394+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:14.395+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:14.395+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:14.396+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:14.395+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:14.402+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:44:14.430+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:14.430+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:44:14.449+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:14.449+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:44:14.462+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.832 seconds
+[2023-11-07T21:44:44.612+0000] {processor.py:153} INFO - Started process (PID=757) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:44:44.615+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:44:44.616+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:44.616+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:44:45.218+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:45.217+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:45.219+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:45.219+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:45.220+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:45.220+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:45.222+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:45.222+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:45.223+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:45.223+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:45.225+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:45.225+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:44:45.232+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:44:45.254+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:45.254+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:44:45.275+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:44:45.275+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:44:45.289+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.681 seconds
+[2023-11-07T21:45:15.542+0000] {processor.py:153} INFO - Started process (PID=795) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:45:15.543+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:45:15.544+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:15.544+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:45:16.194+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:16.194+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:16.195+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:16.195+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:16.196+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:16.196+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:16.197+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:16.196+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:16.197+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:16.197+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:16.198+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:16.198+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:16.202+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:45:16.223+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:16.223+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:45:16.241+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:16.241+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:45:16.256+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.718 seconds
+[2023-11-07T21:45:46.557+0000] {processor.py:153} INFO - Started process (PID=821) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:45:46.559+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:45:46.560+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:46.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:45:47.144+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:47.143+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:47.145+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:47.144+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:47.145+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:47.145+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:47.146+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:47.146+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:47.147+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:47.147+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:47.147+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:47.147+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:45:47.152+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:45:47.173+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:47.173+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:45:47.192+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:45:47.192+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:45:47.206+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.655 seconds
+[2023-11-07T21:46:17.360+0000] {processor.py:153} INFO - Started process (PID=859) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:46:17.362+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:46:17.363+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:17.363+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:46:17.954+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:17.954+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:17.955+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:17.955+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:17.956+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:17.956+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:17.957+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:17.957+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:17.957+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:17.957+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:17.958+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:17.958+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:17.962+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:46:17.983+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:17.983+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:46:18.002+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:18.002+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:46:18.016+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.663 seconds
+[2023-11-07T21:46:48.304+0000] {processor.py:153} INFO - Started process (PID=897) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:46:48.305+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:46:48.307+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:48.307+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:46:48.894+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:48.894+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:48.895+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:48.895+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:48.896+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:48.896+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:48.897+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:48.897+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:48.897+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:48.897+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:48.898+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:48.898+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:46:48.903+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:46:48.927+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:48.927+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:46:48.948+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:46:48.948+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:46:48.963+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.663 seconds
+[2023-11-07T21:47:19.266+0000] {processor.py:153} INFO - Started process (PID=923) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:47:19.268+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:47:19.269+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:19.269+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:47:19.880+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:19.879+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:19.881+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:19.880+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:19.881+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:19.881+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:19.882+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:19.882+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:19.882+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:19.882+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:19.883+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:19.883+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:19.888+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:47:19.910+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:19.910+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:47:19.929+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:19.929+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:47:19.943+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.681 seconds
+[2023-11-07T21:47:50.189+0000] {processor.py:153} INFO - Started process (PID=961) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:47:50.192+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:47:50.194+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:50.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:47:50.832+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:50.832+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:50.833+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:50.833+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:50.834+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:50.834+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:50.835+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:50.835+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:50.835+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:50.835+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:50.836+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:50.836+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:47:50.841+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:47:50.863+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:50.862+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:47:50.881+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:47:50.881+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:47:50.895+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.711 seconds
+[2023-11-07T21:48:21.229+0000] {processor.py:153} INFO - Started process (PID=987) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:48:21.230+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:48:21.231+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:21.231+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:48:21.851+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:21.851+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:21.852+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:21.852+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:21.853+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:21.853+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:21.854+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:21.854+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:21.855+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:21.855+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:21.856+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:21.856+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:21.861+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:48:21.885+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:21.884+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:48:21.906+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:21.906+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:48:21.926+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.701 seconds
+[2023-11-07T21:48:52.317+0000] {processor.py:153} INFO - Started process (PID=1025) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:48:52.318+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:48:52.320+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:52.319+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:48:52.902+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:52.902+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:52.903+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:52.903+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:52.904+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:52.904+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:52.904+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:52.904+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:52.905+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:52.905+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:52.906+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:52.905+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:48:52.910+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:48:52.931+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:52.931+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:48:52.950+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:48:52.949+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:48:52.963+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.651 seconds
+[2023-11-07T21:49:23.269+0000] {processor.py:153} INFO - Started process (PID=1063) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:49:23.273+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:49:23.274+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:23.274+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:49:23.977+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:23.976+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:23.978+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:23.978+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:23.978+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:23.978+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:23.980+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:23.980+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:23.981+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:23.981+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:23.982+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:23.982+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:23.987+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:49:24.009+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:24.009+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:49:24.028+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:24.028+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:49:24.042+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.780 seconds
+[2023-11-07T21:49:54.283+0000] {processor.py:153} INFO - Started process (PID=1090) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:49:54.286+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:49:54.287+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:54.286+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:49:55.024+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:55.023+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:55.025+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:55.025+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:55.026+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:55.026+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:55.027+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:55.027+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:55.028+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:55.028+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:55.029+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:55.028+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:49:55.037+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:49:55.071+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:55.071+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:49:55.102+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:49:55.102+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:49:55.123+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.843 seconds
+[2023-11-07T21:50:25.359+0000] {processor.py:153} INFO - Started process (PID=1128) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:50:25.362+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:50:25.363+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:25.363+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:50:25.972+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:25.972+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:25.973+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:25.973+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:25.973+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:25.973+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:25.974+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:25.974+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:25.975+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:25.975+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:25.975+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:25.975+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:25.980+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:50:26.003+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:26.002+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:50:26.021+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:26.021+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:50:26.036+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.683 seconds
+[2023-11-07T21:50:56.346+0000] {processor.py:153} INFO - Started process (PID=1163) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:50:56.348+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:50:56.349+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:56.349+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:50:57.040+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:57.040+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:57.041+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:57.041+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:57.042+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:57.042+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:57.043+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:57.043+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:57.044+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:57.044+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:57.045+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:57.045+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:50:57.053+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:50:57.085+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:57.085+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:50:57.111+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:50:57.111+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:50:57.132+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.792 seconds
+[2023-11-07T21:51:27.500+0000] {processor.py:153} INFO - Started process (PID=1192) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:51:27.503+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:51:27.505+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:27.505+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:51:28.182+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:28.182+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:28.183+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:28.183+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:28.184+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:28.184+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:28.185+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:28.185+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:28.185+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:28.185+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:28.186+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:28.186+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:28.191+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:51:28.212+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:28.212+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:51:28.230+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:28.230+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:51:28.244+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.752 seconds
+[2023-11-07T21:51:58.538+0000] {processor.py:153} INFO - Started process (PID=1230) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:51:58.541+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:51:58.542+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:58.542+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:51:59.155+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:59.155+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:59.157+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:59.157+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:59.158+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:59.158+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:59.158+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:59.158+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:59.159+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:59.159+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:59.160+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:59.160+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:51:59.165+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:51:59.186+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:59.186+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:51:59.205+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:51:59.205+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:51:59.219+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.688 seconds
+[2023-11-07T21:52:29.437+0000] {processor.py:153} INFO - Started process (PID=1258) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:52:29.439+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:52:29.440+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:52:29.440+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:52:30.042+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:52:30.042+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:52:30.043+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:52:30.043+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:52:30.043+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:52:30.043+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:52:30.044+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:52:30.044+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:52:30.045+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:52:30.044+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:52:30.045+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:52:30.045+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:52:30.050+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:52:30.073+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:52:30.072+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:52:30.092+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:52:30.092+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:52:30.107+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.673 seconds
+[2023-11-07T21:53:00.463+0000] {processor.py:153} INFO - Started process (PID=1296) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:53:00.466+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:53:00.467+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:00.467+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:53:01.075+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:01.075+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:01.076+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:01.076+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:01.077+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:01.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:01.078+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:01.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:01.078+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:01.078+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:01.079+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:01.079+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:01.083+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:53:01.105+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:01.105+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:53:01.124+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:01.124+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:53:01.138+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.681 seconds
+[2023-11-07T21:53:31.433+0000] {processor.py:153} INFO - Started process (PID=1334) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:53:31.435+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:53:31.436+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:31.436+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:53:32.085+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:32.085+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:32.086+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:32.086+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:32.087+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:32.087+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:32.088+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:32.087+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:32.088+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:32.088+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:32.089+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:32.089+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:53:32.094+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:53:32.116+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:32.116+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:53:32.134+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:53:32.134+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:53:32.148+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.719 seconds
+[2023-11-07T21:54:02.479+0000] {processor.py:153} INFO - Started process (PID=1360) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:54:02.481+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:54:02.482+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:02.481+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:54:03.074+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:03.074+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:03.075+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:03.075+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:03.076+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:03.076+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:03.077+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:03.076+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:03.077+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:03.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:03.078+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:03.078+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:03.083+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:54:03.104+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:03.104+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:54:03.122+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:03.122+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:54:03.134+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.659 seconds
+[2023-11-07T21:54:33.445+0000] {processor.py:153} INFO - Started process (PID=1398) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:54:33.447+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:54:33.448+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:33.448+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:54:34.110+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:34.110+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:34.112+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:34.112+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:34.113+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:34.113+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:34.113+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:34.113+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:34.114+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:34.114+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:34.115+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:34.115+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:54:34.120+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:54:34.141+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:34.140+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:54:34.159+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:54:34.159+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:54:34.172+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.732 seconds
+[2023-11-07T21:55:04.456+0000] {processor.py:153} INFO - Started process (PID=1425) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:55:04.458+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:55:04.459+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:04.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:55:05.072+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:05.072+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:05.073+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:05.073+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:05.074+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:05.073+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:05.074+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:05.074+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:05.075+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:05.075+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:05.076+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:05.075+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:05.081+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:55:05.104+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:05.104+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:55:05.126+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:05.126+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:55:05.144+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.692 seconds
+[2023-11-07T21:55:35.456+0000] {processor.py:153} INFO - Started process (PID=1463) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:55:35.458+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:55:35.459+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:35.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:55:36.076+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:36.076+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:36.077+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:36.077+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:36.078+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:36.078+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:36.078+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:36.078+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:36.079+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:36.079+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:36.079+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:36.079+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:55:36.084+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:55:36.109+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:36.109+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:55:36.131+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:55:36.131+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:55:36.148+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.695 seconds
+[2023-11-07T21:56:06.448+0000] {processor.py:153} INFO - Started process (PID=1501) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:56:06.451+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:56:06.453+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:06.453+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:56:07.040+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:07.040+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:07.041+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:07.041+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:07.042+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:07.042+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:07.042+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:07.042+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:07.043+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:07.043+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:07.044+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:07.044+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:07.048+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:56:07.069+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:07.069+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:56:07.088+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:07.088+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:56:07.102+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.660 seconds
+[2023-11-07T21:56:37.367+0000] {processor.py:153} INFO - Started process (PID=1526) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:56:37.370+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:56:37.371+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:37.371+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:56:37.969+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:37.969+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:37.970+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:37.970+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:37.971+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:37.971+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:37.972+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:37.972+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:37.972+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:37.972+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:37.973+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:37.973+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:56:37.978+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:56:37.999+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:37.999+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:56:38.017+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:56:38.017+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:56:38.031+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.669 seconds
+[2023-11-07T21:57:08.368+0000] {processor.py:153} INFO - Started process (PID=1564) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:57:08.369+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:57:08.370+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:08.370+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:57:08.945+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:08.945+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:08.946+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:08.946+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:08.948+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:08.947+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:08.948+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:08.948+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:08.949+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:08.949+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:08.950+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:08.950+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:08.955+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:57:08.976+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:08.975+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:57:08.995+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:08.995+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:57:09.008+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.644 seconds
+[2023-11-07T21:57:39.314+0000] {processor.py:153} INFO - Started process (PID=1597) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:57:39.316+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:57:39.317+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:39.317+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:57:39.962+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:39.962+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:39.963+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:39.963+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:39.964+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:39.964+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:39.965+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:39.965+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:39.966+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:39.965+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:39.966+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:39.966+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:57:39.972+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:57:39.996+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:39.995+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:57:40.021+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:57:40.021+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:57:40.050+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.740 seconds
+[2023-11-07T21:58:10.178+0000] {processor.py:153} INFO - Started process (PID=1628) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:58:10.181+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:58:10.183+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:10.183+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:58:10.910+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:10.910+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:10.911+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:10.911+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:10.912+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:10.912+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:10.912+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:10.912+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:10.913+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:10.913+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:10.913+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:10.913+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:10.919+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:58:10.942+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:10.941+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:58:10.961+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:10.961+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:58:10.977+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.806 seconds
+[2023-11-07T21:58:41.339+0000] {processor.py:153} INFO - Started process (PID=1666) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:58:41.341+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:58:41.342+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:41.342+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:58:41.954+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:41.954+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:41.955+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:41.955+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:41.956+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:41.956+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:41.957+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:41.957+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:41.957+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:41.957+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:41.958+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:41.958+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:58:41.963+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:58:41.984+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:41.983+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:58:42.003+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:58:42.003+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:58:42.017+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.682 seconds
+[2023-11-07T21:59:12.406+0000] {processor.py:153} INFO - Started process (PID=1692) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:59:12.409+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:59:12.411+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:12.411+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:59:13.004+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:13.003+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:13.005+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:13.005+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:13.005+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:13.005+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:13.006+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:13.006+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:13.007+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:13.007+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:13.007+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:13.007+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:13.012+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:59:13.032+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:13.032+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:59:13.051+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:13.051+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:59:13.065+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.665 seconds
+[2023-11-07T21:59:43.385+0000] {processor.py:153} INFO - Started process (PID=1730) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T21:59:43.388+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T21:59:43.389+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:43.389+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T21:59:43.983+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:43.982+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:43.984+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:43.984+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:43.984+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:43.984+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:43.985+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:43.985+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:43.986+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:43.986+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:43.987+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:43.987+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T21:59:43.992+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T21:59:44.014+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:44.013+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T21:59:44.032+0000] {logging_mixin.py:137} INFO - [2023-11-07T21:59:44.032+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T21:59:44.046+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.667 seconds
+[2023-11-07T22:00:14.405+0000] {processor.py:153} INFO - Started process (PID=1762) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T22:00:14.407+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T22:00:14.409+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:14.409+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T22:00:15.174+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:15.174+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:15.175+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:15.175+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:15.176+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:15.176+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:15.177+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:15.177+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:15.178+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:15.178+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:15.179+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:15.179+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:15.187+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T22:00:15.219+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:15.218+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T22:00:15.246+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:15.246+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T22:00:15.264+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.863 seconds
+[2023-11-07T22:00:45.744+0000] {processor.py:153} INFO - Started process (PID=1794) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T22:00:45.747+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T22:00:45.749+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:45.748+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T22:00:46.358+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:46.358+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:46.359+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:46.359+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:46.360+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:46.360+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:46.361+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:46.361+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:46.362+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:46.362+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:46.362+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:46.362+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:00:46.368+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T22:00:46.391+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:46.390+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T22:00:46.412+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:00:46.412+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T22:00:46.425+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.689 seconds
+[2023-11-07T22:25:30.324+0000] {processor.py:153} INFO - Started process (PID=1819) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T22:25:30.326+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T22:25:30.327+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:25:30.327+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T22:25:31.236+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:25:31.236+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T22:25:31.238+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:25:31.238+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T22:25:31.240+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:25:31.239+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:25:31.241+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:25:31.241+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T22:25:31.242+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:25:31.242+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:25:31.244+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:25:31.243+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:25:31.253+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T22:25:31.322+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:25:31.322+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T22:25:31.374+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:25:31.374+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T22:25:31.412+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.093 seconds
+[2023-11-07T22:52:14.198+0000] {processor.py:153} INFO - Started process (PID=1843) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T22:52:14.199+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T22:52:14.201+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:52:14.200+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T22:52:15.404+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:52:15.404+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T22:52:15.406+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:52:15.405+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T22:52:15.407+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:52:15.407+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:52:15.408+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:52:15.408+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T22:52:15.409+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:52:15.409+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:52:15.411+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:52:15.411+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T22:52:15.416+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T22:52:15.439+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:52:15.439+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T22:52:15.459+0000] {logging_mixin.py:137} INFO - [2023-11-07T22:52:15.459+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T22:52:15.472+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.278 seconds
+[2023-11-07T23:06:36.809+0000] {processor.py:153} INFO - Started process (PID=1880) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T23:06:36.821+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T23:06:36.837+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:06:36.836+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T23:06:38.672+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:06:38.672+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T23:06:38.673+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:06:38.673+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T23:06:38.674+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:06:38.674+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:06:38.675+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:06:38.675+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T23:06:38.676+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:06:38.676+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:06:38.677+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:06:38.677+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:06:38.683+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T23:06:38.709+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:06:38.709+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T23:06:38.731+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:06:38.730+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T23:06:38.744+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.975 seconds
+[2023-11-07T23:16:21.590+0000] {processor.py:153} INFO - Started process (PID=1907) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T23:16:21.593+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T23:16:21.595+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:21.595+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T23:16:22.854+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:22.854+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:22.855+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:22.855+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:22.856+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:22.856+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:22.857+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:22.857+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:22.857+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:22.857+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:22.858+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:22.858+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:22.864+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T23:16:22.891+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:22.891+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T23:16:22.913+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:22.913+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T23:16:22.928+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.342 seconds
+[2023-11-07T23:16:53.254+0000] {processor.py:153} INFO - Started process (PID=1945) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T23:16:53.257+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T23:16:53.259+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:53.259+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T23:16:54.058+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:54.058+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:54.059+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:54.059+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:54.060+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:54.060+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:54.060+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:54.060+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:54.061+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:54.061+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:54.062+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:54.062+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:16:54.066+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T23:16:54.089+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:54.088+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T23:16:54.106+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:16:54.106+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T23:16:54.120+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.873 seconds
+[2023-11-07T23:50:04.139+0000] {processor.py:153} INFO - Started process (PID=1970) to work on /opt/airflow/dags/airflow.py
+[2023-11-07T23:50:04.141+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-07T23:50:04.143+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:50:04.142+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-07T23:50:04.839+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:50:04.839+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_data_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T23:50:04.841+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:50:04.841+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, load_data_task already registered for DAG: your_python_dag
+[2023-11-07T23:50:04.841+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:50:04.841+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): data_preprocessing_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:50:04.842+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:50:04.842+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, data_preprocessing_task already registered for DAG: your_python_dag
+[2023-11-07T23:50:04.843+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:50:04.842+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): build_save_model_task>, load_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:50:04.843+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:50:04.843+0000] {taskmixin.py:205} WARNING - Dependency <Task(PythonOperator): load_model_task>, build_save_model_task already registered for DAG: your_python_dag
+[2023-11-07T23:50:04.849+0000] {processor.py:753} INFO - DAG(s) dict_keys(['your_python_dag']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-07T23:50:04.872+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:50:04.871+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-07T23:50:04.891+0000] {logging_mixin.py:137} INFO - [2023-11-07T23:50:04.890+0000] {dag.py:3441} INFO - Setting next_dagrun for your_python_dag to None, run_after=None
+[2023-11-07T23:50:04.904+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.769 seconds
