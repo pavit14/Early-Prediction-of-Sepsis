@@ -1,6 +1,6 @@
 outs:
-- md5: d817825c064b1c220ac968a787e1d8b4.dir
-  size: 185629
+- md5: c672ed35187767fe3af2d442807299db.dir
+  size: 181179
   nfiles: 36
   hash: md5
   path: Train_data

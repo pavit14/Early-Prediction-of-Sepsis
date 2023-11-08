@@ -1,6 +1,6 @@
 outs:
-- md5: c1704dd26c1970b64223c4f4f0c0564f.dir
-  size: 101608
+- md5: 8995877c6642e3a95d1d1d0f40cc19a8.dir
+  size: 72346
   nfiles: 12
   hash: md5
   path: Valid_data

@@ -88,9 +88,9 @@ add_file(valid_files, new_directory_path)
 
 
 ### preprocessing 
-def preprocess_ffill_zero_imput(files):   #provide the list of train, test, valid files 
+def preprocess_ffill(files):   #provide the list of train, test, valid files 
     num_columns = 38
-    processed_data = np.empty((0, num_columns))
+    ffill_data = np.empty((0, num_columns))
     
     for f in files:
         # Load data.
@@ -100,43 +100,29 @@ def preprocess_ffill_zero_imput(files):   #provide the list of train, test, vali
         
         data = data.ffill()
         data = data.drop([7, 20, 27, 32], axis=1)
-        data = data.fillna(0).values
-        
+
         id = int(f[1:7])
         new_column = np.full((len(data), 1), id)
         data = np.hstack((new_column, data))
         
-        processed_data = np.vstack((processed_data, data)) 
-    processed_data = pd.DataFrame(processed_data)
-    print(processed_data)
-    return processed_data
+        ffill_data = np.vstack((ffill_data, data)) 
+    ffill_data = pd.DataFrame(ffill_data)
+    print(ffill_data)
+    return ffill_data
 
-def preprocess_ffill_mean_imput(files):   #provide the list of train, test, valid files 
-    num_columns = 38
-    processed_data = np.empty((0, num_columns))
-    scaler = MinMaxScaler()
-    scaler.fit(X_train)
-    X_train = scaler.transform(X_train)
-    X_test = scaler.transform(X_test)
-    
-    for f in files:
-        # Load data
-        input_file = os.path.join(path, f)
-        data = load_challenge_data(input_file)
-        data = pd.DataFrame(data)
-        
-        data = data.ffill()
-        data = data.drop([7, 20, 27, 32], axis=1)
-        data = data.fillna(0).values
-        
-        id = int(f[1:7])
-        new_column = np.full((len(data), 1), id)
-        data = np.hstack((new_column, data))
-        
-        processed_data = np.vstack((processed_data, data)) 
-    return processed_data
+def preprocess_zero_imput(df):
+    df = df.fillna(0)
+    return df
 
-df = preprocess_ffill_zero_imput(train_files)
+def preprocess_mean_imput(df, train_ffill_df):
+    column_means = train_ffill_df.mean()
+    df_imputed = df.fillna(column_means)
+    return df
+
+
+train_df = preprocess_ffill(train_files)
+test_df = preprocess_ffill(test_files)
+df = preprocess_mean_imput(test_df, train_df)
 file_path = os.path.join('D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data', 'my_train_data.csv')
 df.to_csv(file_path, index=False)
 
