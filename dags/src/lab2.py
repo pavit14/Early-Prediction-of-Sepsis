@@ -84,5 +84,3 @@ def load_model_elbow(filename,sse):
     )
 
     return "Cluster " + str(loaded_model.predict(df)[0]) +" Number of clusters "+str(kl.elbow)
-
-
