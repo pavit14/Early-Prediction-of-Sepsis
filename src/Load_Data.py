@@ -43,10 +43,10 @@ def train_test_valid_files(path, shuffle_files = False):
     valid_files = files[n_train + n_test:]
     return train_files, test_files, valid_files
 
-path ="D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data\Downloaded_data"
+##path ="D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data\Downloaded_data"
 
-train_files, test_files, valid_files = train_test_valid_files(path, True)
-
+#train_files, test_files, valid_files = train_test_valid_files(path, True)
+"""
 def add_file(files, directory_path):
     for f in files:
         source_file_path = os.path.join(path, f)
@@ -85,7 +85,7 @@ shutil.rmtree(directory_path)
 if not os.path.exists(new_directory_path):
     os.makedirs(new_directory_path)
 add_file(valid_files, new_directory_path)
-
+"""
 
 ### preprocessing 
 def preprocess_ffill(files):   #provide the list of train, test, valid files 
@@ -95,6 +95,7 @@ def preprocess_ffill(files):   #provide the list of train, test, valid files
     for f in files:
         # Load data.
         input_file = os.path.join(path, f)
+        path = "D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data\Downloaded_data"
         data = load_challenge_data(input_file)
         data = pd.DataFrame(data)
         
@@ -119,13 +120,13 @@ def preprocess_mean_imput(df, train_ffill_df):
     df_imputed = df.fillna(column_means)
     return df
 
-
+"""
 train_df = preprocess_ffill(train_files)
 test_df = preprocess_ffill(test_files)
 df = preprocess_mean_imput(test_df, train_df)
 file_path = os.path.join('D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data', 'my_train_data.csv')
 df.to_csv(file_path, index=False)
-
+"""
 
 
 
