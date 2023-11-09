@@ -122,6 +122,14 @@ def preprocess_zero_imput_norm(**kwargs):
     test_df.iloc[:,1:-1] = scaler.transform(test_df.iloc[:,1:-1])
     valid_df.iloc[:,1:-1] = scaler.transform(valid_df.iloc[:, 1:-1])
 
+    
+    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_train_data.csv')
+    train_df.to_csv(file_path, index=False)
+    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_test_data.csv')
+    test_df.to_csv(file_path, index=False)
+    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_valid_data.csv')
+    valid_df.to_csv(file_path, index=False)
+
 
     train_serialized_data = pickle.dumps(train_df)
     valid_serialized_data = pickle.dumps(valid_df)
@@ -160,3 +168,4 @@ def preprocess_mean_input_norm(**kwargs):
     ti.xcom_push(key='train_data', value=train_serialized_data)
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
+
