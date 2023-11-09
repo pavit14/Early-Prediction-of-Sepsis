@@ -4510,3 +4510,6 @@ File Path                     PID    Runtime      # DAGs    # Errors  Last Runti
 ----------------------------  -----  ---------  --------  ----------  --------------  -------------------
 /opt/airflow/dags/airflow.py                           1           0  0.96s           2023-11-09T05:43:27
 ================================================================================
+[2023-11-09T05:43:58.540+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-11-09T05:43:58.543+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
+[2023-11-09T05:44:00.147+0000] {manager.py:465} INFO - Exiting gracefully upon receiving signal 15
