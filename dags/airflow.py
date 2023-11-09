@@ -2,7 +2,7 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
-from src.pylab import preprocess_train_data,preprocess_test_val_data,train_test_valid_files
+from src.pylab1 import load_train_test_valid_files,feature_engineering,preprocess_zero_imput_norm,preprocess_mean_input_norm
 
 from airflow import configuration as conf
 
@@ -11,7 +11,7 @@ conf.set('core', 'enable_xcom_pickling', 'True')
 
 # Define default arguments for your DAG
 default_args = {
-    'owner': 'your_name',
+    'owner': 'Pavs',
     'start_date': datetime(2023, 9, 17),
     'retries': 0, # Number of retries in case of task failure
     'retry_delay': timedelta(minutes=5), # Delay before retries
@@ -59,32 +59,38 @@ load_model_task = PythonOperator(
 '''
 # Define your Airflow tasks
 
-train_test_valid_files_task = PythonOperator(
-    task_id='train_test_valid_files',
-    python_callable=train_test_valid_files,
+load_train_test_valid_files_task = PythonOperator(
+    task_id='load_train_test_valid_files',
+    python_callable=load_train_test_valid_files,
+    provide_context=True,
+    dag=dag
+)
+
+
+feature_engineering_task = PythonOperator(
+    task_id='feature_engineering',
+    python_callable=feature_engineering,
     provide_context=True,
     #op_kwargs={'output_param': 'output_result'},
     dag=dag
 )
 
-
-preprocess_train_data_task = PythonOperator(
-    task_id='preprocess_train_data',
-    python_callable=preprocess_train_data,
+preprocess_zero_imput_norm_task = PythonOperator(
+    task_id='preprocess_zero_imput_norm',
+    python_callable=preprocess_zero_imput_norm,
     provide_context=True,
-    #op_kwargs={'output_param': 'output_result'},
     dag=dag
 )
 
-preprocess_test_val_data_task = PythonOperator(
-    task_id='preprocess_test_val_data',
-    python_callable=preprocess_test_val_data,
+preprocess_mean_input_norm_task = PythonOperator(
+    task_id='preprocess_mean_input_norm',
+    python_callable=preprocess_mean_input_norm,
     provide_context=True,
     dag=dag
 )
 
 # Set task dependencies
-train_test_valid_files_task >> preprocess_train_data_task >> preprocess_test_val_data_task
+load_train_test_valid_files_task >> feature_engineering_task >> (preprocess_zero_imput_norm_task,preprocess_mean_input_norm_task)
 
 # If this script is run directly, allow command-line interaction with the DAG
 if __name__ == "__main__":
