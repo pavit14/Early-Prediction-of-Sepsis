@@ -72,7 +72,7 @@ preprocess_train_data_task = PythonOperator(
     task_id='preprocess_train_data',
     python_callable=preprocess_train_data,
     provide_context=True,
-    op_kwargs={'output_param': 'output_result'},
+    #op_kwargs={'output_param': 'output_result'},
     dag=dag
 )
 
