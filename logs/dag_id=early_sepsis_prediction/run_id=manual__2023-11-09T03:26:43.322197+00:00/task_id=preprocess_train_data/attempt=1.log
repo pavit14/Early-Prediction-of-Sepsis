@@ -1,0 +1,32 @@
+[2023-11-09T03:26:47.252+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: early_sepsis_prediction.preprocess_train_data manual__2023-11-09T03:26:43.322197+00:00 [queued]>
+[2023-11-09T03:26:47.261+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: early_sepsis_prediction.preprocess_train_data manual__2023-11-09T03:26:43.322197+00:00 [queued]>
+[2023-11-09T03:26:47.261+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-09T03:26:47.262+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-11-09T03:26:47.263+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-09T03:26:47.274+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): preprocess_train_data> on 2023-11-09 03:26:43.322197+00:00
+[2023-11-09T03:26:47.282+0000] {standard_task_runner.py:55} INFO - Started process 3626 to run task
+[2023-11-09T03:26:47.287+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'early_sepsis_prediction', 'preprocess_train_data', 'manual__2023-11-09T03:26:43.322197+00:00', '--job-id', '152', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmparm3yja4']
+[2023-11-09T03:26:47.290+0000] {standard_task_runner.py:83} INFO - Job 152: Subtask preprocess_train_data
+[2023-11-09T03:26:47.363+0000] {task_command.py:388} INFO - Running <TaskInstance: early_sepsis_prediction.preprocess_train_data manual__2023-11-09T03:26:43.322197+00:00 [running]> on host 4460f47ac51f
+[2023-11-09T03:26:47.434+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=your_name
+AIRFLOW_CTX_DAG_ID=early_sepsis_prediction
+AIRFLOW_CTX_TASK_ID=preprocess_train_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-09T03:26:43.322197+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-09T03:26:43.322197+00:00
+[2023-11-09T03:26:47.449+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/src/pylab.py", line 41, in preprocess_train_data
+    train_data,valid_data,test_data=xcom_value
+TypeError: cannot unpack non-iterable NoneType object
+[2023-11-09T03:26:47.461+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=early_sepsis_prediction, task_id=preprocess_train_data, execution_date=20231109T032643, start_date=20231109T032647, end_date=20231109T032647
+[2023-11-09T03:26:47.471+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 152 for task preprocess_train_data (cannot unpack non-iterable NoneType object; 3626)
+[2023-11-09T03:26:47.499+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-11-09T03:26:47.525+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
