@@ -1,0 +1,38 @@
+[2023-11-09T22:25:19.309+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: early_sepsis_prediction.preprocess_zero_imput_norm manual__2023-11-09T22:25:12.740064+00:00 [queued]>
+[2023-11-09T22:25:19.344+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: early_sepsis_prediction.preprocess_zero_imput_norm manual__2023-11-09T22:25:12.740064+00:00 [queued]>
+[2023-11-09T22:25:19.345+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-09T22:25:19.346+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-11-09T22:25:19.347+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-11-09T22:25:19.389+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): preprocess_zero_imput_norm> on 2023-11-09 22:25:12.740064+00:00
+[2023-11-09T22:25:19.411+0000] {standard_task_runner.py:55} INFO - Started process 4053 to run task
+[2023-11-09T22:25:19.468+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'early_sepsis_prediction', 'preprocess_zero_imput_norm', 'manual__2023-11-09T22:25:12.740064+00:00', '--job-id', '252', '--raw', '--subdir', 'DAGS_FOLDER/***.py', '--cfg-path', '/tmp/tmp5_8tg6ed']
+[2023-11-09T22:25:19.487+0000] {standard_task_runner.py:83} INFO - Job 252: Subtask preprocess_zero_imput_norm
+[2023-11-09T22:25:19.723+0000] {task_command.py:388} INFO - Running <TaskInstance: early_sepsis_prediction.preprocess_zero_imput_norm manual__2023-11-09T22:25:12.740064+00:00 [running]> on host 911414a99fc3
+[2023-11-09T22:25:20.010+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=Pavs
+AIRFLOW_CTX_DAG_ID=early_sepsis_prediction
+AIRFLOW_CTX_TASK_ID=preprocess_zero_imput_norm
+AIRFLOW_CTX_EXECUTION_DATE=2023-11-09T22:25:12.740064+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-11-09T22:25:12.740064+00:00
+[2023-11-09T22:25:20.157+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/src/pylab1.py", line 121, in preprocess_zero_imput_norm
+    train_df[:,1:-1] = scaler.fit_transform(train_df[:,1:-1])
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 3458, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 3361, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 76, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 82, in pandas._libs.index.IndexEngine.get_loc
+TypeError: '(slice(None, None, None), slice(1, -1, None))' is an invalid key
+[2023-11-09T22:25:20.205+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=early_sepsis_prediction, task_id=preprocess_zero_imput_norm, execution_date=20231109T222512, start_date=20231109T222519, end_date=20231109T222520
+[2023-11-09T22:25:20.226+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 252 for task preprocess_zero_imput_norm ('(slice(None, None, None), slice(1, -1, None))' is an invalid key; 4053)
+[2023-11-09T22:25:20.288+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-11-09T22:25:20.326+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
