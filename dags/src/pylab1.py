@@ -8,6 +8,7 @@ import random
 import shutil
 from sklearn.model_selection import train_test_split
 
+
 def load_train_test_valid_files(**kwargs):
     files = []
     path = os.path.join(os.path.dirname(__file__), '../data/Dataset')
@@ -32,14 +33,12 @@ def load_train_test_valid_files(**kwargs):
             file_path = os.path.join(path, filename)
             data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
             file_id = os.path.splitext(filename)[0]
+            file_id=int(file_id[1:])
             data['id'] = file_id
             train_df = pd.concat([train_df, data], ignore_index=True)
 
     tr_last_column = train_df.pop(train_df.columns[-1])  # Remove the last column
     train_df.insert(0, tr_last_column.name, tr_last_column)
-
-    print(train_df.head(5))
-
 
     test_df = pd.DataFrame()
     for filename in os.listdir(path):
@@ -47,6 +46,7 @@ def load_train_test_valid_files(**kwargs):
             file_path = os.path.join(path, filename)
             data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
             file_id = os.path.splitext(filename)[0]
+            file_id=file_id[1:]
             data['id'] = file_id
             test_df = pd.concat([test_df, data], ignore_index=True)
 
@@ -59,6 +59,7 @@ def load_train_test_valid_files(**kwargs):
             file_path = os.path.join(path, filename)
             data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
             file_id = os.path.splitext(filename)[0]
+            file_id=file_id[1:]
             data['id'] = file_id
             valid_df = pd.concat([valid_df, data], ignore_index=True)
     
@@ -82,7 +83,6 @@ def feature_engineering(**kwargs):
 
     train_df = pickle.loads(train_data)
     train_df = train_df.groupby('id').filter(lambda x: len(x) >=15 )
-    train_df=train_df.reset_index()
     train_df= train_df.groupby('id').ffill()
     train_df = train_df.drop(train_df.columns[[8, 21, 28, 33]], axis=1)
     
