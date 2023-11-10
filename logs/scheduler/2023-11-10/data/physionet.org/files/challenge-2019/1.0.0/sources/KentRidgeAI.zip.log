@@ -1,0 +1,80 @@
+[2023-11-10T00:00:28.214+0000] {processor.py:153} INFO - Started process (PID=9992) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:00:28.217+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:00:28.218+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:28.218+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:00:28.222+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:00:28.250+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.041 seconds
+[2023-11-10T00:00:58.956+0000] {processor.py:153} INFO - Started process (PID=10046) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:00:58.959+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:00:58.961+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:58.960+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:00:58.964+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:00:58.991+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.041 seconds
+[2023-11-10T00:01:29.661+0000] {processor.py:153} INFO - Started process (PID=10097) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:01:29.673+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:01:29.688+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:01:29.687+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:01:29.695+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:01:29.766+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.110 seconds
+[2023-11-10T00:02:00.286+0000] {processor.py:153} INFO - Started process (PID=10142) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:02:00.288+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:02:00.289+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:00.289+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:02:00.291+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:02:00.310+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.028 seconds
+[2023-11-10T00:02:30.674+0000] {processor.py:153} INFO - Started process (PID=10193) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:02:30.676+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:02:30.678+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:30.678+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:02:30.685+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:02:30.714+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.045 seconds
+[2023-11-10T00:03:01.442+0000] {processor.py:153} INFO - Started process (PID=10238) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:03:01.445+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:03:01.447+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:01.447+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:03:01.453+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:03:01.478+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.040 seconds
+[2023-11-10T00:03:31.970+0000] {processor.py:153} INFO - Started process (PID=10281) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:03:31.972+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:03:31.975+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:31.975+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:03:31.979+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:03:32.002+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.037 seconds
+[2023-11-10T00:04:19.464+0000] {processor.py:153} INFO - Started process (PID=10352) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:04:19.468+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:04:19.471+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:19.471+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:04:19.477+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:04:19.509+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.058 seconds
+[2023-11-10T00:04:49.757+0000] {processor.py:153} INFO - Started process (PID=10418) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:04:49.760+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:04:49.762+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:49.762+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:04:49.778+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:04:49.818+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.068 seconds
+[2023-11-10T00:05:19.893+0000] {processor.py:153} INFO - Started process (PID=10478) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:05:19.895+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:05:19.896+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:19.896+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:05:19.901+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:05:19.921+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.033 seconds
+[2023-11-10T00:05:50.872+0000] {processor.py:153} INFO - Started process (PID=10542) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:05:50.875+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:05:50.881+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:50.881+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:05:50.916+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:05:50.982+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.122 seconds
+[2023-11-10T00:06:21.398+0000] {processor.py:153} INFO - Started process (PID=10604) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:06:21.401+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:06:21.402+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:21.402+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:06:21.405+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:06:21.431+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.041 seconds
+[2023-11-10T00:06:51.968+0000] {processor.py:153} INFO - Started process (PID=10662) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:06:51.970+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:06:51.971+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:51.971+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:06:51.974+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:06:51.994+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.031 seconds
+[2023-11-10T00:07:22.556+0000] {processor.py:153} INFO - Started process (PID=10732) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:07:22.559+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:07:22.561+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:22.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:07:22.565+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:07:22.591+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.041 seconds
+[2023-11-10T00:07:52.940+0000] {processor.py:153} INFO - Started process (PID=10790) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:07:52.943+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:07:52.945+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:52.944+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:07:52.948+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:07:52.971+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.036 seconds
+[2023-11-10T00:08:23.671+0000] {processor.py:153} INFO - Started process (PID=10860) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:08:23.673+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip for tasks to queue
+[2023-11-10T00:08:23.675+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:23.675+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:08:23.680+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip
+[2023-11-10T00:08:23.734+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/KentRidgeAI.zip took 0.072 seconds

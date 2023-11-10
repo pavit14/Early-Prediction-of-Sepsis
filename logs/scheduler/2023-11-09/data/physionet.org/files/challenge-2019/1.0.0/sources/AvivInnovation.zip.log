@@ -1,0 +1,45 @@
+[2023-11-09T23:48:41.962+0000] {processor.py:153} INFO - Started process (PID=9111) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:48:41.964+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip for tasks to queue
+[2023-11-09T23:48:41.966+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:48:41.966+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:48:41.971+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:48:42.001+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip took 0.047 seconds
+[2023-11-09T23:49:12.677+0000] {processor.py:153} INFO - Started process (PID=9146) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:49:12.679+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip for tasks to queue
+[2023-11-09T23:49:12.680+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:49:12.680+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:49:12.683+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:49:12.708+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip took 0.037 seconds
+[2023-11-09T23:49:43.123+0000] {processor.py:153} INFO - Started process (PID=9194) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:49:43.126+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip for tasks to queue
+[2023-11-09T23:49:43.129+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:49:43.129+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:49:43.134+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:49:43.158+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip took 0.040 seconds
+[2023-11-09T23:50:13.631+0000] {processor.py:153} INFO - Started process (PID=9231) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:50:13.633+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip for tasks to queue
+[2023-11-09T23:50:13.634+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:50:13.634+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:50:13.637+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:50:13.658+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip took 0.031 seconds
+[2023-11-09T23:50:43.929+0000] {processor.py:153} INFO - Started process (PID=9280) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:50:43.930+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip for tasks to queue
+[2023-11-09T23:50:43.931+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:50:43.931+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:50:43.934+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:50:43.953+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip took 0.028 seconds
+[2023-11-09T23:51:14.163+0000] {processor.py:153} INFO - Started process (PID=9318) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:51:14.164+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip for tasks to queue
+[2023-11-09T23:51:14.166+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:51:14.166+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:51:14.169+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:51:14.188+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip took 0.031 seconds
+[2023-11-09T23:51:44.347+0000] {processor.py:153} INFO - Started process (PID=9366) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:51:44.349+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip for tasks to queue
+[2023-11-09T23:51:44.350+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:51:44.350+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:51:44.352+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:51:44.372+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip took 0.029 seconds
+[2023-11-09T23:52:14.945+0000] {processor.py:153} INFO - Started process (PID=9403) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:52:14.946+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip for tasks to queue
+[2023-11-09T23:52:14.947+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:52:14.947+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:52:14.950+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:52:14.971+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip took 0.031 seconds
+[2023-11-09T23:52:45.550+0000] {processor.py:153} INFO - Started process (PID=9452) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:52:45.552+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip for tasks to queue
+[2023-11-09T23:52:45.554+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:52:45.554+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:52:45.560+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip
+[2023-11-09T23:52:45.593+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AvivInnovation.zip took 0.053 seconds

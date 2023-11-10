@@ -1,0 +1,45 @@
+[2023-11-10T00:04:18.837+0000] {processor.py:153} INFO - Started process (PID=10348) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:04:18.840+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip for tasks to queue
+[2023-11-10T00:04:18.846+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:18.846+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:04:18.852+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:04:18.891+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip took 0.060 seconds
+[2023-11-10T00:04:49.442+0000] {processor.py:153} INFO - Started process (PID=10413) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:04:49.445+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip for tasks to queue
+[2023-11-10T00:04:49.450+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:49.450+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:04:49.459+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:04:49.500+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip took 0.067 seconds
+[2023-11-10T00:05:19.758+0000] {processor.py:153} INFO - Started process (PID=10474) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:05:19.760+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip for tasks to queue
+[2023-11-10T00:05:19.761+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:19.761+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:05:19.765+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:05:19.783+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip took 0.030 seconds
+[2023-11-10T00:05:50.594+0000] {processor.py:153} INFO - Started process (PID=10531) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:05:50.597+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip for tasks to queue
+[2023-11-10T00:05:50.600+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:50.600+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:05:50.609+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:05:50.635+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip took 0.057 seconds
+[2023-11-10T00:06:21.251+0000] {processor.py:153} INFO - Started process (PID=10600) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:06:21.253+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip for tasks to queue
+[2023-11-10T00:06:21.254+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:21.254+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:06:21.261+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:06:21.284+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip took 0.037 seconds
+[2023-11-10T00:06:51.779+0000] {processor.py:153} INFO - Started process (PID=10658) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:06:51.781+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip for tasks to queue
+[2023-11-10T00:06:51.783+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:51.783+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:06:51.787+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:06:51.805+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip took 0.030 seconds
+[2023-11-10T00:07:22.336+0000] {processor.py:153} INFO - Started process (PID=10728) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:07:22.338+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip for tasks to queue
+[2023-11-10T00:07:22.340+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:22.340+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:07:22.345+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:07:22.365+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip took 0.033 seconds
+[2023-11-10T00:07:52.792+0000] {processor.py:153} INFO - Started process (PID=10786) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:07:52.794+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip for tasks to queue
+[2023-11-10T00:07:52.795+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:52.795+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:07:52.798+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:07:52.820+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip took 0.031 seconds
+[2023-11-10T00:08:23.384+0000] {processor.py:153} INFO - Started process (PID=10856) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:08:23.388+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip for tasks to queue
+[2023-11-10T00:08:23.391+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:23.391+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:08:23.399+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip
+[2023-11-10T00:08:23.445+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SFAA.zip took 0.069 seconds

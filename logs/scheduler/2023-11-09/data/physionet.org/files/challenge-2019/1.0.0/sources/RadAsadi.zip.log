@@ -1,0 +1,15 @@
+[2023-11-09T23:58:56.268+0000] {processor.py:153} INFO - Started process (PID=9851) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip
+[2023-11-09T23:58:56.271+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip for tasks to queue
+[2023-11-09T23:58:56.273+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:58:56.273+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip
+[2023-11-09T23:58:56.282+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip
+[2023-11-09T23:58:56.315+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip took 0.052 seconds
+[2023-11-09T23:59:26.692+0000] {processor.py:153} INFO - Started process (PID=9891) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip
+[2023-11-09T23:59:26.694+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip for tasks to queue
+[2023-11-09T23:59:26.697+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:59:26.697+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip
+[2023-11-09T23:59:26.703+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip
+[2023-11-09T23:59:26.739+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip took 0.054 seconds
+[2023-11-09T23:59:57.593+0000] {processor.py:153} INFO - Started process (PID=9947) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip
+[2023-11-09T23:59:57.595+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip for tasks to queue
+[2023-11-09T23:59:57.596+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:59:57.596+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip
+[2023-11-09T23:59:57.599+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip
+[2023-11-09T23:59:57.620+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RadAsadi.zip took 0.032 seconds

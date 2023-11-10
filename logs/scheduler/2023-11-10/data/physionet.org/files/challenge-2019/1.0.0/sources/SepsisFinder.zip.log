@@ -1,0 +1,45 @@
+[2023-11-10T00:04:19.644+0000] {processor.py:153} INFO - Started process (PID=10354) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:04:19.647+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip for tasks to queue
+[2023-11-10T00:04:19.651+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:19.650+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:04:19.658+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:04:19.695+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip took 0.057 seconds
+[2023-11-10T00:04:49.964+0000] {processor.py:153} INFO - Started process (PID=10421) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:04:49.967+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip for tasks to queue
+[2023-11-10T00:04:49.969+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:49.969+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:04:49.974+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:04:50.007+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip took 0.049 seconds
+[2023-11-10T00:05:20.971+0000] {processor.py:153} INFO - Started process (PID=10480) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:05:20.974+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip for tasks to queue
+[2023-11-10T00:05:20.976+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:20.976+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:05:20.978+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:05:20.998+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip took 0.031 seconds
+[2023-11-10T00:05:51.091+0000] {processor.py:153} INFO - Started process (PID=10544) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:05:51.094+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip for tasks to queue
+[2023-11-10T00:05:51.098+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:51.098+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:05:51.103+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:05:51.148+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip took 0.069 seconds
+[2023-11-10T00:06:21.474+0000] {processor.py:153} INFO - Started process (PID=10606) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:06:21.476+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip for tasks to queue
+[2023-11-10T00:06:21.478+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:21.478+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:06:21.482+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:06:21.505+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip took 0.036 seconds
+[2023-11-10T00:06:52.029+0000] {processor.py:153} INFO - Started process (PID=10664) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:06:52.031+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip for tasks to queue
+[2023-11-10T00:06:52.033+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:52.032+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:06:52.036+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:06:52.055+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip took 0.029 seconds
+[2023-11-10T00:07:22.648+0000] {processor.py:153} INFO - Started process (PID=10734) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:07:22.650+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip for tasks to queue
+[2023-11-10T00:07:22.652+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:22.652+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:07:22.660+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:07:22.700+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip took 0.064 seconds
+[2023-11-10T00:07:53.027+0000] {processor.py:153} INFO - Started process (PID=10792) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:07:53.030+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip for tasks to queue
+[2023-11-10T00:07:53.031+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:53.031+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:07:53.035+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:07:53.061+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip took 0.040 seconds
+[2023-11-10T00:08:23.815+0000] {processor.py:153} INFO - Started process (PID=10862) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:08:23.817+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip for tasks to queue
+[2023-11-10T00:08:23.819+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:23.819+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:08:23.832+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip
+[2023-11-10T00:08:23.865+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SepsisFinder.zip took 0.056 seconds

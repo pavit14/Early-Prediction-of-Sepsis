@@ -1,0 +1,45 @@
+[2023-11-09T23:48:42.512+0000] {processor.py:153} INFO - Started process (PID=9120) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:48:42.514+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip for tasks to queue
+[2023-11-09T23:48:42.516+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:48:42.516+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:48:42.519+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:48:42.548+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip took 0.041 seconds
+[2023-11-09T23:49:13.024+0000] {processor.py:153} INFO - Started process (PID=9155) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:49:13.027+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip for tasks to queue
+[2023-11-09T23:49:13.030+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:49:13.030+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:49:13.033+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:49:13.059+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip took 0.040 seconds
+[2023-11-09T23:49:43.402+0000] {processor.py:153} INFO - Started process (PID=9203) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:49:43.403+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip for tasks to queue
+[2023-11-09T23:49:43.404+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:49:43.404+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:49:43.409+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:49:43.431+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip took 0.034 seconds
+[2023-11-09T23:50:13.950+0000] {processor.py:153} INFO - Started process (PID=9240) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:50:13.952+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip for tasks to queue
+[2023-11-09T23:50:13.954+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:50:13.954+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:50:13.956+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:50:13.974+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip took 0.028 seconds
+[2023-11-09T23:50:44.213+0000] {processor.py:153} INFO - Started process (PID=9289) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:50:44.215+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip for tasks to queue
+[2023-11-09T23:50:44.216+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:50:44.216+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:50:44.220+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:50:44.242+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip took 0.033 seconds
+[2023-11-09T23:51:14.451+0000] {processor.py:153} INFO - Started process (PID=9327) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:51:14.453+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip for tasks to queue
+[2023-11-09T23:51:14.454+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:51:14.454+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:51:14.457+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:51:14.476+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip took 0.029 seconds
+[2023-11-09T23:51:44.680+0000] {processor.py:153} INFO - Started process (PID=9375) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:51:44.684+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip for tasks to queue
+[2023-11-09T23:51:44.689+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:51:44.689+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:51:44.695+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:51:44.722+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip took 0.047 seconds
+[2023-11-09T23:52:15.279+0000] {processor.py:153} INFO - Started process (PID=9412) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:52:15.281+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip for tasks to queue
+[2023-11-09T23:52:15.282+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:52:15.281+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:52:15.284+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:52:15.304+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip took 0.030 seconds
+[2023-11-09T23:52:46.010+0000] {processor.py:153} INFO - Started process (PID=9461) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:52:46.013+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip for tasks to queue
+[2023-11-09T23:52:46.019+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:52:46.018+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:52:46.039+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip
+[2023-11-09T23:52:46.079+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AminiUnivTehran.zip took 0.077 seconds

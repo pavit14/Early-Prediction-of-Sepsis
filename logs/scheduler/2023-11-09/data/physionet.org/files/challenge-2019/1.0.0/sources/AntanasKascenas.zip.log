@@ -1,0 +1,45 @@
+[2023-11-09T23:48:42.519+0000] {processor.py:153} INFO - Started process (PID=9121) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:48:42.520+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip for tasks to queue
+[2023-11-09T23:48:42.522+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:48:42.522+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:48:42.526+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:48:42.561+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip took 0.047 seconds
+[2023-11-09T23:49:13.073+0000] {processor.py:153} INFO - Started process (PID=9156) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:49:13.075+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip for tasks to queue
+[2023-11-09T23:49:13.077+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:49:13.076+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:49:13.082+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:49:13.110+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip took 0.042 seconds
+[2023-11-09T23:49:43.441+0000] {processor.py:153} INFO - Started process (PID=9204) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:49:43.444+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip for tasks to queue
+[2023-11-09T23:49:43.445+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:49:43.445+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:49:43.448+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:49:43.467+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip took 0.031 seconds
+[2023-11-09T23:50:13.962+0000] {processor.py:153} INFO - Started process (PID=9241) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:50:13.963+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip for tasks to queue
+[2023-11-09T23:50:13.964+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:50:13.964+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:50:13.967+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:50:13.986+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip took 0.029 seconds
+[2023-11-09T23:50:44.248+0000] {processor.py:153} INFO - Started process (PID=9290) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:50:44.251+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip for tasks to queue
+[2023-11-09T23:50:44.253+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:50:44.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:50:44.256+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:50:44.276+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip took 0.033 seconds
+[2023-11-09T23:51:14.475+0000] {processor.py:153} INFO - Started process (PID=9328) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:51:14.478+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip for tasks to queue
+[2023-11-09T23:51:14.479+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:51:14.479+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:51:14.481+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:51:14.500+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip took 0.029 seconds
+[2023-11-09T23:51:44.733+0000] {processor.py:153} INFO - Started process (PID=9376) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:51:44.736+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip for tasks to queue
+[2023-11-09T23:51:44.738+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:51:44.738+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:51:44.745+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:51:44.770+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip took 0.041 seconds
+[2023-11-09T23:52:15.285+0000] {processor.py:153} INFO - Started process (PID=9413) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:52:15.286+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip for tasks to queue
+[2023-11-09T23:52:15.287+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:52:15.287+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:52:15.291+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:52:15.311+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip took 0.031 seconds
+[2023-11-09T23:52:46.092+0000] {processor.py:153} INFO - Started process (PID=9462) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:52:46.095+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip for tasks to queue
+[2023-11-09T23:52:46.098+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:52:46.098+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:52:46.106+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip
+[2023-11-09T23:52:46.142+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/AntanasKascenas.zip took 0.059 seconds

@@ -1,0 +1,45 @@
+[2023-11-10T00:04:20.495+0000] {processor.py:153} INFO - Started process (PID=10365) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:04:20.498+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip for tasks to queue
+[2023-11-10T00:04:20.499+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:20.499+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:04:20.505+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:04:20.543+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip took 0.053 seconds
+[2023-11-10T00:04:51.087+0000] {processor.py:153} INFO - Started process (PID=10435) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:04:51.089+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip for tasks to queue
+[2023-11-10T00:04:51.090+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:51.090+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:04:51.093+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:04:51.115+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip took 0.034 seconds
+[2023-11-10T00:05:21.698+0000] {processor.py:153} INFO - Started process (PID=10493) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:05:21.703+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip for tasks to queue
+[2023-11-10T00:05:21.709+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:21.709+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:05:21.718+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:05:21.748+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip took 0.057 seconds
+[2023-11-10T00:05:52.217+0000] {processor.py:153} INFO - Started process (PID=10557) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:05:52.224+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip for tasks to queue
+[2023-11-10T00:05:52.232+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:52.232+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:05:52.248+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:05:52.359+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip took 0.153 seconds
+[2023-11-10T00:06:23.231+0000] {processor.py:153} INFO - Started process (PID=10617) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:06:23.234+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip for tasks to queue
+[2023-11-10T00:06:23.236+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:23.235+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:06:23.243+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:06:23.274+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip took 0.061 seconds
+[2023-11-10T00:06:53.474+0000] {processor.py:153} INFO - Started process (PID=10675) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:06:53.489+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip for tasks to queue
+[2023-11-10T00:06:53.491+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:53.491+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:06:53.495+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:06:53.517+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip took 0.046 seconds
+[2023-11-10T00:07:24.249+0000] {processor.py:153} INFO - Started process (PID=10745) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:07:24.254+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip for tasks to queue
+[2023-11-10T00:07:24.256+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:24.255+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:07:24.259+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:07:24.302+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip took 0.058 seconds
+[2023-11-10T00:07:54.456+0000] {processor.py:153} INFO - Started process (PID=10803) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:07:54.458+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip for tasks to queue
+[2023-11-10T00:07:54.460+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:54.460+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:07:54.472+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:07:54.503+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip took 0.053 seconds
+[2023-11-10T00:08:25.281+0000] {processor.py:153} INFO - Started process (PID=10873) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:08:25.283+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip for tasks to queue
+[2023-11-10T00:08:25.284+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:25.284+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:08:25.287+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip
+[2023-11-10T00:08:25.316+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SBU.zip took 0.039 seconds

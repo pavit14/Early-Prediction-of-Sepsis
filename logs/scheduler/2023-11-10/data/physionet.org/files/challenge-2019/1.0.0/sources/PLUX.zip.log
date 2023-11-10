@@ -1,0 +1,80 @@
+[2023-11-10T00:00:28.451+0000] {processor.py:153} INFO - Started process (PID=9997) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:00:28.454+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:00:28.456+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:28.456+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:00:28.462+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:00:28.497+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.053 seconds
+[2023-11-10T00:00:59.160+0000] {processor.py:153} INFO - Started process (PID=10051) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:00:59.161+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:00:59.163+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:59.163+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:00:59.167+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:00:59.191+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.036 seconds
+[2023-11-10T00:01:29.993+0000] {processor.py:153} INFO - Started process (PID=10102) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:01:29.995+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:01:29.998+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:01:29.997+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:01:30.004+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:01:30.031+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.045 seconds
+[2023-11-10T00:02:00.433+0000] {processor.py:153} INFO - Started process (PID=10147) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:02:00.435+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:02:00.437+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:00.437+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:02:00.440+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:02:00.465+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.036 seconds
+[2023-11-10T00:02:31.050+0000] {processor.py:153} INFO - Started process (PID=10198) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:02:31.053+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:02:31.056+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:31.056+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:02:31.067+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:02:31.104+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.063 seconds
+[2023-11-10T00:03:01.663+0000] {processor.py:153} INFO - Started process (PID=10243) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:03:01.665+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:03:01.667+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:01.667+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:03:01.671+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:03:01.698+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.040 seconds
+[2023-11-10T00:03:32.168+0000] {processor.py:153} INFO - Started process (PID=10292) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:03:32.170+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:03:32.174+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:32.174+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:03:32.182+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:03:32.211+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.048 seconds
+[2023-11-10T00:04:20.238+0000] {processor.py:153} INFO - Started process (PID=10361) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:04:20.241+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:04:20.244+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:20.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:04:20.250+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:04:20.313+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.080 seconds
+[2023-11-10T00:04:50.715+0000] {processor.py:153} INFO - Started process (PID=10431) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:04:50.718+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:04:50.721+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:50.721+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:04:50.728+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:04:50.756+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.053 seconds
+[2023-11-10T00:05:21.221+0000] {processor.py:153} INFO - Started process (PID=10487) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:05:21.223+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:05:21.224+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:21.224+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:05:21.228+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:05:21.274+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.058 seconds
+[2023-11-10T00:05:51.732+0000] {processor.py:153} INFO - Started process (PID=10553) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:05:51.735+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:05:51.751+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:51.751+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:05:51.763+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:05:51.820+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.096 seconds
+[2023-11-10T00:06:22.719+0000] {processor.py:153} INFO - Started process (PID=10613) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:06:22.721+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:06:22.723+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:22.722+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:06:22.725+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:06:22.757+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.042 seconds
+[2023-11-10T00:06:53.284+0000] {processor.py:153} INFO - Started process (PID=10671) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:06:53.287+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:06:53.289+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:53.289+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:06:53.293+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:06:53.323+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.046 seconds
+[2023-11-10T00:07:24.060+0000] {processor.py:153} INFO - Started process (PID=10741) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:07:24.062+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:07:24.063+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:24.063+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:07:24.066+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:07:24.084+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.028 seconds
+[2023-11-10T00:07:54.302+0000] {processor.py:153} INFO - Started process (PID=10799) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:07:54.304+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:07:54.307+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:54.306+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:07:54.312+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:07:54.334+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.035 seconds
+[2023-11-10T00:08:25.154+0000] {processor.py:153} INFO - Started process (PID=10869) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:08:25.155+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip for tasks to queue
+[2023-11-10T00:08:25.157+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:25.157+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:08:25.160+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip
+[2023-11-10T00:08:25.179+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PLUX.zip took 0.030 seconds
