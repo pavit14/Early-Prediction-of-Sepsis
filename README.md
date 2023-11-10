@@ -35,7 +35,7 @@ cd dags
 cd data 
 wget -r -N -c -np --accept="*.psv" https://physionet.org/files/challenge-2019/1.0.0/
 
-4) Come out of data directory
+4) Come out of data directory. You are now in dags directory.
 cd ..
 
 5) Run the below command for setting up the airflow and docker. 
