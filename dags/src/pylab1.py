@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 
 def load_train_test_valid_files(**kwargs):
     files = []
-    path = os.path.join(os.path.dirname(__file__), '../data/untitledFolder')
+    path = os.path.join(os.path.dirname(__file__), '../data/Dataset')
     for f in os.listdir(path):
         if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
             files.append(f)

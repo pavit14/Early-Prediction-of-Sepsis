@@ -1,21 +1,32 @@
-import os
-import random
-import pickle
-import pandas as pd 
+import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
+import pickle
+import os
+import numpy as np
+from collections import Counter
+import random
+import shutil
 from sklearn.model_selection import train_test_split
-#import tensorflow as tf
+import tensorflow as tf
 
+
+@tf.function
 def load_train_test_valid_files(**kwargs):
-    files = []
-    path = os.path.join(os.path.dirname(__file__), '../data/untitledFolder')
-    for f in os.listdir(path):
-        if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
-            files.append(f)
-    
-    random.shuffle(files)
+    """Loads the train, test, and validation data from the given path.
 
-    n_files = len(files)
+    Args:
+        kwargs: A dictionary of arguments.
+
+    Returns:
+        A tuple of three tensors, containing the train, test, and validation data.
+    """
+
+    path = os.path.join(os.path.dirname(__file__), '../data/untitledFolder')
+    files = tf.io.gfile.glob(os.path.join(path, '*.psv'))
+
+    tf.random.shuffle(files)
+
+    n_files = tf.shape(files)[0]
     n_train = n_files * 6 // 10
     n_test = n_files * 2 // 10
 
@@ -23,146 +34,182 @@ def load_train_test_valid_files(**kwargs):
     test_files = files[n_train:n_train + n_test]
     valid_files = files[n_train + n_test:]
 
+    # Read the data from the files.
+    train_data = tf.io.read_csv(train_files, sep='|')
+    valid_data = tf.io.read_csv(valid_files, sep='|')
+    test_data = tf.io.read_csv(test_files, sep='|')
 
-    train_df = pd.DataFrame()
-    for filename in os.listdir(path):
-        if filename.endswith('.psv') and filename in train_files:
-            file_path = os.path.join(path, filename)
-            data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
-            file_id = os.path.splitext(filename)[0]
-            file_id=int(file_id[1:])
-            data['id'] = file_id
-            train_df = pd.concat([train_df, data], ignore_index=True)
+    # Add the `id` column to the data.
+    train_data['id'] = tf.range(tf.shape(train_data)[0])
+    valid_data['id'] = tf.range(tf.shape(valid_data)[0])
+    test_data['id'] = tf.range(tf.shape(test_data)[0])
 
-    tr_last_column = train_df.pop(train_df.columns[-1])  # Remove the last column
-    train_df.insert(0, tr_last_column.name, tr_last_column)
+    # Remove the last column from the data.
+    train_data = train_data.drop(train_data.columns[-1], axis=1)
+    valid_data = valid_data.drop(valid_data.columns[-1], axis=1)
+    test_data = test_data.drop(test_data.columns[-1], axis=1)
 
-    test_df = pd.DataFrame()
-    for filename in os.listdir(path):
-        if filename.endswith('.psv') and filename in test_files:
-            file_path = os.path.join(path, filename)
-            data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
-            file_id = os.path.splitext(filename)[0]
-            file_id=file_id[1:]
-            data['id'] = file_id
-            test_df = pd.concat([test_df, data], ignore_index=True)
+    # Serialize the data to TensorFlow tensors.
+    train_serialized_data = tf.io.serialize_tensor(train_data)
+    valid_serialized_data = tf.io.serialize_tensor(valid_data)
+    test_serialized_data = tf.io.serialize_tensor(test_data)
 
-    te_last_column = test_df.pop(test_df.columns[-1])  # Remove the last column
-    test_df.insert(0, te_last_column.name, te_last_column)
-
-    valid_df = pd.DataFrame()
-    for filename in os.listdir(path):
-        if filename.endswith('.psv') and filename in valid_files:
-            file_path = os.path.join(path, filename)
-            data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
-            file_id = os.path.splitext(filename)[0]
-            file_id=file_id[1:]
-            data['id'] = file_id
-            valid_df = pd.concat([valid_df, data], ignore_index=True)
-    
-    va_last_column = valid_df.pop(valid_df.columns[-1])  # Remove the last column
-    valid_df.insert(0, va_last_column.name, va_last_column)
-
-    train_serialized_data = pickle.dumps(train_df)
-    valid_serialized_data = pickle.dumps(valid_df)
-    test_serialized_data = pickle.dumps(test_df)
-
+    # Push the serialized data to xcom.
     ti = kwargs['ti']
     ti.xcom_push(key='train_data', value=train_serialized_data)
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
 
-def feature_engineering(**kwargs):
-    ti = kwargs['ti']
-    train_data = ti.xcom_pull(task_ids='load_train_test_valid_files', key='train_data')
-    valid_data = ti.xcom_pull(task_ids='load_train_test_valid_files', key='valid_data')
-    test_data = ti.xcom_pull(task_ids='load_train_test_valid_files', key='test_data')
+    return train_serialized_data, valid_serialized_data, test_serialized_data
 
-    train_df = pickle.loads(train_data)
-    train_df = train_df.groupby('id').filter(lambda x: len(x) >=15 )
-    train_df= train_df.groupby('id').ffill()
+@tf.function
+def feature_engineering(**kwargs):
+    """Performs feature engineering on the given data.
+
+    Args:
+        kwargs: A dictionary of arguments.
+
+    Returns:
+        A tuple of three tensors, containing the train, test, and validation data with
+        feature engineering applied.
+    """
+
+    ti = kwargs['ti']
+
+    # Pull the serialized data from xcom.
+    train_serialized_data = ti.xcom_pull(task_ids='load_train_test_valid_files', key='train_data')
+    valid_serialized_data = ti.xcom_pull(task_ids='load_train_test_valid_files', key='valid_data')
+    test_serialized_data = ti.xcom_pull(task_ids='load_train_test_valid_files', key='test_data')
+
+    # Deserialize the data to TensorFlow tensors.
+    train_df = pd.DataFrame(pickle.loads(train_serialized_data))
+    valid_df = pd.DataFrame(pickle.loads(valid_serialized_data))
+    test_df = pd.DataFrame(pickle.loads(test_serialized_data))
+
+    # Perform feature engineering on the data.
+    train_df = train_df.groupby('id').filter(lambda x: len(x) >= 15)
+    train_df = train_df.groupby('id').ffill()
     train_df = train_df.drop(train_df.columns[[8, 21, 28, 33]], axis=1)
-    
-    valid_df = pickle.loads(valid_data)
-    valid_df= valid_df.groupby('id').ffill()
+
+    valid_df = valid_df.groupby('id').ffill()
     valid_df = valid_df.drop(valid_df.columns[[8, 21, 28, 33]], axis=1)
 
-    test_df = pickle.loads(test_data)
-    test_df= test_df.groupby('id').ffill()
+    test_df = test_df.groupby('id').ffill()
     test_df = test_df.drop(test_df.columns[[8, 21, 28, 33]], axis=1)
 
-    train_serialized_data = pickle.dumps(train_df)
-    valid_serialized_data = pickle.dumps(valid_df)
-    test_serialized_data = pickle.dumps(test_df)
+    # Serialize the data to TensorFlow tensors.
+    train_serialized_data = tf.io.serialize_tensor(train_df)
+    valid_serialized_data = tf.io.serialize_tensor(valid_df)
+    test_serialized_data = tf.io.serialize_tensor(test_df)
 
-    ti = kwargs['ti']
+    # Push the serialized data to xcom.
     ti.xcom_push(key='train_data', value=train_serialized_data)
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
 
+    return train_serialized_data, valid_serialized_data, test_serialized_data
+
+
+
+@tf.function
 def preprocess_zero_imput_norm(**kwargs):
+    """Imputes missing values with zeros and normalizes the data.
+
+    Args:
+        kwargs: A dictionary of arguments.
+
+    Returns:
+        A tuple of three tensors, containing the train, test, and validation data with
+        missing values imputed with zeros and normalized.
+    """
+
     ti = kwargs['ti']
-    train_data = ti.xcom_pull(task_ids='feature_engineering', key='train_data')
-    valid_data = ti.xcom_pull(task_ids='feature_engineering', key='valid_data')
-    test_data = ti.xcom_pull(task_ids='feature_engineering', key='test_data')
 
-    train_df = pickle.loads(train_data)
-    test_df = pickle.loads(test_data)
-    valid_df = pickle.loads(valid_data)
+    # Pull the serialized data from xcom.
+    train_serialized_data = ti.xcom_pull(task_ids='feature_engineering', key='train_data')
+    valid_serialized_data = ti.xcom_pull(task_ids='feature_engineering', key='valid_data')
+    test_serialized_data = ti.xcom_pull(task_ids='feature_engineering', key='test_data')
 
+    # Deserialize the data to TensorFlow tensors.
+    train_df = pd.DataFrame(pickle.loads(train_serialized_data))
+    valid_df = pd.DataFrame(pickle.loads(valid_serialized_data))
+    test_df = pd.DataFrame(pickle.loads(test_serialized_data))
+
+    # Impute missing values with zeros.
     train_df = train_df.fillna(0)
-    test_df = test_df.fillna(0)
     valid_df = valid_df.fillna(0)
+    test_df = test_df.fillna(0)
 
+    # Normalize the data.
     scaler = MinMaxScaler()
-    train_df.iloc[:,1:-1] = scaler.fit_transform(train_df.iloc[:,1:-1])
-    test_df.iloc[:,1:-1] = scaler.transform(test_df.iloc[:,1:-1])
-    valid_df.iloc[:,1:-1] = scaler.transform(valid_df.iloc[:, 1:-1])
+    train_df.iloc[:, 1:-1] = scaler.fit_transform(train_df.iloc[:, 1:-1])
+    valid_df.iloc[:, 1:-1] = scaler.transform(valid_df.iloc[:, 1:-1])
+    test_df.iloc[:, 1:-1] = scaler.transform(test_df.iloc[:, 1:-1])
 
-    
-    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_train_data.csv')
-    train_df.to_csv(file_path, index=False)
-    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_test_data.csv')
-    test_df.to_csv(file_path, index=False)
-    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_valid_data.csv')
-    valid_df.to_csv(file_path, index=False)
+    # Save the preprocessed data to files.
+    train_df.to_csv(os.path.join(os.path.dirname(__file__), '../data/', 'my_train_data.csv'), index=False)
+    valid_df.to_csv(os.path.join(os.path.dirname(__file__), '../data/', 'my_valid_data.csv'), index=False)
+    test_df.to_csv(os.path.join(os.path.dirname(__file__), '../data/', 'my_test_data.csv'), index=False)
 
-
+    # Serialize the preprocessed data to TensorFlow tensors.
     train_serialized_data = pickle.dumps(train_df)
     valid_serialized_data = pickle.dumps(valid_df)
     test_serialized_data = pickle.dumps(test_df)
 
+    # Push the serialized data to xcom.
     ti = kwargs['ti']
     ti.xcom_push(key='train_data', value=train_serialized_data)
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
 
+    return train_serialized_data, valid_serialized_data, test_serialized_data
+
+
+@tf.function
 def preprocess_mean_input_norm(**kwargs):
+    """Imputes missing values with the mean and normalizes the data.
+
+    Args:
+        kwargs: A dictionary of arguments.
+
+    Returns:
+        A tuple of three tensors, containing the train, test, and validation data with
+        missing values imputed with the mean and normalized.
+    """
+
     ti = kwargs['ti']
-    train_data = ti.xcom_pull(task_ids='feature_engineering', key='train_data')
-    valid_data = ti.xcom_pull(task_ids='feature_engineering', key='valid_data')
-    test_data = ti.xcom_pull(task_ids='feature_engineering', key='test_data')
 
-    train_df = pickle.loads(train_data)
-    test_df = pickle.loads(test_data)
-    valid_df = pickle.loads(valid_data)
+    # Pull the serialized data from xcom.
+    train_serialized_data = ti.xcom_pull(task_ids='feature_engineering', key='train_data')
+    valid_serialized_data = ti.xcom_pull(task_ids='feature_engineering', key='valid_data')
+    test_serialized_data = ti.xcom_pull(task_ids='feature_engineering', key='test_data')
 
-    mean_values = train_df.mean()
-    train_df.fillna(mean_values, inplace=True)
-    test_df.fillna(mean_values, inplace=True)
-    valid_df.fillna(mean_values, inplace=True)
-    
+    # Deserialize the data to TensorFlow tensors.
+    train_df = pd.DataFrame(pickle.loads(train_serialized_data))
+    valid_df = pd.DataFrame(pickle.loads(valid_serialized_data))
+    test_df = pd.DataFrame(pickle.loads(test_serialized_data))
+
+    # Impute missing values with the mean.
+    mean_values = train_df.mean(axis=0)
+    train_df = train_df.fillna(mean_values)
+    valid_df = valid_df.fillna(mean_values)
+    test_df = test_df.fillna(mean_values)
+
+    # Normalize the data.
     scaler = MinMaxScaler()
-    train_df.iloc[:,1:-1] = scaler.fit_transform(train_df.iloc[:,1:-1])
-    test_df.iloc[:,1:-1] = scaler.transform(test_df.iloc[:,1:-1])
-    valid_df.iloc[:,1:-1] = scaler.transform(valid_df.iloc[:, 1:-1])
+    train_df = scaler.fit_transform(train_df)
+    valid_df = scaler.transform(valid_df)
+    test_df = scaler.transform(test_df)
 
-    train_serialized_data = pickle.dumps(train_df)
-    valid_serialized_data = pickle.dumps(valid_df)
-    test_serialized_data = pickle.dumps(test_df)
+    # Serialize the preprocessed data to TensorFlow tensors.
+    train_serialized_data = tf.io.serialize_tensor(train_df)
+    valid_serialized_data = tf.io.serialize_tensor(valid_df)
+    test_serialized_data = tf.io.serialize_tensor(test_df)
 
+    # Push the serialized data to xcom.
     ti = kwargs['ti']
     ti.xcom_push(key='train_data', value=train_serialized_data)
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
 
+    return train_serialized_data, valid_serialized_data, test_serialized_data
