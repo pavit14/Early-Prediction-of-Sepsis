@@ -1,8 +1,15 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler, StandardScaler
 import numpy as np
-from load import load_data
+from .load import load_data
 import warnings
+import os
+
+# get parent directory of the file
+script_dir = os.path.dirname(__file__)
+
+# get root directory of the file
+root_dir = os.path.abspath(os.path.join(script_dir, os.pardir))
 
 # Filter out the specific warning
 warnings.filterwarnings("ignore", message="All-NaN slice encountered", category=RuntimeWarning)
@@ -88,3 +95,4 @@ def preprocess_data():
 
 if __name__ == "__main__":
     cleaned_data = preprocess_data()
+    cleaned_data.to_csv(os.path.join(root_dir, "data", "preprocessed_dataset.csv"))
