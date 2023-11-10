@@ -84,9 +84,9 @@ def preprocess_test_val_data(**kwargs):
 def train_test_valid_files(**kwargs):
     shuffle_files = True
     files = []
-    #path = os.path.join(os.path.dirname(__file__), '../../data/Downloaded_data')
+    path = os.path.join(os.path.dirname(__file__), '../../data/Downloaded_data')
     #path =os.path.join(os.path.dirname(__file__), '../data/Dataset')
-    path = "D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data\Downloaded_data"
+    #path = "D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data\Downloaded_data"
     for f in os.listdir(path):
         if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
             files.append(f)

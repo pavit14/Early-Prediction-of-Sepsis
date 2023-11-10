@@ -4,6 +4,7 @@ import pandas as pd
 import random
 import shutil
 from sklearn.preprocessing import MinMaxScaler
+import pickle
 
 """
 from sklearn.metrics import confusion_matrix
@@ -119,6 +120,52 @@ def preprocess_mean_imput(df, train_ffill_df):
     column_means = train_ffill_df.mean()
     df_imputed = df.fillna(column_means)
     return df
+
+
+
+def preprocess_zero_imput_norm(**kwargs):
+    ti = kwargs['ti']
+    train_data = ti.xcom_pull(task_ids='train_test_valid_files', key='train_data')
+    valid_data = ti.xcom_pull(task_ids='train_test_valid_files', key='valid_data')
+    test_data = ti.xcom_pull(task_ids='train_test_valid_files', key='test_data')
+    train_df = pickle.loads(train_data)
+    test_df = pickle.loads(test_data)
+    valid_df = pickle.loads(valid_data)
+
+    train_df = train_df.fillna(0)
+    test_df = test_df.fillna(0)
+    valid_df = valid_df.fillna(0)
+
+    scaler = MinMaxScaler()
+    train_df.iloc[:,1:-1] = scaler.fit_transform(train_df.iloc[:,1:-1])
+    test_df.iloc[:,1:-1] = scaler.transform(test_df.iloc[:,1:-1])
+    valid_df.iloc[:,1:-1] = scaler.transform(valid_df.iloc[:, 1:-1])
+
+
+def preprocess_mean_input_norm(**kwargs):
+    ti = kwargs['ti']
+    train_data = ti.xcom_pull(task_ids='train_test_valid_files', key='train_data')
+    valid_data = ti.xcom_pull(task_ids='train_test_valid_files', key='valid_data')
+    test_data = ti.xcom_pull(task_ids='train_test_valid_files', key='test_data')
+    train_df = pickle.loads(train_data)
+    test_df = pickle.loads(test_data)
+    valid_df = pickle.loads(valid_data)
+
+    mean_values = train_df.mean()
+    train_df.fillna(mean_values, inplace=True)
+    test_df.fillna(mean_values, inplace=True)
+    valid_df.fillna(mean_values, inplace=True)
+    
+    scaler = MinMaxScaler()
+    train_df.iloc[:,1:-1] = scaler.fit_transform(train_df.iloc[:,1:-1])
+    test_df.iloc[:,1:-1] = scaler.transform(test_df.iloc[:,1:-1])
+    valid_df.iloc[:,1:-1] = scaler.transform(valid_df.iloc[:, 1:-1])
+
+
+
+
+
+
 
 """
 train_df = preprocess_ffill(train_files)
