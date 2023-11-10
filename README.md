@@ -48,12 +48,14 @@ for version 2.7.1:
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.1/docker-compose.yaml' 
 
 Set below parameters as specified in docker-compose.yaml file:
+
 AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+
 _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas }
 
 
 # Workflow
-1) Data Preprocessing:
+# 1) Data Preprocessing:
 Data preprocessing have below steps:
 i) load_train_test_valid_files
 ii) feature_engineering
@@ -88,7 +90,7 @@ Early-Prediction-of-Sepsis/dags/airflow.py
 
 f) Once the dataframes saved in csv files, give dvc and git push.
 
-License
+# License
 This project is licensed under the https://physionet.org/content/challenge-2019/1.0.0/LICENSE.txt licence. 
 
 
