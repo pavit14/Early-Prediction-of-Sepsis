@@ -1,0 +1,45 @@
+[2023-11-10T00:04:19.729+0000] {processor.py:153} INFO - Started process (PID=10355) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:04:19.732+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip for tasks to queue
+[2023-11-10T00:04:19.735+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:19.735+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:04:19.741+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:04:19.794+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip took 0.082 seconds
+[2023-11-10T00:04:50.055+0000] {processor.py:153} INFO - Started process (PID=10422) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:04:50.058+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip for tasks to queue
+[2023-11-10T00:04:50.061+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:50.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:04:50.068+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:04:50.100+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip took 0.051 seconds
+[2023-11-10T00:05:20.979+0000] {processor.py:153} INFO - Started process (PID=10481) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:05:20.980+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip for tasks to queue
+[2023-11-10T00:05:20.981+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:20.981+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:05:20.984+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:05:21.006+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip took 0.032 seconds
+[2023-11-10T00:05:51.155+0000] {processor.py:153} INFO - Started process (PID=10545) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:05:51.158+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip for tasks to queue
+[2023-11-10T00:05:51.163+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:51.163+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:05:51.173+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:05:51.215+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip took 0.068 seconds
+[2023-11-10T00:06:21.504+0000] {processor.py:153} INFO - Started process (PID=10607) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:06:21.506+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip for tasks to queue
+[2023-11-10T00:06:21.507+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:21.507+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:06:21.511+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:06:21.534+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip took 0.034 seconds
+[2023-11-10T00:06:52.045+0000] {processor.py:153} INFO - Started process (PID=10665) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:06:52.047+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip for tasks to queue
+[2023-11-10T00:06:52.048+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:52.048+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:06:52.051+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:06:52.071+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip took 0.030 seconds
+[2023-11-10T00:07:22.673+0000] {processor.py:153} INFO - Started process (PID=10735) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:07:22.676+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip for tasks to queue
+[2023-11-10T00:07:22.679+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:22.679+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:07:22.685+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:07:22.725+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip took 0.059 seconds
+[2023-11-10T00:07:53.050+0000] {processor.py:153} INFO - Started process (PID=10793) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:07:53.053+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip for tasks to queue
+[2023-11-10T00:07:53.055+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:53.055+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:07:53.062+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:07:53.095+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip took 0.049 seconds
+[2023-11-10T00:08:23.877+0000] {processor.py:153} INFO - Started process (PID=10863) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:08:23.880+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip for tasks to queue
+[2023-11-10T00:08:23.883+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:23.883+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:08:23.901+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip
+[2023-11-10T00:08:23.932+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RxLR.zip took 0.062 seconds

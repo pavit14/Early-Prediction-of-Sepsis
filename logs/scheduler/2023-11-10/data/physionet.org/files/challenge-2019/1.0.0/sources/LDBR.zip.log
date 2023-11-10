@@ -1,0 +1,80 @@
+[2023-11-10T00:00:28.107+0000] {processor.py:153} INFO - Started process (PID=9989) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:00:28.109+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:00:28.111+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:28.111+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:00:28.114+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:00:28.144+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.040 seconds
+[2023-11-10T00:00:58.853+0000] {processor.py:153} INFO - Started process (PID=10043) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:00:58.854+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:00:58.856+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:58.856+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:00:58.859+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:00:58.882+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.034 seconds
+[2023-11-10T00:01:29.478+0000] {processor.py:153} INFO - Started process (PID=10092) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:01:29.480+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:01:29.481+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:01:29.481+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:01:29.486+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:01:29.508+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.034 seconds
+[2023-11-10T00:02:00.175+0000] {processor.py:153} INFO - Started process (PID=10139) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:02:00.177+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:02:00.178+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:00.178+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:02:00.181+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:02:00.199+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.028 seconds
+[2023-11-10T00:02:30.566+0000] {processor.py:153} INFO - Started process (PID=10190) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:02:30.568+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:02:30.569+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:30.569+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:02:30.572+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:02:30.590+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.027 seconds
+[2023-11-10T00:03:01.309+0000] {processor.py:153} INFO - Started process (PID=10235) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:03:01.311+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:03:01.313+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:01.313+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:03:01.316+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:03:01.336+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.031 seconds
+[2023-11-10T00:03:31.862+0000] {processor.py:153} INFO - Started process (PID=10278) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:03:31.864+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:03:31.866+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:31.866+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:03:31.869+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:03:31.891+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.032 seconds
+[2023-11-10T00:04:18.609+0000] {processor.py:153} INFO - Started process (PID=10346) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:04:18.612+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:04:18.615+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:18.614+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:04:18.621+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:04:18.664+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.062 seconds
+[2023-11-10T00:04:49.295+0000] {processor.py:153} INFO - Started process (PID=10411) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:04:49.298+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:04:49.301+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:49.300+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:04:49.307+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:04:49.352+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.063 seconds
+[2023-11-10T00:05:19.691+0000] {processor.py:153} INFO - Started process (PID=10472) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:05:19.693+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:05:19.695+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:19.695+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:05:19.699+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:05:19.718+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.030 seconds
+[2023-11-10T00:05:50.441+0000] {processor.py:153} INFO - Started process (PID=10529) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:05:50.447+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:05:50.450+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:50.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:05:50.455+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:05:50.485+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.051 seconds
+[2023-11-10T00:06:21.182+0000] {processor.py:153} INFO - Started process (PID=10598) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:06:21.184+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:06:21.185+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:21.185+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:06:21.189+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:06:21.212+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.037 seconds
+[2023-11-10T00:06:51.711+0000] {processor.py:153} INFO - Started process (PID=10656) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:06:51.712+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:06:51.714+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:51.714+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:06:51.718+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:06:51.741+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.034 seconds
+[2023-11-10T00:07:22.268+0000] {processor.py:153} INFO - Started process (PID=10726) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:07:22.270+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:07:22.271+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:22.271+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:07:22.275+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:07:22.299+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.035 seconds
+[2023-11-10T00:07:52.676+0000] {processor.py:153} INFO - Started process (PID=10784) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:07:52.678+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:07:52.679+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:52.679+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:07:52.682+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:07:52.700+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.028 seconds
+[2023-11-10T00:08:23.252+0000] {processor.py:153} INFO - Started process (PID=10854) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:08:23.254+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip for tasks to queue
+[2023-11-10T00:08:23.256+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:23.256+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:08:23.263+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip
+[2023-11-10T00:08:23.306+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LDBR.zip took 0.059 seconds

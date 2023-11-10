@@ -1,0 +1,80 @@
+[2023-11-10T00:00:28.384+0000] {processor.py:153} INFO - Started process (PID=9996) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:00:28.386+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:00:28.388+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:28.388+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:00:28.394+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:00:28.423+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.045 seconds
+[2023-11-10T00:00:59.119+0000] {processor.py:153} INFO - Started process (PID=10050) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:00:59.125+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:00:59.129+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:59.129+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:00:59.137+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:00:59.159+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.045 seconds
+[2023-11-10T00:01:29.900+0000] {processor.py:153} INFO - Started process (PID=10101) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:01:29.903+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:01:29.910+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:01:29.910+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:01:29.922+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:01:29.961+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.067 seconds
+[2023-11-10T00:02:00.416+0000] {processor.py:153} INFO - Started process (PID=10146) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:02:00.418+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:02:00.421+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:00.420+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:02:00.425+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:02:00.447+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.034 seconds
+[2023-11-10T00:02:30.982+0000] {processor.py:153} INFO - Started process (PID=10197) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:02:30.987+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:02:30.992+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:30.991+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:02:31.004+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:02:31.051+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.079 seconds
+[2023-11-10T00:03:01.588+0000] {processor.py:153} INFO - Started process (PID=10242) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:03:01.590+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:03:01.592+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:01.592+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:03:01.595+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:03:01.621+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.037 seconds
+[2023-11-10T00:03:32.136+0000] {processor.py:153} INFO - Started process (PID=10287) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:03:32.140+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:03:32.143+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:32.142+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:03:32.158+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:03:32.186+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.053 seconds
+[2023-11-10T00:04:20.133+0000] {processor.py:153} INFO - Started process (PID=10359) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:04:20.136+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:04:20.138+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:20.138+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:04:20.144+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:04:20.173+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.046 seconds
+[2023-11-10T00:04:50.467+0000] {processor.py:153} INFO - Started process (PID=10429) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:04:50.469+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:04:50.471+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:50.470+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:04:50.475+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:04:50.507+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.046 seconds
+[2023-11-10T00:05:21.121+0000] {processor.py:153} INFO - Started process (PID=10485) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:05:21.123+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:05:21.124+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:21.124+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:05:21.129+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:05:21.165+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.048 seconds
+[2023-11-10T00:05:51.556+0000] {processor.py:153} INFO - Started process (PID=10551) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:05:51.561+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:05:51.564+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:51.563+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:05:51.576+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:05:51.639+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.089 seconds
+[2023-11-10T00:06:22.634+0000] {processor.py:153} INFO - Started process (PID=10611) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:06:22.636+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:06:22.637+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:22.637+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:06:22.641+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:06:22.663+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.033 seconds
+[2023-11-10T00:06:53.182+0000] {processor.py:153} INFO - Started process (PID=10669) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:06:53.188+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:06:53.196+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:53.196+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:06:53.203+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:06:53.224+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.047 seconds
+[2023-11-10T00:07:23.981+0000] {processor.py:153} INFO - Started process (PID=10739) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:07:23.983+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:07:23.984+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:23.984+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:07:23.988+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:07:24.014+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.037 seconds
+[2023-11-10T00:07:54.237+0000] {processor.py:153} INFO - Started process (PID=10797) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:07:54.240+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:07:54.241+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:54.241+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:07:54.244+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:07:54.266+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.033 seconds
+[2023-11-10T00:08:25.090+0000] {processor.py:153} INFO - Started process (PID=10867) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:08:25.091+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip for tasks to queue
+[2023-11-10T00:08:25.093+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:25.093+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:08:25.096+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip
+[2023-11-10T00:08:25.118+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/LeicesterFox.zip took 0.033 seconds

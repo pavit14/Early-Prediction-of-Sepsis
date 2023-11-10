@@ -1,0 +1,80 @@
+[2023-11-10T00:00:28.296+0000] {processor.py:153} INFO - Started process (PID=9994) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:00:28.299+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:00:28.301+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:28.301+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:00:28.307+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:00:28.335+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.043 seconds
+[2023-11-10T00:00:59.033+0000] {processor.py:153} INFO - Started process (PID=10048) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:00:59.036+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:00:59.038+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:59.038+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:00:59.043+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:00:59.070+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.044 seconds
+[2023-11-10T00:01:29.797+0000] {processor.py:153} INFO - Started process (PID=10099) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:01:29.800+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:01:29.803+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:01:29.802+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:01:29.809+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:01:29.835+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.051 seconds
+[2023-11-10T00:02:00.341+0000] {processor.py:153} INFO - Started process (PID=10144) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:02:00.343+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:02:00.345+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:00.345+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:02:00.350+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:02:00.373+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.035 seconds
+[2023-11-10T00:02:30.792+0000] {processor.py:153} INFO - Started process (PID=10195) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:02:30.796+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:02:30.802+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:30.802+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:02:30.825+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:02:30.879+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.097 seconds
+[2023-11-10T00:03:01.517+0000] {processor.py:153} INFO - Started process (PID=10240) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:03:01.519+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:03:01.521+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:01.521+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:03:01.525+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:03:01.547+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.034 seconds
+[2023-11-10T00:03:32.048+0000] {processor.py:153} INFO - Started process (PID=10283) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:03:32.050+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:03:32.051+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:32.051+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:03:32.055+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:03:32.084+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.040 seconds
+[2023-11-10T00:04:19.766+0000] {processor.py:153} INFO - Started process (PID=10356) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:04:19.773+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:04:19.776+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:19.776+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:04:19.791+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:04:19.915+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.156 seconds
+[2023-11-10T00:04:50.152+0000] {processor.py:153} INFO - Started process (PID=10423) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:04:50.155+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:04:50.157+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:50.157+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:04:50.162+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:04:50.191+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.045 seconds
+[2023-11-10T00:05:21.040+0000] {processor.py:153} INFO - Started process (PID=10482) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:05:21.041+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:05:21.042+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:21.042+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:05:21.045+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:05:21.066+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.031 seconds
+[2023-11-10T00:05:51.253+0000] {processor.py:153} INFO - Started process (PID=10546) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:05:51.269+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:05:51.273+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:51.273+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:05:51.281+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:05:51.323+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.077 seconds
+[2023-11-10T00:06:21.545+0000] {processor.py:153} INFO - Started process (PID=10608) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:06:21.547+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:06:21.548+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:21.548+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:06:21.552+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:06:21.572+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.031 seconds
+[2023-11-10T00:06:52.090+0000] {processor.py:153} INFO - Started process (PID=10666) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:06:52.092+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:06:52.093+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:52.093+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:06:52.096+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:06:52.116+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.029 seconds
+[2023-11-10T00:07:22.767+0000] {processor.py:153} INFO - Started process (PID=10736) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:07:22.770+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:07:22.773+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:22.772+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:07:22.780+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:07:22.817+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.057 seconds
+[2023-11-10T00:07:53.105+0000] {processor.py:153} INFO - Started process (PID=10794) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:07:53.107+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:07:53.110+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:53.109+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:07:53.115+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:07:53.141+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.041 seconds
+[2023-11-10T00:08:23.918+0000] {processor.py:153} INFO - Started process (PID=10864) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:08:23.921+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip for tasks to queue
+[2023-11-10T00:08:23.923+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:23.923+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:08:23.930+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip
+[2023-11-10T00:08:23.961+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/RHope.zip took 0.048 seconds

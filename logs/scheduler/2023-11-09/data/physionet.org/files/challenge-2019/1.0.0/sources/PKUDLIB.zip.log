@@ -1,0 +1,15 @@
+[2023-11-09T23:58:56.523+0000] {processor.py:153} INFO - Started process (PID=9854) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip
+[2023-11-09T23:58:56.525+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip for tasks to queue
+[2023-11-09T23:58:56.527+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:58:56.527+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip
+[2023-11-09T23:58:56.533+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip
+[2023-11-09T23:58:56.567+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip took 0.051 seconds
+[2023-11-09T23:59:26.884+0000] {processor.py:153} INFO - Started process (PID=9894) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip
+[2023-11-09T23:59:26.887+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip for tasks to queue
+[2023-11-09T23:59:26.889+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:59:26.889+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip
+[2023-11-09T23:59:26.893+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip
+[2023-11-09T23:59:26.926+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip took 0.049 seconds
+[2023-11-09T23:59:57.716+0000] {processor.py:153} INFO - Started process (PID=9950) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip
+[2023-11-09T23:59:57.718+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip for tasks to queue
+[2023-11-09T23:59:57.719+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:59:57.719+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip
+[2023-11-09T23:59:57.722+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip
+[2023-11-09T23:59:57.741+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PKUDLIB.zip took 0.030 seconds

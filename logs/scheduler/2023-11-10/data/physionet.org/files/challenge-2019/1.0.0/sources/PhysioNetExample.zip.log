@@ -1,0 +1,80 @@
+[2023-11-10T00:00:28.488+0000] {processor.py:153} INFO - Started process (PID=9998) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:00:28.491+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:00:28.493+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:28.493+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:00:28.498+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:00:28.535+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.056 seconds
+[2023-11-10T00:00:59.195+0000] {processor.py:153} INFO - Started process (PID=10052) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:00:59.198+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:00:59.200+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:59.200+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:00:59.203+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:00:59.225+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.035 seconds
+[2023-11-10T00:01:30.017+0000] {processor.py:153} INFO - Started process (PID=10103) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:01:30.021+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:01:30.023+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:01:30.023+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:01:30.028+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:01:30.057+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.053 seconds
+[2023-11-10T00:02:00.482+0000] {processor.py:153} INFO - Started process (PID=10148) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:02:00.485+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:02:00.486+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:00.486+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:02:00.490+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:02:00.510+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.033 seconds
+[2023-11-10T00:02:31.124+0000] {processor.py:153} INFO - Started process (PID=10199) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:02:31.127+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:02:31.131+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:31.131+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:02:31.145+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:02:31.199+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.083 seconds
+[2023-11-10T00:03:01.738+0000] {processor.py:153} INFO - Started process (PID=10244) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:03:01.741+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:03:01.744+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:01.744+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:03:01.750+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:03:01.787+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.054 seconds
+[2023-11-10T00:03:32.233+0000] {processor.py:153} INFO - Started process (PID=10293) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:03:32.236+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:03:32.237+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:32.237+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:03:32.245+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:03:32.276+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.047 seconds
+[2023-11-10T00:04:20.401+0000] {processor.py:153} INFO - Started process (PID=10364) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:04:20.404+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:04:20.410+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:20.410+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:04:20.420+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:04:20.456+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.061 seconds
+[2023-11-10T00:04:51.021+0000] {processor.py:153} INFO - Started process (PID=10434) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:04:51.023+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:04:51.024+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:51.024+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:04:51.028+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:04:51.052+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.036 seconds
+[2023-11-10T00:05:21.585+0000] {processor.py:153} INFO - Started process (PID=10492) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:05:21.588+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:05:21.591+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:21.591+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:05:21.598+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:05:21.631+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.053 seconds
+[2023-11-10T00:05:52.048+0000] {processor.py:153} INFO - Started process (PID=10556) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:05:52.053+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:05:52.056+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:52.056+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:05:52.076+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:05:52.141+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.102 seconds
+[2023-11-10T00:06:23.075+0000] {processor.py:153} INFO - Started process (PID=10616) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:06:23.081+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:06:23.085+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:23.085+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:06:23.091+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:06:23.159+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.103 seconds
+[2023-11-10T00:06:53.450+0000] {processor.py:153} INFO - Started process (PID=10674) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:06:53.452+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:06:53.454+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:53.454+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:06:53.457+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:06:53.480+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.034 seconds
+[2023-11-10T00:07:24.226+0000] {processor.py:153} INFO - Started process (PID=10744) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:07:24.228+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:07:24.230+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:24.230+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:07:24.241+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:07:24.271+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.049 seconds
+[2023-11-10T00:07:54.400+0000] {processor.py:153} INFO - Started process (PID=10802) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:07:54.404+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:07:54.407+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:54.406+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:07:54.414+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:07:54.440+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.045 seconds
+[2023-11-10T00:08:25.248+0000] {processor.py:153} INFO - Started process (PID=10872) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:08:25.250+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip for tasks to queue
+[2023-11-10T00:08:25.251+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:25.251+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:08:25.253+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip
+[2023-11-10T00:08:25.274+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PhysioNetExample.zip took 0.030 seconds

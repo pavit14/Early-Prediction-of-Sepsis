@@ -8,10 +8,94 @@ import random
 import shutil
 from sklearn.model_selection import train_test_split
 
-
 def load_train_test_valid_files(**kwargs):
+        #i=0
+        train_files = []
+        path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
+        for f in os.listdir(path):
+            #if i>10:
+            #    break
+            if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
+                train_files.append(f)
+                #i=i+1
+        #j=0
+        test_valid_files = []
+        path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
+        for f in os.listdir(path):
+            #if j>10:
+            #    break
+            if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
+                test_valid_files.append(f)
+                #j=j+1
+        
+        random.shuffle(test_valid_files)
+        
+        n_t_v_files = len(test_valid_files)
+        n_test = n_t_v_files * 1 // 2
+
+        test_files = test_valid_files[:n_test]
+        valid_files = test_valid_files[n_test:]
+
+
+        train_df = pd.DataFrame()
+        path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
+        for filename in os.listdir(path):
+            if filename.endswith('.psv') and filename in train_files:
+                file_path = os.path.join(path, filename)
+                data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
+                file_id = os.path.splitext(filename)[0]
+                file_id=int(file_id[1:])
+                data['id'] = file_id
+                train_df = pd.concat([train_df, data], ignore_index=True)
+
+        tr_last_column = train_df.pop(train_df.columns[-1])  # Remove the last column
+        train_df.insert(0, tr_last_column.name, tr_last_column)
+
+        test_df = pd.DataFrame()
+        path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
+        for filename in os.listdir(path):
+            if filename.endswith('.psv') and filename in test_files:
+                file_path = os.path.join(path, filename)
+                data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
+                file_id = os.path.splitext(filename)[0]
+                file_id=file_id[1:]
+                data['id'] = file_id
+                test_df = pd.concat([test_df, data], ignore_index=True)
+
+        te_last_column = test_df.pop(test_df.columns[-1])  # Remove the last column
+        test_df.insert(0, te_last_column.name, te_last_column)
+
+        valid_df = pd.DataFrame()
+        path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
+        for filename in os.listdir(path):
+            if filename.endswith('.psv') and filename in valid_files:
+                file_path = os.path.join(path, filename)
+                data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
+                file_id = os.path.splitext(filename)[0]
+                file_id=file_id[1:]
+                data['id'] = file_id
+                valid_df = pd.concat([valid_df, data], ignore_index=True)
+        
+        va_last_column = valid_df.pop(valid_df.columns[-1])  # Remove the last column
+        valid_df.insert(0, va_last_column.name, va_last_column)
+
+        train_serialized_data = pickle.dumps(train_df)
+        valid_serialized_data = pickle.dumps(valid_df)
+        test_serialized_data = pickle.dumps(test_df)
+
+        ti = kwargs['ti']
+        ti.xcom_push(key='train_data', value=train_serialized_data)
+        ti.xcom_push(key='valid_data', value=valid_serialized_data)
+        ti.xcom_push(key='test_data', value=test_serialized_data)
+
+def lload_train_test_valid_files(**kwargs):
     files = []
-    path = os.path.join(os.path.dirname(__file__), '../data/Dataset')
+    path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/content/challenge-2019/1.0.0/training/training_setA')
+    for f in os.listdir(path):
+        if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
+            files.append(f)
+
+    path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/content/challenge-2019/1.0.0/training/training_setB')
     for f in os.listdir(path):
         if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
             files.append(f)
@@ -31,7 +115,7 @@ def load_train_test_valid_files(**kwargs):
     for filename in os.listdir(path):
         if filename.endswith('.psv') and filename in train_files:
             file_path = os.path.join(path, filename)
-            data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
+            data = pd.read_csv(file_path) # Assuming the files are pipe-separated
             file_id = os.path.splitext(filename)[0]
             file_id=int(file_id[1:])
             data['id'] = file_id

@@ -1,0 +1,45 @@
+[2023-11-10T00:04:17.833+0000] {processor.py:153} INFO - Started process (PID=10342) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:04:17.837+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip for tasks to queue
+[2023-11-10T00:04:17.840+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:17.840+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:04:17.848+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:04:17.891+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip took 0.081 seconds
+[2023-11-10T00:04:48.082+0000] {processor.py:153} INFO - Started process (PID=10398) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:04:48.085+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip for tasks to queue
+[2023-11-10T00:04:48.087+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:48.087+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:04:48.093+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:04:48.129+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip took 0.056 seconds
+[2023-11-10T00:05:18.550+0000] {processor.py:153} INFO - Started process (PID=10468) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:05:18.553+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip for tasks to queue
+[2023-11-10T00:05:18.554+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:18.554+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:05:18.557+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:05:18.586+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip took 0.041 seconds
+[2023-11-10T00:05:49.220+0000] {processor.py:153} INFO - Started process (PID=10525) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:05:49.223+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip for tasks to queue
+[2023-11-10T00:05:49.226+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:49.225+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:05:49.230+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:05:49.249+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip took 0.033 seconds
+[2023-11-10T00:06:20.089+0000] {processor.py:153} INFO - Started process (PID=10594) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:06:20.091+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip for tasks to queue
+[2023-11-10T00:06:20.097+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:20.097+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:06:20.105+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:06:20.134+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip took 0.051 seconds
+[2023-11-10T00:06:50.555+0000] {processor.py:153} INFO - Started process (PID=10652) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:06:50.557+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip for tasks to queue
+[2023-11-10T00:06:50.558+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:50.558+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:06:50.560+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:06:50.580+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip took 0.029 seconds
+[2023-11-10T00:07:21.103+0000] {processor.py:153} INFO - Started process (PID=10722) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:07:21.106+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip for tasks to queue
+[2023-11-10T00:07:21.108+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:21.108+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:07:21.112+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:07:21.137+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip took 0.039 seconds
+[2023-11-10T00:07:51.569+0000] {processor.py:153} INFO - Started process (PID=10780) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:07:51.571+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip for tasks to queue
+[2023-11-10T00:07:51.573+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:51.573+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:07:51.580+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:07:51.604+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip took 0.040 seconds
+[2023-11-10T00:08:21.968+0000] {processor.py:153} INFO - Started process (PID=10850) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:08:21.970+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip for tasks to queue
+[2023-11-10T00:08:21.972+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:21.971+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:08:21.976+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip
+[2023-11-10T00:08:22.002+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Shivpatidar.zip took 0.039 seconds

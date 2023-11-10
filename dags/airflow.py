@@ -63,7 +63,8 @@ load_train_test_valid_files_task = PythonOperator(
     task_id='load_train_test_valid_files',
     python_callable=load_train_test_valid_files,
     provide_context=True,
-    dag=dag
+    dag=dag,
+    execution_timeout=timedelta(minutes=360),
 )
 
 

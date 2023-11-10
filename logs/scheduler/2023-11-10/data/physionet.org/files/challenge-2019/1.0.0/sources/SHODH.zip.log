@@ -1,0 +1,45 @@
+[2023-11-10T00:04:18.224+0000] {processor.py:153} INFO - Started process (PID=10344) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:04:18.227+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip for tasks to queue
+[2023-11-10T00:04:18.229+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:18.229+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:04:18.235+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:04:18.297+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip took 0.080 seconds
+[2023-11-10T00:04:49.127+0000] {processor.py:153} INFO - Started process (PID=10407) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:04:49.130+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip for tasks to queue
+[2023-11-10T00:04:49.136+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:49.136+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:04:49.141+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:04:49.166+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip took 0.043 seconds
+[2023-11-10T00:05:19.621+0000] {processor.py:153} INFO - Started process (PID=10470) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:05:19.623+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip for tasks to queue
+[2023-11-10T00:05:19.625+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:19.624+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:05:19.628+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:05:19.652+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip took 0.034 seconds
+[2023-11-10T00:05:50.285+0000] {processor.py:153} INFO - Started process (PID=10527) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:05:50.288+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip for tasks to queue
+[2023-11-10T00:05:50.290+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:50.290+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:05:50.299+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:05:50.331+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip took 0.054 seconds
+[2023-11-10T00:06:21.105+0000] {processor.py:153} INFO - Started process (PID=10596) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:06:21.107+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip for tasks to queue
+[2023-11-10T00:06:21.108+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:21.108+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:06:21.111+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:06:21.141+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip took 0.040 seconds
+[2023-11-10T00:06:51.581+0000] {processor.py:153} INFO - Started process (PID=10654) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:06:51.583+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip for tasks to queue
+[2023-11-10T00:06:51.584+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:51.584+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:06:51.587+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:06:51.609+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip took 0.032 seconds
+[2023-11-10T00:07:22.141+0000] {processor.py:153} INFO - Started process (PID=10724) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:07:22.143+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip for tasks to queue
+[2023-11-10T00:07:22.144+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:22.144+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:07:22.148+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:07:22.169+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip took 0.032 seconds
+[2023-11-10T00:07:52.610+0000] {processor.py:153} INFO - Started process (PID=10782) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:07:52.612+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip for tasks to queue
+[2023-11-10T00:07:52.613+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:52.613+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:07:52.616+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:07:52.640+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip took 0.035 seconds
+[2023-11-10T00:08:23.039+0000] {processor.py:153} INFO - Started process (PID=10852) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:08:23.045+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip for tasks to queue
+[2023-11-10T00:08:23.051+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:23.050+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:08:23.058+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip
+[2023-11-10T00:08:23.101+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/SHODH.zip took 0.066 seconds

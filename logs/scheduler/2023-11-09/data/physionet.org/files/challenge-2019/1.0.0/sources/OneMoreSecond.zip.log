@@ -1,0 +1,15 @@
+[2023-11-09T23:58:57.159+0000] {processor.py:153} INFO - Started process (PID=9862) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip
+[2023-11-09T23:58:57.161+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip for tasks to queue
+[2023-11-09T23:58:57.163+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:58:57.162+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip
+[2023-11-09T23:58:57.166+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip
+[2023-11-09T23:58:57.191+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip took 0.037 seconds
+[2023-11-09T23:59:27.529+0000] {processor.py:153} INFO - Started process (PID=9904) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip
+[2023-11-09T23:59:27.532+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip for tasks to queue
+[2023-11-09T23:59:27.534+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:59:27.534+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip
+[2023-11-09T23:59:27.537+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip
+[2023-11-09T23:59:27.567+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip took 0.043 seconds
+[2023-11-09T23:59:58.016+0000] {processor.py:153} INFO - Started process (PID=9958) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip
+[2023-11-09T23:59:58.018+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip for tasks to queue
+[2023-11-09T23:59:58.019+0000] {logging_mixin.py:137} INFO - [2023-11-09T23:59:58.019+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip
+[2023-11-09T23:59:58.023+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip
+[2023-11-09T23:59:58.042+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/OneMoreSecond.zip took 0.030 seconds

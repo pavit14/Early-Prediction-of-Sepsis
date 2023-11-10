@@ -1,0 +1,80 @@
+[2023-11-10T00:00:28.123+0000] {processor.py:153} INFO - Started process (PID=9990) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:00:28.126+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:00:28.128+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:28.127+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:00:28.132+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:00:28.163+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.044 seconds
+[2023-11-10T00:00:58.872+0000] {processor.py:153} INFO - Started process (PID=10044) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:00:58.874+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:00:58.876+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:00:58.876+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:00:58.881+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:00:58.913+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.046 seconds
+[2023-11-10T00:01:29.547+0000] {processor.py:153} INFO - Started process (PID=10093) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:01:29.549+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:01:29.551+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:01:29.551+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:01:29.555+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:01:29.587+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.044 seconds
+[2023-11-10T00:02:00.230+0000] {processor.py:153} INFO - Started process (PID=10140) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:02:00.232+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:02:00.233+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:00.233+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:02:00.236+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:02:00.255+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.029 seconds
+[2023-11-10T00:02:30.585+0000] {processor.py:153} INFO - Started process (PID=10191) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:02:30.587+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:02:30.589+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:02:30.589+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:02:30.593+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:02:30.625+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.044 seconds
+[2023-11-10T00:03:01.316+0000] {processor.py:153} INFO - Started process (PID=10236) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:03:01.318+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:03:01.319+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:01.319+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:03:01.322+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:03:01.345+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.034 seconds
+[2023-11-10T00:03:31.885+0000] {processor.py:153} INFO - Started process (PID=10279) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:03:31.888+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:03:31.890+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:03:31.889+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:03:31.899+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:03:31.924+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.044 seconds
+[2023-11-10T00:04:18.954+0000] {processor.py:153} INFO - Started process (PID=10349) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:04:18.957+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:04:18.960+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:18.960+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:04:18.966+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:04:19.024+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.077 seconds
+[2023-11-10T00:04:49.469+0000] {processor.py:153} INFO - Started process (PID=10414) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:04:49.472+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:04:49.475+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:49.474+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:04:49.482+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:04:49.544+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.083 seconds
+[2023-11-10T00:05:19.802+0000] {processor.py:153} INFO - Started process (PID=10475) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:05:19.803+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:05:19.804+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:19.804+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:05:19.807+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:05:19.827+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.030 seconds
+[2023-11-10T00:05:50.647+0000] {processor.py:153} INFO - Started process (PID=10532) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:05:50.650+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:05:50.653+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:50.652+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:05:50.659+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:05:50.691+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.051 seconds
+[2023-11-10T00:06:21.289+0000] {processor.py:153} INFO - Started process (PID=10601) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:06:21.291+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:06:21.293+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:21.293+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:06:21.297+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:06:21.320+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.035 seconds
+[2023-11-10T00:06:51.840+0000] {processor.py:153} INFO - Started process (PID=10659) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:06:51.842+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:06:51.844+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:51.844+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:06:51.847+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:06:51.869+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.034 seconds
+[2023-11-10T00:07:22.403+0000] {processor.py:153} INFO - Started process (PID=10729) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:07:22.405+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:07:22.406+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:22.406+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:07:22.415+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:07:22.437+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.038 seconds
+[2023-11-10T00:07:52.792+0000] {processor.py:153} INFO - Started process (PID=10787) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:07:52.794+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:07:52.795+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:52.795+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:07:52.799+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:07:52.819+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.030 seconds
+[2023-11-10T00:08:23.515+0000] {processor.py:153} INFO - Started process (PID=10857) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:08:23.518+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip for tasks to queue
+[2023-11-10T00:08:23.523+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:23.522+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:08:23.535+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip
+[2023-11-10T00:08:23.585+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/PurdueUniversity.zip took 0.076 seconds

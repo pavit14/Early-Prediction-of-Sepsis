@@ -1,0 +1,45 @@
+[2023-11-10T00:04:20.379+0000] {processor.py:153} INFO - Started process (PID=10363) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:04:20.381+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip for tasks to queue
+[2023-11-10T00:04:20.386+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:20.386+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:04:20.391+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:04:20.420+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip took 0.047 seconds
+[2023-11-10T00:04:50.929+0000] {processor.py:153} INFO - Started process (PID=10433) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:04:50.947+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip for tasks to queue
+[2023-11-10T00:04:50.949+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:04:50.949+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:04:50.955+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:04:50.982+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip took 0.058 seconds
+[2023-11-10T00:05:21.459+0000] {processor.py:153} INFO - Started process (PID=10490) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:05:21.461+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip for tasks to queue
+[2023-11-10T00:05:21.463+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:21.463+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:05:21.468+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:05:21.533+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip took 0.094 seconds
+[2023-11-10T00:05:51.953+0000] {processor.py:153} INFO - Started process (PID=10555) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:05:51.961+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip for tasks to queue
+[2023-11-10T00:05:51.966+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:05:51.966+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:05:51.985+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:05:52.083+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip took 0.154 seconds
+[2023-11-10T00:06:22.826+0000] {processor.py:153} INFO - Started process (PID=10615) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:06:22.833+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip for tasks to queue
+[2023-11-10T00:06:22.838+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:22.838+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:06:22.854+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:06:22.909+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip took 0.088 seconds
+[2023-11-10T00:06:53.374+0000] {processor.py:153} INFO - Started process (PID=10673) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:06:53.378+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip for tasks to queue
+[2023-11-10T00:06:53.379+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:06:53.379+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:06:53.383+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:06:53.408+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip took 0.038 seconds
+[2023-11-10T00:07:24.140+0000] {processor.py:153} INFO - Started process (PID=10743) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:07:24.142+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip for tasks to queue
+[2023-11-10T00:07:24.144+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:24.143+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:07:24.147+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:07:24.190+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip took 0.055 seconds
+[2023-11-10T00:07:54.377+0000] {processor.py:153} INFO - Started process (PID=10801) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:07:54.378+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip for tasks to queue
+[2023-11-10T00:07:54.380+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:07:54.380+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:07:54.385+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:07:54.412+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip took 0.039 seconds
+[2023-11-10T00:08:25.215+0000] {processor.py:153} INFO - Started process (PID=10871) to work on /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:08:25.217+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip for tasks to queue
+[2023-11-10T00:08:25.218+0000] {logging_mixin.py:137} INFO - [2023-11-10T00:08:25.218+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:08:25.221+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip
+[2023-11-10T00:08:25.243+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/data/physionet.org/files/challenge-2019/1.0.0/sources/Separatrix.zip took 0.032 seconds
