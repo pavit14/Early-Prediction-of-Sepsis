@@ -60,7 +60,6 @@ def load_train_test_valid_files(**kwargs):
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
 
-    return train_serialized_data, valid_serialized_data, test_serialized_data
 
 @tf.function
 def feature_engineering(**kwargs):
@@ -107,7 +106,6 @@ def feature_engineering(**kwargs):
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
 
-    return train_serialized_data, valid_serialized_data, test_serialized_data
 
 
 
@@ -162,7 +160,6 @@ def preprocess_zero_imput_norm(**kwargs):
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
 
-    return train_serialized_data, valid_serialized_data, test_serialized_data
 
 
 @tf.function
@@ -211,5 +208,3 @@ def preprocess_mean_input_norm(**kwargs):
     ti.xcom_push(key='train_data', value=train_serialized_data)
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
-
-    return train_serialized_data, valid_serialized_data, test_serialized_data
