@@ -6,7 +6,7 @@ import pandas as pd
 import numpy as np, os, sys
 import sys
 #sys.path.append("D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis")
-sys.path.append("..")
+#sys.path.append("..")
 #from src.Load_Data import preprocess_zero_imput, preprocess_ffill, train_test_valid_files, load_challenge_data
 
 
@@ -19,7 +19,7 @@ def load_challenge_data(file):
 
 def train_test_valid_files(shuffle_files = True):
     files = []
-    path = "D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data\Downloaded_data"
+    path = os.path.join(os.path.dirname(__file__), '../../data/Downloaded_data')
     for f in os.listdir(path):
         if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
             files.append(f)
@@ -34,7 +34,6 @@ def train_test_valid_files(shuffle_files = True):
     train_files = files[:n_train]
     test_files = files[n_train:n_train + n_test]
     valid_files = files[n_train + n_test:]
-    print(train_files, test_files, valid_files)
     return train_files, test_files, valid_files
 
 def preprocess_ffill(files):   #provide the list of train, test, valid files 
@@ -43,8 +42,8 @@ def preprocess_ffill(files):   #provide the list of train, test, valid files
     
     for f in files:
         # Load data.
+        path = os.path.join(os.path.dirname(__file__), '../../data/Downloaded_data')
         input_file = os.path.join(path, f)
-        path = "D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data\Downloaded_data"
         data = load_challenge_data(input_file)
         data = pd.DataFrame(data)
         
@@ -57,7 +56,6 @@ def preprocess_ffill(files):   #provide the list of train, test, valid files
         
         ffill_data = np.vstack((ffill_data, data)) 
     ffill_data = pd.DataFrame(ffill_data)
-    print(ffill_data)
     return ffill_data
 
 def preprocess_zero_imput(df):
@@ -77,9 +75,9 @@ def zero_imputation(**kwargs):
     zero_ffill_test = preprocess_zero_imput(preprocess_ffill(test_files))
     zero_ffill_valid = preprocess_zero_imput(preprocess_ffill(valid_files))
 
-    file_path_train = os.path.join('D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data', '_train_data.csv')
-    file_path_test = os.path.join('D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data', '_test_data.csv')
-    file_path_valid = os.path.join('D:\IE7374_MLOps\Final_project\Early-Prediction-of-Sepsis\data', '_valid_data.csv')
+    file_path_train = os.path.join(os.path.dirname(__file__), '../../data/_train_data.csv')
+    file_path_test = os.path.join(os.path.dirname(__file__), '../../data/_test_data.csv')
+    file_path_valid = os.path.join(os.path.dirname(__file__), '../../data/_valid_data.csv')
     zero_ffill_train.to_csv(file_path_train, index=False)
     zero_ffill_test.to_csv(file_path_test, index=False)
     zero_ffill_valid.to_csv(file_path_valid, index=False)
@@ -106,5 +104,8 @@ with DAG("Data_pipeline_dag", start_date=datetime(2023, 1, 1),
     )
 
     train_test_valid_split >> zero_imput_files
+
+    if __name__ == "__main__":
+        dag.cli()
 
     
