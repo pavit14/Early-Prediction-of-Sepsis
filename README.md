@@ -23,7 +23,13 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
 
 ## Installation 
 
-1) create an python virtual environment and clone the repository
+1) Create an python virtual environment, activate and clone the repository
+    ```
+    python -m venv lab01
+    ```
+    ```
+    source venv/bin/activate
+    ```
     ```
     git clone https://github.com/pavit14/Early-Prediction-of-Sepsis.git
     ```
@@ -45,7 +51,7 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
     .. cd 
     ```
 
-5) Fetch the docker-compose.yaml file. (This file is alrday present in repository with all the necessary changes required to run the airflow. However, the error may occur if there is airflow version difference. We are using airflow version 2.5.1 for this project. If you are using updated version 2.7.1 make sure you have installed docker-compose.yaml file with same verison. Run below command and update the below changes in the file.)
+5) Fetch the docker-compose.yaml file. (This file is already present in repository with all the necessary changes required to run the airflow. However, the error may occur if there is airflow version difference. We are using airflow version 2.5.1 for this project. If you are using updated version 2.7.1 make sure you have installed docker-compose.yaml file with same verison. Run below command and update the below changes in the file.)
 for version 2.7.1: 
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.1/docker-compose.yaml' 
 
