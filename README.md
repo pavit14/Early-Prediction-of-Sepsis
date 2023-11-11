@@ -39,7 +39,7 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
     ```
 
 5) Go inside the dags/data folder. Run below bash command to download the dataset. (This command will only run for bash. It will download the dataset directly in the data directory.)
-   ```
+    ```
     cd dags/data
     ```
     ```
