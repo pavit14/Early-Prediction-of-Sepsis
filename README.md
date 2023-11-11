@@ -92,6 +92,7 @@ For feature selection, we are doing following steps:
 - A threshold is set to filter out less important features. Features with importance values below the threshold are considered non-important.
 - The selected features can be utilized for subsequent analysis or training models with reduced feature sets, potentially enhancing efficiency and interpretability.
 
+## How to run
 a) Now navigate to dags directory using command line and initialize the database.
 ```docker compose up airflow-init```
 
