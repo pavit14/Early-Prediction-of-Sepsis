@@ -25,7 +25,7 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
 
 1) create an python virtual environment and clone the repository
 ```git clone https://github.com/pavit14/Early-Prediction-of-Sepsis.git
-```
+
 
 3) Install dependencies 
 ```
