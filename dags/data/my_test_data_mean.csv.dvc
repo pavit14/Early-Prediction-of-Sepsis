@@ -1,0 +1,5 @@
+outs:
+- md5: 3fa9f3c8ed98ce6c0bf81536e9672076
+  size: 60887552
+  hash: md5
+  path: my_test_data_mean.csv

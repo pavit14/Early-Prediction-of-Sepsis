@@ -1,0 +1,5 @@
+outs:
+- md5: 54332d29bb6d8e1471fb85ef193b3b4e
+  size: 61385985
+  hash: md5
+  path: my_valid_data_mean.csv

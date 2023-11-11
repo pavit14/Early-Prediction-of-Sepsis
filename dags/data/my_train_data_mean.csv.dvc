@@ -1,0 +1,5 @@
+outs:
+- md5: 6afd5c3199eca48ba3c852486a6fb17d
+  size: 124911774
+  hash: md5
+  path: my_train_data_mean.csv
