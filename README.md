@@ -24,20 +24,26 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
 ## Installation 
 
 1) create an python virtual environment and clone the repository
-```git clone https://github.com/pavit14/Early-Prediction-of-Sepsis.git```
-
     ```
     git clone https://github.com/pavit14/Early-Prediction-of-Sepsis.git
     ```
-3) Install dependencies 
-```pip install -r requirements.txt```
+3) Install dependencies
+    ```
+    pip install -r requirements.txt
+    ```
 
-5) Go inside the dags/data folder. Run below bash command to download the dataset. (This command will only run for bash. It will download the dataset directly in the data directory.) 
-```cd dags/data```
-```wget -r -N -c -np --accept="*.psv" https://physionet.org/files/challenge-2019/1.0.0/```
+5) Go inside the dags/data folder. Run below bash command to download the dataset. (This command will only run for bash. It will download the dataset directly in the data directory.)
+   ```
+    cd dags/data
+    ```
+    ```
+    wget -r -N -c -np --accept="*.psv" https://physionet.org/files/challenge-2019/1.0.0/
+    ```
 
 7) Navigate to the dags directory.
-```cd ..```
+   ```
+    .. cd 
+    ```
 
 5) Fetch the docker-compose.yaml file. (This file is alrday present in repository with all the necessary changes required to run the airflow. However, the error may occur if there is airflow version difference. We are using airflow version 2.5.1 for this project. If you are using updated version 2.7.1 make sure you have installed docker-compose.yaml file with same verison. Run below command and update the below changes in the file.)
 for version 2.7.1: 
