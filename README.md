@@ -55,10 +55,10 @@ _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas }
 # Workflow
 # 1) Data Preprocessing:
 Data preprocessing have below steps:
-i) load_train_test_valid_files
-ii) feature_engineering
-iii) preprocess_zero_imput_norm
-iv) preprocess_mean_input_norm
+- i) load_train_test_valid_files
+- ii) feature_engineering
+- iii) preprocess_zero_imput_norm
+- iv) preprocess_mean_input_norm
 
 We are using training_set_A as our training dataset and training_set_B is splitted into test and valid dataset. 
 For preprocessing, we are doing following steps
