@@ -3320,3 +3320,10 @@ NameError: name 'conf' is not defined
 [2023-11-11T04:36:35.465+0000] {logging_mixin.py:137} INFO - [2023-11-11T04:36:35.464+0000] {dag.py:2690} INFO - Sync 1 DAGs
 [2023-11-11T04:36:35.511+0000] {logging_mixin.py:137} INFO - [2023-11-11T04:36:35.511+0000] {dag.py:3441} INFO - Setting next_dagrun for early_sepsis_prediction to None, run_after=None
 [2023-11-11T04:36:35.545+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 1.675 seconds
+[2023-11-11T04:37:05.661+0000] {processor.py:153} INFO - Started process (PID=12659) to work on /opt/airflow/dags/airflow.py
+[2023-11-11T04:37:05.662+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/airflow.py for tasks to queue
+[2023-11-11T04:37:05.664+0000] {logging_mixin.py:137} INFO - [2023-11-11T04:37:05.664+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/airflow.py
+[2023-11-11T04:37:06.277+0000] {processor.py:753} INFO - DAG(s) dict_keys(['early_sepsis_prediction']) retrieved from /opt/airflow/dags/airflow.py
+[2023-11-11T04:37:06.300+0000] {logging_mixin.py:137} INFO - [2023-11-11T04:37:06.299+0000] {dag.py:2690} INFO - Sync 1 DAGs
+[2023-11-11T04:37:06.320+0000] {logging_mixin.py:137} INFO - [2023-11-11T04:37:06.319+0000] {dag.py:3441} INFO - Setting next_dagrun for early_sepsis_prediction to None, run_after=None
+[2023-11-11T04:37:06.335+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/airflow.py took 0.679 seconds
