@@ -61,7 +61,7 @@ curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.1/docker-compose.y
    ```
 
    ```
-   _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas }
+   _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas}
    ```
 
 7) Run the below command for setting up the airflow and docker. 
@@ -78,13 +78,15 @@ Data preprocessing have below steps:
 - iv) preprocess_mean_input_norm
 
 We are using training_set_A as our training dataset and training_set_B is splitted into test and valid dataset. <br>
-For preprocessing, we are doing following steps: <br>
+For preprocessing, we are doing following steps: 
 - Converting .psv files into df
 - For each patient file, there are many null values as every test is not getting conducted every hour. So, we are assuming that between 2 tests values are remaining same. So, we are using ffill to remove those nulls. 
 - We are adding the ID column for each patient identifcation. 
 - We are stacking the all patient's data and created a single dataframe for training, testing and valid each.
 - However, there are some nulls remaining as there is no record before first record in each column for each patient comes in. So, we are creating 2 versions of data, in one we are imputing nulls with zero and in other approach we are imputing it with mean value. 
-- At last, we are normalizing the data. 
+- At last, we are normalizing the data.
+
+For preprocessing, we are doing following steps: <br> 
 
 a) Now navigate to dags directory using command line and initialize the database.
 ```docker compose up airflow-init```
