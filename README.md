@@ -70,21 +70,21 @@ For preprocessing, we are doing following steps: <br>
 - At last, we are normalizing the data. 
 
 a) First run the below file:(This file includes the preprocessing functions)
-Early-Prediction-of-Sepsis/dags/src/pylab1.py
+```Early-Prediction-of-Sepsis/dags/src/pylab1.py```
 
 b) Navigate to 'Early-Prediction-of-Sepsis' using you rcommand line to run this file as this file uses current directory path .
 Run the below file to create .csv files to save created dataframes after preprocessing. 
-Early-Prediction-of-Sepsis\dags\create_csv.py
+```Early-Prediction-of-Sepsis\dags\create_csv.py```
 
 c) Now navigate to dags directory using command line and initialize the database.
-docker compose up airflow-init
+```docker compose up airflow-init```
 
 d) Run the airflow:
-docker compose up
+```docker compose up```
 
 e) Visit the 'localhost:8080' and login with credential.
 Run the below file to create the run the pipeline dag. 
-Early-Prediction-of-Sepsis/dags/airflow.py
+```Early-Prediction-of-Sepsis/dags/airflow.py```
 
 f) Once the dataframes saved in csv files, give dvc and git push.
 
