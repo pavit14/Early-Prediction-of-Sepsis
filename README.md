@@ -33,12 +33,12 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
     ```
     git clone https://github.com/pavit14/Early-Prediction-of-Sepsis.git
     ```
-3) Install dependencies
+2) Install dependencies
     ```
     pip install -r requirements.txt
     ```
 
-5) Go inside the dags/data folder. Run below bash command to download the dataset. (This command will only run for bash. It will download the dataset directly in the data directory.)
+3) Go inside the dags/data folder. Run below bash command to download the dataset. (This command will only run for bash. It will download the dataset directly in the data directory.)
     ```
     cd dags/data
     ```
@@ -46,8 +46,8 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
     wget -r -N -c -np --accept="*.psv" https://physionet.org/files/challenge-2019/1.0.0/
     ```
 
-7) Navigate to the dags directory.
-   ```
+4) Navigate to the dags directory.
+    ```
     .. cd 
     ```
 
@@ -55,13 +55,16 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
 for version 2.7.1: 
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.1/docker-compose.yaml' 
 
-Set below parameters as specified in docker-compose.yaml file:
+6) Set below parameters as specified in docker-compose.yaml file:
+   ```
+   AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+   ```
 
-AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+   ```
+   _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas }
+   ```
 
-_PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas }
-
-6) Run the below command for setting up the airflow and docker. 
+7) Run the below command for setting up the airflow and docker. 
 (Ensure that you have installed the docker desktop and check for adequate memory)
  ```docker-compose up --build```
 
