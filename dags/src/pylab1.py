@@ -9,24 +9,24 @@ import shutil
 from sklearn.model_selection import train_test_split
 
 def load_train_test_valid_files(**kwargs):
-        #i=0
+        i=0
         train_files = []
         path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
         for f in os.listdir(path):
-            #if i>10:
-            #    break
+            if i>5000:
+                break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 train_files.append(f)
-                #i=i+1
-        #j=0
+                i=i+1
+        j=0
         test_valid_files = []
         path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
         for f in os.listdir(path):
-            #if j>10:
-            #    break
+            if j>5000:
+                break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 test_valid_files.append(f)
-                #j=j+1
+                j=j+1
         
         random.shuffle(test_valid_files)
         
@@ -88,76 +88,6 @@ def load_train_test_valid_files(**kwargs):
         ti.xcom_push(key='valid_data', value=valid_serialized_data)
         ti.xcom_push(key='test_data', value=test_serialized_data)
 
-def lload_train_test_valid_files(**kwargs):
-    files = []
-    path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/content/challenge-2019/1.0.0/training/training_setA')
-    for f in os.listdir(path):
-        if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
-            files.append(f)
-
-    path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/content/challenge-2019/1.0.0/training/training_setB')
-    for f in os.listdir(path):
-        if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
-            files.append(f)
-    
-    random.shuffle(files)
-
-    n_files = len(files)
-    n_train = n_files * 6 // 10
-    n_test = n_files * 2 // 10
-
-    train_files = files[:n_train]
-    test_files = files[n_train:n_train + n_test]
-    valid_files = files[n_train + n_test:]
-
-
-    train_df = pd.DataFrame()
-    for filename in os.listdir(path):
-        if filename.endswith('.psv') and filename in train_files:
-            file_path = os.path.join(path, filename)
-            data = pd.read_csv(file_path) # Assuming the files are pipe-separated
-            file_id = os.path.splitext(filename)[0]
-            file_id=int(file_id[1:])
-            data['id'] = file_id
-            train_df = pd.concat([train_df, data], ignore_index=True)
-
-    tr_last_column = train_df.pop(train_df.columns[-1])  # Remove the last column
-    train_df.insert(0, tr_last_column.name, tr_last_column)
-
-    test_df = pd.DataFrame()
-    for filename in os.listdir(path):
-        if filename.endswith('.psv') and filename in test_files:
-            file_path = os.path.join(path, filename)
-            data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
-            file_id = os.path.splitext(filename)[0]
-            file_id=file_id[1:]
-            data['id'] = file_id
-            test_df = pd.concat([test_df, data], ignore_index=True)
-
-    te_last_column = test_df.pop(test_df.columns[-1])  # Remove the last column
-    test_df.insert(0, te_last_column.name, te_last_column)
-
-    valid_df = pd.DataFrame()
-    for filename in os.listdir(path):
-        if filename.endswith('.psv') and filename in valid_files:
-            file_path = os.path.join(path, filename)
-            data = pd.read_csv(file_path, sep='|')  # Assuming the files are pipe-separated
-            file_id = os.path.splitext(filename)[0]
-            file_id=file_id[1:]
-            data['id'] = file_id
-            valid_df = pd.concat([valid_df, data], ignore_index=True)
-    
-    va_last_column = valid_df.pop(valid_df.columns[-1])  # Remove the last column
-    valid_df.insert(0, va_last_column.name, va_last_column)
-
-    train_serialized_data = pickle.dumps(train_df)
-    valid_serialized_data = pickle.dumps(valid_df)
-    test_serialized_data = pickle.dumps(test_df)
-
-    ti = kwargs['ti']
-    ti.xcom_push(key='train_data', value=train_serialized_data)
-    ti.xcom_push(key='valid_data', value=valid_serialized_data)
-    ti.xcom_push(key='test_data', value=test_serialized_data)
 
 def feature_engineering(**kwargs):
     ti = kwargs['ti']
@@ -166,17 +96,20 @@ def feature_engineering(**kwargs):
     test_data = ti.xcom_pull(task_ids='load_train_test_valid_files', key='test_data')
 
     train_df = pickle.loads(train_data)
-    train_df = train_df.groupby('id').filter(lambda x: len(x) >=15 )
-    train_df= train_df.groupby('id').ffill()
-    train_df = train_df.drop(train_df.columns[[8, 21, 28, 33]], axis=1)
+    if len(train_df) > 1:
+        train_df = train_df.groupby('id').filter(lambda x: len(x) >= 15)
+        train_df = train_df.groupby('id').ffill()
+        train_df = train_df.drop(train_df.columns[[7, 20, 27, 35, 36, 37]], axis=1)
     
     valid_df = pickle.loads(valid_data)
-    valid_df= valid_df.groupby('id').ffill()
-    valid_df = valid_df.drop(valid_df.columns[[8, 21, 28, 33]], axis=1)
+    if len(valid_df) > 1:
+        valid_df= valid_df.groupby('id').ffill()
+        valid_df = valid_df.drop(valid_df.columns[[7, 20, 27, 35, 36, 37]], axis=1)
 
     test_df = pickle.loads(test_data)
-    test_df= test_df.groupby('id').ffill()
-    test_df = test_df.drop(test_df.columns[[8, 21, 28, 33]], axis=1)
+    if len(test_df) > 1:
+        test_df= test_df.groupby('id').ffill()
+        test_df = test_df.drop(test_df.columns[[7, 20, 27, 35, 36, 37]], axis=1)
 
     train_serialized_data = pickle.dumps(train_df)
     valid_serialized_data = pickle.dumps(valid_df)
@@ -244,6 +177,13 @@ def preprocess_mean_input_norm(**kwargs):
     test_df.iloc[:,1:-1] = scaler.transform(test_df.iloc[:,1:-1])
     valid_df.iloc[:,1:-1] = scaler.transform(valid_df.iloc[:, 1:-1])
 
+    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_train_data_mean.csv')
+    train_df.to_csv(file_path, index=False)
+    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_test_data_mean.csv')
+    test_df.to_csv(file_path, index=False)
+    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_valid_data_mean.csv')
+    valid_df.to_csv(file_path, index=False)
+
     train_serialized_data = pickle.dumps(train_df)
     valid_serialized_data = pickle.dumps(valid_df)
     test_serialized_data = pickle.dumps(test_df)
@@ -252,4 +192,5 @@ def preprocess_mean_input_norm(**kwargs):
     ti.xcom_push(key='train_data', value=train_serialized_data)
     ti.xcom_push(key='valid_data', value=valid_serialized_data)
     ti.xcom_push(key='test_data', value=test_serialized_data)
+
 
