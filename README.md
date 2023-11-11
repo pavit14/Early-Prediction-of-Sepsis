@@ -66,7 +66,9 @@ curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.7.1/docker-compose.y
 
 7) Run the below command for setting up the airflow and docker. 
 (Ensure that you have installed the docker desktop and check for adequate memory)
- ```docker-compose up --build```
+   ```
+   docker-compose up --build
+   ```
 
 
 # Workflow
@@ -94,35 +96,35 @@ For feature selection, we are doing following steps:
 
 ## How to run
 a) Now navigate to dags directory using command line and initialize the database.
-    ```
-    docker compose up airflow-init
-    ```
+   ```
+   docker compose up airflow-init
+   ```
 
 b) Run the airflow:
-    ```
-    docker compose up
-    ```
+   ```
+   docker compose up
+   ```
 
 c) Visit the 'localhost:8080' and login with credential.
 
 d) Once the dataframes saved in csv files, give dvc and git push.
-    ``` 
-    dvc init 
-    ```
-    ``` 
-    dvc add <file name> 
-    ```
-    ``` 
-    dvc commit
-    ```
+   ``` 
+   dvc init 
+   ```
+   ``` 
+   dvc add <file name> 
+   ```
+   ``` 
+   dvc commit
+   ```
 
 e) Now commit to your git
-    ``` 
-    git add .
-    ```
-    ``` 
-    git commit 
-    ```
+   ``` 
+   git add .
+   ```
+   ``` 
+   git commit 
+   ```
 
 # License
 This project is licensed under the https://physionet.org/content/challenge-2019/1.0.0/LICENSE.txt licence. 
