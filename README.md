@@ -14,7 +14,7 @@ Dataset consists of 2 parts: training set A (20,336 subjects) and B (20,000 subj
 
 
 # Getting Started
-# Prerequisites
+## Prerequisites
 Before using the Sepsis Prediction MLops framework, ensure you have the following prerequisites installed:
 - [Docker](https://www.docker.com/get-started/)
 - [Airflow](https://airflow.apache.org/docs/apache-airflow/stable/start.html)
@@ -22,7 +22,7 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
 - [Python](https://www.python.org/downloads/) 3.x
 - Pip (Python package installer)
 
-# Installation 
+## Installation 
 
 1) create an virtual environment and clone the repository
 ```git clone https://github.com/pavit14/Early-Prediction-of-Sepsis.git```
@@ -53,7 +53,7 @@ _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas }
 
 
 # Workflow
-# 1) Data Preprocessing:
+## 1) Data Preprocessing:
 Data preprocessing have below steps:
 - i) load_train_test_valid_files
 - ii) feature_engineering
