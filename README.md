@@ -23,14 +23,15 @@ Before using the Sepsis Prediction MLops framework, ensure you have the followin
 
 ## Installation 
 
-1) create an virtual environment and clone the repository
+1) create an python virtual environment and clone the repository
 ```git clone https://github.com/pavit14/Early-Prediction-of-Sepsis.git```
 
 2) Install dependencies 
 ```pip install -r requirements.txt```
 
-3) Go inside the dags/data folder. Run below bash command to download the dataset. (This command will only run for bash. It will download the dataset directly in the data directory.)
+3) Go inside the dags/data folder. Run below bash command to download the dataset. (This command will only run for bash. It will download the dataset directly in the data directory.) <br>
 ```cd dags/data```
+<br>
 ```wget -r -N -c -np --accept="*.psv" https://physionet.org/files/challenge-2019/1.0.0/```
 
 5) Navigate to the dags directory.
