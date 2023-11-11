@@ -16,32 +16,26 @@ Dataset consists of 2 parts: training set A (20,336 subjects) and B (20,000 subj
 # Getting Started
 # Prerequisites
 Before using the Sepsis Prediction MLops framework, ensure you have the following prerequisites installed:
-Docker
-Airflow
-DVC
-Python 3.x
-Pip (Python package installer)
+- [Docker](https://www.docker.com/get-started/)
+- [Airflow](https://airflow.apache.org/docs/apache-airflow/stable/start.html)
+- [DVC](https://airflow.apache.org/docs/apache-airflow/stable/start.html)
+- [Python](https://www.python.org/downloads/) 3.x
+- Pip (Python package installer)
 
 # Installation 
 
-1) craete an virtual environment and clone the repository
-git clone https://github.com/pavit14/Early-Prediction-of-Sepsis.git
+1) create an virtual environment and clone the repository
+```git clone https://github.com/pavit14/Early-Prediction-of-Sepsis.git```
 
 2) Install dependencies 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
-3) Go inside the dags/data folder. Run below bash command to download the dataset. (This command will only run for bash. This command will download the daset directly in the data directory.)
-cd dags
-cd data 
-wget -r -N -c -np --accept="*.psv" https://physionet.org/files/challenge-2019/1.0.0/
+3) Go inside the dags/data folder. Run below bash command to download the dataset. (This command will only run for bash. It will download the dataset directly in the data directory.)
+```cd dags/data```
+```wget -r -N -c -np --accept="*.psv" https://physionet.org/files/challenge-2019/1.0.0/```
 
-4) Come out of data directory. You are now in dags directory.
-cd ..
-
-5) Run the below command for setting up the airflow and docker. 
-(Ensure that you have installed the docker desktop)
-check the memory 
-wget -r -N -c -np --accept="*.psv" https://physionet.org/files/challenge-2019/1.0.0/
+5) Navigate to the dags directory.
+```cd ../```
 
 5) Fetch the docker-compose.yaml file. (This file is alrday present in repository with all the necessary changes required to run the airflow. However, the error may occur if there is airflow version difference. We are using airflow version 2.5.1 for this project. If you are using updated version 2.7.1 make sure you have installed docker-compose.yaml file with same verison. Run below command and update the below changes in the file.)
 for version 2.7.1: 
@@ -52,6 +46,10 @@ Set below parameters as specified in docker-compose.yaml file:
 AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
 
 _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:- pandas }
+
+6) Run the below command for setting up the airflow and docker. 
+(Ensure that you have installed the docker desktop and check for adequate memory)
+ ```docker-compose up --build```
 
 
 # Workflow
@@ -92,12 +90,6 @@ f) Once the dataframes saved in csv files, give dvc and git push.
 
 # License
 This project is licensed under the https://physionet.org/content/challenge-2019/1.0.0/LICENSE.txt licence. 
-
-
-
-
-
-
 
 
 
