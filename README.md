@@ -78,8 +78,13 @@ b) Run the airflow:
 c) Visit the 'localhost:8080' and login with credential.
 
 d) Once the dataframes saved in csv files, give dvc and git push.
-```
-```
+``` dvc init ```
+``` dvc add <file name> ```
+``` dvc commit```
+
+e) Now commit to your git
+``` git add .```
+``` git commit ```
 
 # License
 This project is licensed under the https://physionet.org/content/challenge-2019/1.0.0/LICENSE.txt licence. 
