@@ -87,7 +87,10 @@ For preprocessing, we are doing following steps:
 - At last, we are normalizing the data.
 
 For feature selection, we are doing following steps: 
-- 
+- We employ a Random Forest Classifier to train our model using the training data. Predictions are generated using the trained model on the test data.
+- Feature importance is assessed using the Random Forest model. Features are sorted in descending order to identify the most influential ones.
+- A threshold is set to filter out less important features. Features with importance values below the threshold are considered non-important.
+- The selected features can be utilized for subsequent analysis or training models with reduced feature sets, potentially enhancing efficiency and interpretability.
 
 a) Now navigate to dags directory using command line and initialize the database.
 ```docker compose up airflow-init```
