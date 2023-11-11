@@ -77,7 +77,7 @@ Data preprocessing have below steps:
 - iii) preprocess_zero_imput_norm
 - iv) preprocess_mean_input_norm
 
-We are using training_set_A as our training dataset and training_set_B is splitted into test and valid dataset. <br>
+We are using training_set_A as our training dataset and training_set_B is splitted into test and valid dataset. <br><br>
 For preprocessing, we are doing following steps: 
 - Converting .psv files into df
 - For each patient file, there are many null values as every test is not getting conducted every hour. So, we are assuming that between 2 tests values are remaining same. So, we are using ffill to remove those nulls. 
@@ -86,7 +86,8 @@ For preprocessing, we are doing following steps:
 - However, there are some nulls remaining as there is no record before first record in each column for each patient comes in. So, we are creating 2 versions of data, in one we are imputing nulls with zero and in other approach we are imputing it with mean value. 
 - At last, we are normalizing the data.
 
-For preprocessing, we are doing following steps: <br> 
+For feature selection, we are doing following steps: 
+- 
 
 a) Now navigate to dags directory using command line and initialize the database.
 ```docker compose up airflow-init```
