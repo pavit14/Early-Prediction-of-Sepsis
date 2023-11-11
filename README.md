@@ -105,7 +105,10 @@ b) Run the airflow:
    docker compose up
    ```
 
-c) Visit the 'localhost:8080' and login with credential.
+c) Visit the airflow and login with credential.
+   ```
+   http://localhost:8080
+   ```
 
 d) Once the dataframes saved in csv files, give dvc and git push.
    ``` 
