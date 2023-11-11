@@ -60,23 +60,23 @@ Data preprocessing have below steps:
 - iii) preprocess_zero_imput_norm
 - iv) preprocess_mean_input_norm
 
-We are using training_set_A as our training dataset and training_set_B is splitted into test and valid dataset. 
-For preprocessing, we are doing following steps
-Converting .psv files into df
-For each patient file, there are many null values as every test is not getting conducted every hour. So, we are assuming that between 2 tests values are remaining same. So, we are using ffill to remove those nulls. 
-We are adding the ID column for each patient identifcation. 
-We are stacking the all patients' data one below the other and craeted a single dataframe for training, testing and valid each.
-However, there are some nulls remaining as there is no record before first record in each column for each patient comes in. So, we are creating 2 types of dataframes, in one we are imputing nulls with zero and in other approach we are imputing it with mean value. 
-At last, we are normalizing the data. 
+We are using training_set_A as our training dataset and training_set_B is splitted into test and valid dataset. <br>
+For preprocessing, we are doing following steps: <br>
+- Converting .psv files into df
+- For each patient file, there are many null values as every test is not getting conducted every hour. So, we are assuming that between 2 tests values are remaining same. So, we are using ffill to remove those nulls. 
+- We are adding the ID column for each patient identifcation. 
+- We are stacking the all patients' data one below the other and craeted a single dataframe for training, testing and valid each.
+- However, there are some nulls remaining as there is no record before first record in each column for each patient comes in. So, we are creating 2 types of dataframes, in one we are imputing nulls with zero and in other approach we are imputing it with mean value. 
+- At last, we are normalizing the data. 
 
 a) First run the below file:(This file includes the preprocessing functions)
 Early-Prediction-of-Sepsis/dags/src/pylab1.py
 
-b) Nevigate to 'Early-Prediction-of-Sepsis' using you rcommand line to run this file as this file uses current directory path .
+b) Navigate to 'Early-Prediction-of-Sepsis' using you rcommand line to run this file as this file uses current directory path .
 Run the below file to create .csv files to save created dataframes after preprocessing. 
 Early-Prediction-of-Sepsis\dags\create_csv.py
 
-c) Now nevigate to dags directory using command line and initialize the database.
+c) Now navigate to dags directory using command line and initialize the database.
 docker compose up airflow-init
 
 d) Run the airflow:
