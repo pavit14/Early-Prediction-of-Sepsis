@@ -5,3 +5,4 @@ logs/
 dags/data/.DS_Store
 dags/src/__pycache__
 .vscode
+logs
