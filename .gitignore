@@ -1,3 +1,5 @@
 LAB01
 dags/data/Dataset
 logs
+.DS_Store
+dags/data/.DS_Store
