@@ -115,6 +115,7 @@ services:
       airflow-init:
         condition: service_completed_successfully
 
+
   airflow-scheduler:
     <<: *airflow-common
     command: scheduler

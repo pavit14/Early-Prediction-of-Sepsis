@@ -9,24 +9,24 @@ import shutil
 from sklearn.model_selection import train_test_split
 
 def load_train_test_valid_files(**kwargs):
-        i=0
+        #i=0
         train_files = []
         path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
         for f in os.listdir(path):
-            if i>5000:
-                break
+            #if i>5000:
+            #    break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 train_files.append(f)
-                i=i+1
-        j=0
+                #i=i+1
+        #j=0
         test_valid_files = []
         path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
         for f in os.listdir(path):
-            if j>5000:
-                break
+            #if j>5000:
+            #    break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 test_valid_files.append(f)
-                j=j+1
+                #j=j+1
         
         random.shuffle(test_valid_files)
         
