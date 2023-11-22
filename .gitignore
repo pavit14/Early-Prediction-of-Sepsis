@@ -1,8 +1,3 @@
 LAB01
-dags/data/Dataset
-logs/
-*.DS_Store
-dags/data/.DS_Store
-dags/src/__pycache__
-.vscode
 logs
+*.DS_Store
