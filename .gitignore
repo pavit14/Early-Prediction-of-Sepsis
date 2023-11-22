@@ -3,3 +3,4 @@ dags/data/Dataset
 logs
 .DS_Store
 dags/data/.DS_Store
+dags/src/__pycache__
