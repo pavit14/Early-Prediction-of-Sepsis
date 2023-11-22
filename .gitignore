@@ -1,6 +1,2 @@
 LAB01
-logs/dag_id=Data_pipeline_dag
-logs/dag_id=early_sepsis_prediction
-logs/dag_processor_manager
-logs/scheduler
-dags/data/Dataset
+.DS_Store
