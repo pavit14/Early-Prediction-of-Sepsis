@@ -9,24 +9,24 @@ import shutil
 from sklearn.model_selection import train_test_split
 
 def load_train_test_valid_files(**kwargs):
-        #i=0
+        i=0
         train_files = []
         path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
         for f in os.listdir(path):
-            #if i>5000:
-            #    break
+            if i>20:
+                break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 train_files.append(f)
-                #i=i+1
-        #j=0
+                i=i+1
+        j=0
         test_valid_files = []
         path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
         for f in os.listdir(path):
-            #if j>5000:
-            #    break
+            if j>20:
+                break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 test_valid_files.append(f)
-                #j=j+1
+                j=j+1
         
         random.shuffle(test_valid_files)
         
@@ -140,11 +140,11 @@ def preprocess_zero_imput_norm(**kwargs):
     valid_df.iloc[:,1:-1] = scaler.transform(valid_df.iloc[:, 1:-1])
 
     
-    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_train_data.csv')
+    file_path = os.path.join(os.path.dirname(__file__), '../data/dvc','my_train_data_zero.csv')
     train_df.to_csv(file_path, index=False)
-    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_test_data.csv')
+    file_path = os.path.join(os.path.dirname(__file__), '../data/dvc','my_test_data_zero.csv')
     test_df.to_csv(file_path, index=False)
-    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_valid_data.csv')
+    file_path = os.path.join(os.path.dirname(__file__), '../data/dvc','my_valid_data_zero.csv')
     valid_df.to_csv(file_path, index=False)
 
 
@@ -177,11 +177,11 @@ def preprocess_mean_input_norm(**kwargs):
     test_df.iloc[:,1:-1] = scaler.transform(test_df.iloc[:,1:-1])
     valid_df.iloc[:,1:-1] = scaler.transform(valid_df.iloc[:, 1:-1])
 
-    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_train_data_mean.csv')
+    file_path = os.path.join(os.path.dirname(__file__), '../data/dvc','my_train_data_mean.csv')
     train_df.to_csv(file_path, index=False)
-    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_test_data_mean.csv')
+    file_path = os.path.join(os.path.dirname(__file__), '../data/dvc','my_test_data_mean.csv')
     test_df.to_csv(file_path, index=False)
-    file_path = os.path.join(os.path.dirname(__file__), '../data/','my_valid_data_mean.csv')
+    file_path = os.path.join(os.path.dirname(__file__), '../data/dvc','my_valid_data_mean.csv')
     valid_df.to_csv(file_path, index=False)
 
     train_serialized_data = pickle.dumps(train_df)

@@ -2,7 +2,8 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
-from src.pylab1 import load_train_test_valid_files,feature_engineering,preprocess_zero_imput_norm,preprocess_mean_input_norm
+#from src.pylab1 import load_train_test_valid_files,feature_engineering,preprocess_zero_imput_norm,preprocess_mean_input_norm
+from src.demo import load_train_files,load_test_files,feature_engineering
 from airflow import configuration as conf
 
 # Enable pickle support for XCom, allowing data to be passed between tasks
@@ -18,7 +19,7 @@ default_args = {
 
 # Create a DAG instance named 'your_python_dag' with the defined default arguments
 dag = DAG(
-    'early_sepsis_prediction',
+    'early_sepsis_prediction_pipeline1',
     default_args=default_args,
     description='Data Pipeline',
     schedule_interval=None,  # Set the schedule interval or use None for manual triggering
@@ -57,7 +58,7 @@ load_model_task = PythonOperator(
 )
 '''
 # Define your Airflow tasks
-
+'''
 load_train_test_valid_files_task = PythonOperator(
     task_id='load_train_test_valid_files',
     python_callable=load_train_test_valid_files,
@@ -91,6 +92,34 @@ preprocess_mean_input_norm_task = PythonOperator(
 
 # Set task dependencies
 load_train_test_valid_files_task >> feature_engineering_task >> (preprocess_zero_imput_norm_task,preprocess_mean_input_norm_task)
+'''
+
+load_train_files_task = PythonOperator(
+    task_id='load_train_files',
+    python_callable=load_train_files,
+    provide_context=True,
+    dag=dag,
+    execution_timeout=timedelta(minutes=360),
+)
+
+load_test_files_task = PythonOperator(
+    task_id='load_test_files',
+    python_callable=load_test_files,
+    provide_context=True,
+    dag=dag,
+    execution_timeout=timedelta(minutes=360),
+)
+
+feature_engineering_task = PythonOperator(
+    task_id='feature_engineering',
+    python_callable=feature_engineering,
+    provide_context=True,
+    dag=dag
+)
+
+
+# Set task dependencies
+load_train_files_task >> load_test_files_task >> feature_engineering_task
 
 # If this script is run directly, allow command-line interaction with the DAG
 if __name__ == "__main__":

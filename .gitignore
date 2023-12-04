@@ -10,3 +10,5 @@ dags/data/my_train_data_mean.csv
 dags/data/my_train_data_zero.csv
 dags/data/my_valid_data_mean.csv
 dags/data/my_valid_data_zero.csv
+dags/data/dvc
+mlruns
