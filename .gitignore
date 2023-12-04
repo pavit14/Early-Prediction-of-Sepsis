@@ -1,0 +1,15 @@
+LAB01
+* .DS_Store
+logs
+dags/data/Dataset
+dags/__pycache__
+dags/src/__pycache__
+dags/data/my_test_data_mean.csv
+dags/data/my_test_data_zero.csv
+dags/data/my_train_data_mean.csv
+dags/data/my_train_data_zero.csv
+dags/data/my_valid_data_mean.csv
+dags/data/my_valid_data_zero.csv
+dags/data/dvc
+mlruns
+final_proj
