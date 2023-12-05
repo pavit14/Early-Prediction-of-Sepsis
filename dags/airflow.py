@@ -3,7 +3,8 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
 #from src.pylab1 import load_train_test_valid_files,feature_engineering,preprocess_zero_imput_norm,preprocess_mean_input_norm
-from src.demo import load_train_files,load_test_files,feature_engineering
+#import tensorflow as tf
+from src.demo import load_train_files,load_test_files,feature_engineering,mean_imputation, training, model
 from airflow import configuration as conf
 
 # Enable pickle support for XCom, allowing data to be passed between tasks
@@ -24,6 +25,14 @@ dag = DAG(
     description='Data Pipeline',
     schedule_interval=None,  # Set the schedule interval or use None for manual triggering
     catchup=False,
+)
+
+from airflow.operators.bash_operator import BashOperator
+
+install_requirements = BashOperator(
+    task_id='install_requirements',
+    bash_command='pip install tensorflow',
+    dag=dag
 )
 
 # Define PythonOperators for each function
@@ -114,12 +123,37 @@ feature_engineering_task = PythonOperator(
     task_id='feature_engineering',
     python_callable=feature_engineering,
     provide_context=True,
-    dag=dag
+    dag=dag,
+    execution_timeout=timedelta(minutes=360),
+)
+
+mean_imputation_task = PythonOperator(
+    task_id='mean_imputation',
+    python_callable=mean_imputation,
+    provide_context=True,
+    dag=dag,
+    execution_timeout=timedelta(minutes=360),
+)
+
+training_task = PythonOperator(
+    task_id='training',
+    python_callable=training,
+    provide_context=True,
+    dag=dag,
+    execution_timeout=timedelta(minutes=360),
+)
+
+model_task = PythonOperator(
+    task_id='model',
+    python_callable=model,
+    provide_context=True,
+    dag=dag,
+    execution_timeout=timedelta(minutes=360),
 )
 
 
 # Set task dependencies
-load_train_files_task >> load_test_files_task >> feature_engineering_task
+install_requirements>>load_train_files_task >> load_test_files_task >> feature_engineering_task >> mean_imputation_task>> training_task >>model_task
 
 # If this script is run directly, allow command-line interaction with the DAG
 if __name__ == "__main__":

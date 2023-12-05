@@ -1,4 +1,5 @@
 LAB01
+VIRTUAL
 * .DS_Store
 logs
 dags/data/Dataset
@@ -12,3 +13,4 @@ dags/data/my_valid_data_mean.csv
 dags/data/my_valid_data_zero.csv
 dags/data/dvc
 mlruns
+sepsis_df_mean_imput_train_test.pkl

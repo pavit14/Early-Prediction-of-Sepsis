@@ -41,7 +41,7 @@ def load_train_files():
         print(train_df)
 
         train_df.to_pickle('1_train_df.pkl')
-load_train_files()
+#load_train_files()
 def load_test_file():
         i=0
         test_files = []
@@ -78,12 +78,7 @@ def feature_engineering():
     with open('/Users/pavithra/Desktop/xyz/1_test_df.pkl', 'rb') as file:
         test_df = pickle.load(file)
 
-    #train_df=pickle.load('/Users/pavithra/Desktop/xyz/1_train_df.pkl')
-    #test_df=pickle.load('/Users/pavithra/Desktop/xyz/1_test_df.pkl')
-
-    target_train=train_df.iloc[:, -1]
-    train_df=train_df.iloc[:, :-1]
-    
+    train_df = pickle.loads(train_data)
     train_df = train_df.drop(train_df.columns[[37,38]], axis=1)
     column_index_to_encode = 36
     encoded_columns = pd.get_dummies(train_df.iloc[:, column_index_to_encode], prefix='column_36')
@@ -91,13 +86,12 @@ def feature_engineering():
     train_df = pd.concat([train_df, encoded_columns], axis=1)
     train_df = train_df.drop('EtCO2', axis=1)
 
-    target_test=train_df.iloc[:, -1]
-    test_df=test_df.iloc[:, :-1]
-
+    test_df = pickle.loads(test_data)
     test_df = test_df.drop(test_df.columns[[37,38]], axis=1)
     encoded_columns = pd.get_dummies(test_df.iloc[:, column_index_to_encode], prefix='column_36')
     test_df.drop(test_df.columns[column_index_to_encode], axis=1, inplace=True)
     test_df = pd.concat([test_df, encoded_columns], axis=1)
+    test_df = test_df.drop('EtCO2', axis=1)
 
     threshold = 1.0  # 90%
     threshold_count = len(train_df) * threshold
@@ -105,47 +99,26 @@ def feature_engineering():
     train_df.drop(columns=columns_to_drop, inplace=True, axis=1)
     test_df.drop(columns=columns_to_drop, inplace=True, axis=1)
 
-
     if len(train_df) > 1:
         mask = train_df.groupby('id')['id'].transform('count') >= 15
         train_df = train_df[mask]
         train_df = train_df.groupby('id').apply(lambda x: x.ffill()).reset_index(drop=True)
-
     
+
     if len(test_df) > 1:
         test_df = test_df.groupby('id').apply(lambda x: x.ffill()).reset_index(drop=True)
 
     mean_values = train_df.mean()
-
-    mean_values.to_csv('mean_values_.csv')
+    mean_values.to_csv('/Users/pavithra/Desktop/xyz/dags/mean_values.csv')
+    test_df.fillna(mean_values, inplace=True)    
+    train_df.fillna(mean_values, inplace=True)
+    
+    train_df.to_pickle('/Users/pavithra/Desktop/xyz/dags/m_train_df.pkl')
+    test_df.to_pickle('/Users/pavithra/Desktop/xyz/dags/m_test_df.pkl')
 
     
-    train_df.fillna(mean_values, inplace=True)
-    test_df.fillna(mean_values, inplace=True)
 
-    train_df.to_pickle('meantrain_df.pkl')
-    test_df.to_pickle('meantest_df.pkl')
-
-    X=train_df.iloc[:, 1:-1]
-    y=target_train
-
-    train_set, valid_set, train_labels, valid_labels = train_test_split(X, y, test_size=0.33, random_state=42)
-
-    rf_clf = RandomForestClassifier()
-    rf_clf.fit(train_set, train_labels)
-
-    predictions = rf_clf.predict(valid_set)
-    feature_impt = pd.DataFrame(rf_clf.feature_importances_, index=train_set.columns)
-    non_impt_features = feature_impt.loc[feature_impt[0] <= 0.005]
-    non_impt_features_list = list(non_impt_features.index.values)
-    #non_impt_column_indices = [train_df.columns.get_loc(col) for col in non_impt_features_list]
-
-    print(non_impt_features_list)
-    train_df = train_df.drop(non_impt_features_list, axis=1)
-    test_df = test_df.drop(non_impt_features_list, axis=1)
-
-    train_df.to_pickle('ttrain_df.pkl')
-    test_df.to_pickle('ttest_df.pkl')
+    
 
 #feature_engineering()
         
