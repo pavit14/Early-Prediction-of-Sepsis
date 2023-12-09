@@ -1,4 +1,8 @@
 LAB01
+<<<<<<< HEAD
+=======
+VIRTUAL
+>>>>>>> 8fcb5ca6f213d51fd7c646e5aff198796c56b95d
 * .DS_Store
 logs
 dags/data/Dataset
@@ -13,3 +17,4 @@ dags/data/my_valid_data_zero.csv
 dags/data/dvc
 mlruns
 final_proj
+sepsis_df_mean_imput_train_test.pkl

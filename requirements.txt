@@ -20,7 +20,14 @@ apache-airflow-providers-sqlite==3.4.3
 apispec==6.3.0
 appdirs==1.4.4
 argcomplete==3.1.1
+<<<<<<< HEAD
 tensorflow
+=======
+tensorflow==2.15.0
+tensorflow-model-analysis==0.43.0
+tensorflow-transform==1.12.0
+tfx==1.12.0
+>>>>>>> 8fcb5ca6f213d51fd7c646e5aff198796c56b95d
 asgiref==3.7.2
 async-timeout==4.0.3
 asyncssh==2.13.2
@@ -203,3 +210,9 @@ WTForms==3.0.1
 yarl==1.9.2
 zc.lockfile==3.0.post1
 zipp==3.16.2
+<<<<<<< HEAD
+=======
+mlflow
+pandas
+scikit-learn
+>>>>>>> 8fcb5ca6f213d51fd7c646e5aff198796c56b95d

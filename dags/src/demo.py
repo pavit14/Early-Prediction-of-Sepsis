@@ -67,7 +67,6 @@ def load_train_files(**kwargs):
                 file_id=int(file_id[1:])
                 data['id'] = file_id
                 train_df = pd.concat([train_df, data], ignore_index=True)
- 
         tr_last_column = train_df.pop(train_df.columns[-1])  # Remove the last column
         train_df.insert(0, tr_last_column.name, tr_last_column)
         train_serialized_data = pickle.dumps(train_df)
@@ -110,76 +109,79 @@ def feature_engineering(**kwargs):
     ti = kwargs['ti']
     train_data = ti.xcom_pull(task_ids='load_train_files', key='train_data')
     test_data = ti.xcom_pull(task_ids='load_test_files', key='test_data')
- 
+
     train_df = pickle.loads(train_data)
- 
+
     train_df = train_df.drop(train_df.columns[[37,38]], axis=1)
     column_to_encode = 'Gender'
-    encoded_columns = pd.get_dummies(train_df[column_to_encode], prefix=column_to_encode)
-    position = train_df.columns.get_loc(column_to_encode)
-    train_df.drop(column_to_encode, axis=1, inplace=True)
+    encoded_columns = pd.get_dummies(train_df[column_to_encode], prefix=column_to_encode) 
+    position = train_df.columns.get_loc(column_to_encode) 
+    train_df.drop(column_to_encode, axis=1, inplace=True) 
     train_df = pd.concat([train_df.iloc[:, :position], encoded_columns, train_df.iloc[:, position:]], axis=1)
- 
+
     test_df = pickle.loads(test_data)
     test_df = test_df.drop(test_df.columns[[37,38]], axis=1)
-    encoded_columns = pd.get_dummies(test_df[column_to_encode], prefix=column_to_encode)
-    position = test_df.columns.get_loc(column_to_encode)
-    test_df.drop(column_to_encode, axis=1, inplace=True)
+    encoded_columns = pd.get_dummies(test_df[column_to_encode], prefix=column_to_encode) 
+    position = test_df.columns.get_loc(column_to_encode) 
+    test_df.drop(column_to_encode, axis=1, inplace=True) 
     test_df = pd.concat([test_df.iloc[:, :position], encoded_columns, test_df.iloc[:, position:]], axis=1)
- 
+
     train_df = train_df.groupby('id').apply(lambda x: x.ffill()).reset_index(drop=True)
     test_df = test_df.groupby('id').apply(lambda x: x.ffill()).reset_index(drop=True)
- 
+
     train_serialized_data = pickle.dumps(train_df)
     test_serialized_data = pickle.dumps(test_df)
- 
+
     ti = kwargs['ti']
-    ti.xcom_push(key='test_data', value=test_serialized_data)
- 
+    ti.xcom_push(key='f_train_data', value=train_serialized_data)
+    ti.xcom_push(key='f_test_data', value=test_serialized_data)
+
 def mean_imputation(**kwargs):
     ti = kwargs['ti']
-    train_data = ti.xcom_pull(task_ids='load_train_files', key='train_data')
-    test_data = ti.xcom_pull(task_ids='load_test_files', key='test_data')
+    train_data = ti.xcom_pull(task_ids='feature_engineering', key='f_train_data')
+    test_data = ti.xcom_pull(task_ids='feature_engineering', key='f_test_data')
     train_df = pickle.loads(train_data)
     test_df = pickle.loads(test_data)
- 
+
     def delete_last_5_records(group):
         return group.iloc[:-5]
- 
+
     def select_last_50_or_all(group):
         return group.tail(50) if len(group) >= 50 else group
- 
-    train_df = train_df.groupby(train_df[0], group_keys=False).apply(delete_last_5_records)
-    train_df = train_df.groupby(train_df[0], group_keys=False).apply(select_last_50_or_all)
-    test_df = test_df.groupby(test_df[0], group_keys=False).apply(delete_last_5_records)
-    test_df = test_df.groupby(test_df[0], group_keys=False).apply(select_last_50_or_all)
- 
+
+    train_df = train_df.groupby(train_df['id'], group_keys=False).apply(delete_last_5_records)
+    train_df = train_df.groupby(train_df['id'], group_keys=False).apply(select_last_50_or_all)
+    test_df = test_df.groupby(test_df['id'], group_keys=False).apply(delete_last_5_records)
+    test_df = test_df.groupby(test_df['id'], group_keys=False).apply(select_last_50_or_all)
+
     mean_values = train_df.mean()
     train_df = train_df.fillna(mean_values)
     test_df = test_df.fillna(mean_values)
     train_df = train_df.fillna(0)
     test_df = test_df.fillna(0)
- 
     scaler = MinMaxScaler()
     scaler.fit(train_df.iloc[:, 1:-1])
     train_df.iloc[:, 1:-1] = scaler.transform(train_df.iloc[:, 1:-1])
     test_df.iloc[:, 1:-1] = scaler.transform(test_df.iloc[:, 1:-1])
- 
+
     train_serialized_data = pickle.dumps(train_df)
     test_serialized_data = pickle.dumps(test_df)
- 
+
     ti = kwargs['ti']
-    ti.xcom_push(key='feature_train_data', value=train_serialized_data)
-    ti.xcom_push(key='feature_test_data', value=test_serialized_data)
- 
+    ti.xcom_push(key='mean_train_data', value=train_serialized_data)
+    ti.xcom_push(key='mean_test_data', value=test_serialized_data)
+
 def training(**kwargs):
- 
+
     ti = kwargs['ti']
-    train_data = ti.xcom_pull(task_ids='feature_engineering', key='feature_train_data')
-    test_data = ti.xcom_pull(task_ids='feature_engineering', key='feature_test_data')
+    train_data = ti.xcom_pull(task_ids='mean_imputation', key='mean_train_data')
+    test_data = ti.xcom_pull(task_ids='mean_imputation', key='mean_test_data')
     train_df = pickle.loads(train_data)
     test_df = pickle.loads(test_data)
- 
+
+    from tensorflow.keras.preprocessing.sequence import pad_sequences
+    import tensorflow as tf
+
     def pad_trunc(data, max_len):
         new_data = []
         zero_vec = []
@@ -200,9 +202,9 @@ def training(**kwargs):
             new_data.append(temp)
     
         return new_data
- 
+
     def create_sequence_tr_test_data(df, feature_columns, y_label='y'):
-        id_list = df[0].unique()
+        id_list = df['id'].unique()
         x_sequence = []
         y_local = []
         ids = []
@@ -234,21 +236,19 @@ def training(**kwargs):
     X_test = np.reshape(X_test, (len(X_test), max_len, embedding_dim))
     y_train = np.array(y_train)
     y_test = np.array(y_test)
- 
     X_train_serialized_data = pickle.dumps(X_train)
     X_test_serialized_data = pickle.dumps(X_test)
     y_train_serialized_data = pickle.dumps(y_train)
     y_test_serialized_data = pickle.dumps(y_test)
- 
     ti = kwargs['ti']
     ti.xcom_push(key='x_train_data', value=X_train_serialized_data)
     ti.xcom_push(key='x_test_data', value=X_test_serialized_data)
     ti.xcom_push(key='y_train_data', value=y_train_serialized_data)
     ti.xcom_push(key='y_test_data', value=y_test_serialized_data)
- 
- 
+
+
 def model(**kwargs):
- 
+
     ti = kwargs['ti']
     X_train_data = ti.xcom_pull(task_ids='training', key='x_train_data')
     X_test_data = ti.xcom_pull(task_ids='training', key='x_test_data')
@@ -258,7 +258,10 @@ def model(**kwargs):
     X_test = pickle.loads(X_test_data)
     y_train = pickle.loads(y_train_data)
     y_test = pickle.loads(y_test_data)
- 
+
+    from tensorflow.keras.preprocessing.sequence import pad_sequences
+    import tensorflow as tf
+
     if __name__ == "__main__":
         warnings.filterwarnings("ignore")
     
@@ -321,3 +324,4 @@ def model(**kwargs):
                 )
             else:
                 mlflow.sklearn.log_model(model, "model", signature=signature)
+ 
