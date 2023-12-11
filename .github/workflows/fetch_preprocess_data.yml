@@ -28,7 +28,7 @@ jobs:
           # Use Python script or commands to load and preprocess data
           load.py # Replace with your script or commands
 
-      - name: Fetch and preprocess data
-        run: |
-            # Use Python script or commands to load and preprocess data
-          preprocess.py # Replace with your script or commands
+     # - name: Fetch and preprocess data
+     #   run: |
+     #       # Use Python script or commands to load and preprocess data
+     #     preprocess.py # Replace with your script or commands
