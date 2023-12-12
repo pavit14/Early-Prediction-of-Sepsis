@@ -1,0 +1,5 @@
+fastapi[all]
+numpy
+pandas
+tensorflow
+uvicorn[standard]

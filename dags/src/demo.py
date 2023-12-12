@@ -12,7 +12,7 @@ from sklearn.ensemble import RandomForestClassifier
 def load_train_files(**kwargs):
         i=0
         train_files = []
-        path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
+        path = os.path.join('/Users/anurag/Desktop/Snehith2/sepsis_project/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
         for f in os.listdir(path):
             if i>20:
                 break
@@ -21,7 +21,7 @@ def load_train_files(**kwargs):
                 i=i+1
 
         train_df = pd.DataFrame()
-        path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
+        path = os.path.join('/Users/anurag/Desktop/Snehith2/sepsis_project/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
         for filename in os.listdir(path):
             if filename.endswith('.psv') and filename in train_files:
                 file_path = os.path.join(path, filename)
@@ -42,7 +42,7 @@ def load_test_files(**kwargs):
 
         i=0
         test_files = []
-        path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
+        path = os.path.join('/Users/anurag/Desktop/Snehith2/sepsis_project/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
         for f in os.listdir(path):
             if i>10:
                 break
@@ -51,7 +51,7 @@ def load_test_files(**kwargs):
                 i=i+1
 
         test_df = pd.DataFrame()
-        path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
+        path = os.path.join('/Users/anurag/Desktop/Snehith2/sepsis_project/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
         for filename in os.listdir(path):
             if filename.endswith('.psv') and filename in test_files:
                 file_path = os.path.join(path, filename)
@@ -250,6 +250,7 @@ def model(**kwargs):
             model.add(Dense(1, activation='sigmoid'))
             model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=[tf.keras.metrics.Recall(), F1_score])
             model.fit(X_train, y_train, epochs=epochs, batch_size=batch_size, validation_data=(X_test, y_test))
+            model.save('/Users/anurag/Desktop/Snehith2/model_dump.keras')
     
     
             test_predict = model.predict(X_test)

@@ -1,6 +1,7 @@
 LAB01
 VIRTUAL
 * .DS_Store
+.env/
 logs
 dags/data/Dataset
 dags/__pycache__
