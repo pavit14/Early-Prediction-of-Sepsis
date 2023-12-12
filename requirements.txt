@@ -21,7 +21,7 @@ apache-airflow-providers-ftp==3.5.1
 apache-airflow-providers-http==4.5.1
 apache-airflow-providers-imap==3.3.1
 apache-airflow-providers-sqlite==3.4.3
-apispec==6.3.0
+apispec
 appdirs==1.4.4
 argcomplete==3.1.1
 tensorflow==2.15.0
