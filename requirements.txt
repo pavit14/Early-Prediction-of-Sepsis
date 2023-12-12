@@ -14,7 +14,7 @@ amqp==5.1.1
 annotated-types==0.5.0
 antlr4-python3-runtime==4.9.3
 anyio==4.0.0
-apache-airflow==2.5.1
+apache-airflow
 apache-airflow-providers-celery==3.3.3
 apache-airflow-providers-common-sql==1.7.1
 apache-airflow-providers-ftp==3.5.1
@@ -32,7 +32,7 @@ asgiref==3.7.2
 async-timeout==4.0.3
 asyncssh==2.13.2
 atpublic==4.0
-attrs
+attrs<22
 Babel==2.12.1
 backoff==1.10.0
 billiard==4.1.0
