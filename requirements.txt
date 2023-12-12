@@ -32,7 +32,7 @@ asgiref==3.7.2
 async-timeout==4.0.3
 asyncssh==2.13.2
 atpublic==4.0
-attrs<22
+attrs
 Babel==2.12.1
 backoff==1.10.0
 billiard==4.1.0
