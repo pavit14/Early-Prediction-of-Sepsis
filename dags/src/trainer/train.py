@@ -249,7 +249,7 @@ def main():
     # Load and transform data
     gcs_train_data_path = "gs://sepsis_pred_bucket/data/train/train.csv"
     train_df = load_train_data(gcs_train_data_path)
-    gcs_test_data_path = "gs://sepsis_pred_bucket/data/train/test.csv"
+    gcs_test_data_path = "gs://sepsis_pred_bucket/data/test/test.csv"
     test_df = load_test_data(gcs_test_data_path)
     train_df,test_df=feature_engineering(train_df,test_df)
     train_df,test_df=mean_imputation(train_df,test_df)
