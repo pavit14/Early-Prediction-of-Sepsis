@@ -2,7 +2,7 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-MODEL_PATH      = "/Users/anurag/Desktop/Snehith2/model_weights.h5"
+
 
 MAX_LEN         = 50
 DIM             = 39
