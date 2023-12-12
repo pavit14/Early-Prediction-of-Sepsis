@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10.11' # specify your Python version
 
@@ -25,10 +25,10 @@ jobs:
 
       - name: Fetch and preprocess data
         run: |
-          # Use Python script or commands to load and preprocess data
-          load.py # Replace with your script or commands
+# Use Python script or commands to load and preprocess data
+          python load.py # Replace with your script or commands
 
-     # - name: Fetch and preprocess data
-     #   run: |
-     #       # Use Python script or commands to load and preprocess data
-     #     preprocess.py # Replace with your script or commands
+      - name: Fetch and preprocess data
+        run: |
+# Use Python script or commands to load and preprocess data
+          python preprocess.py # Replace with your script or commands
