@@ -18,3 +18,4 @@ dags/data/dvc
 mlruns
 final_proj
 sepsis_df_mean_imput_train_test.pkl
+.env
