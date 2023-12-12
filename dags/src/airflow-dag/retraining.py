@@ -6,7 +6,9 @@ from airflow.operators.bash_operator import BashOperator
 #GITHUB_PREPROCESS_RAW_URL = 'https://github.com/MahavirK1997/Timeseries_Lab/blob/master/src/data_preprocess.py'  # Adjust the path accordingly
 
 LOCAL_TRAIN_FILE_PATH = '/tmp/train.py'
-GITHUB_TRAIN_RAW_URL = 'https://github.com/MahavirK1997/Timeseries_Lab/blob/master/src/trainer/train.py'  # Adjust the path accordingly
+GITHUB_TRAIN_RAW_URL = 'https://github.com/pavit14/Early-Prediction-of-Sepsis/blob/mahavir_mlops/dags/src/trainer/train.py'  # Adjust the path accordingly
+
+
 
 default_args = {
     'owner': 'Sepsis_project',
