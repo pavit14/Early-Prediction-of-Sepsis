@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import datetime as dt
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
@@ -26,24 +27,18 @@ dag = DAG(
 )
 
 
-pull__train_script = BashOperator(
-    task_id='pull__train_script',
+pull_train_script = BashOperator(
+    task_id='pull_train_script',
     bash_command=f'curl -o {LOCAL_TRAIN_FILE_PATH} {GITHUB_TRAIN_RAW_URL}',
     dag=dag,
 )
 
-pull_train_script = BashOperator(
-    task_id='pull_train_script',
-    bash_command=f'curl -o {LOCAL_TRAIN_FILE_PATH} {GITHUB_TRAIN_RAW_URL} && ls -l {LOCAL_TRAIN_FILE_PATH}',
-    dag=dag,
-)
 
 
 
 env = {
     'AIP_STORAGE_URI': 'gs://sepsis_pred_bucket/model'
 }
-
 
 
 run_train_script = BashOperator(
@@ -53,15 +48,25 @@ run_train_script = BashOperator(
     dag=dag,
 )
 
-list_tmp_contents = BashOperator(
-    task_id='list_tmp_contents',
-    bash_command='ls -l /tmp',
+check_file_existence = BashOperator(
+    task_id='check_file_existence',
+    bash_command=f'ls -l {LOCAL_TRAIN_FILE_PATH}',
     dag=dag,
 )
 
-pull_train_script >> list_tmp_contents
+check_python_version = BashOperator(
+    task_id='check_python_version',
+    bash_command='python --version',
+    dag=dag,
+)
+
+print_environment_variables = BashOperator(
+    task_id='print_environment_variables',
+    bash_command='printenv',
+    dag=dag,
+)
+
+pull_train_script >> check_file_existence >> [check_python_version, print_environment_variables] >> run_train_script
 
 
-# Setting up dependencies
-#pull_train_script >> run_train_script
 

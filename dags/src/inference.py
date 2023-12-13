@@ -67,7 +67,7 @@ def predict_custom_trained_model_from_gcs(
         print("Prediction:", dict(prediction))
 
 # Example usage with GCS file
-bucket_name = "sepsis_project_bucket"
+bucket_name = "sepsis_pred_bucket"
 file_path = "/data/valid/valid.csv"
 predict_custom_trained_model_from_gcs(
     project="497741562136",
