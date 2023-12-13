@@ -15,3 +15,4 @@ dags/data/my_valid_data_zero.csv
 dags/data/dvc
 mlruns
 sepsis_df_mean_imput_train_test.pkl
+Model_LSTM_1.py
