@@ -250,6 +250,7 @@ def main():
     """
     # Load and transform data
     gcs_train_data_path = "gs://sepsis_pred_bucket/data/train/train.csv"
+    print("done")
     train_df = load_train_data(gcs_train_data_path)
     gcs_test_data_path = "gs://sepsis_pred_bucket/data/test/test.csv"
     test_df = load_test_data(gcs_test_data_path)

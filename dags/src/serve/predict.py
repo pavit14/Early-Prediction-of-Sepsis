@@ -7,6 +7,7 @@ import pickle
 import csv
 import numpy as np
 import pandas as pd
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from sklearn.preprocessing import MinMaxScaler
@@ -24,6 +25,7 @@ def initialize_variables():
     """
     project_id = os.getenv("PROJECT_ID")
     bucket_name = os.getenv("BUCKET_NAME")
+    print(project_id, bucket_name)
     return project_id, bucket_name
 
 def initialize_client_and_bucket(bucket_name):

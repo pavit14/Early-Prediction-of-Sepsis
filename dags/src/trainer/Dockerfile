@@ -8,7 +8,7 @@ WORKDIR /
 ENV AIP_STORAGE_URI=gs://sepsis_pred_bucket/model
 ENV BUCKET_NAME=sepsis_pred_bucket
 
-COPY trainer /trainer
+COPY trainer/train.py /trainer
 
 # Install any additional dependencies or packages if needed
 # RUN apt-get update \
