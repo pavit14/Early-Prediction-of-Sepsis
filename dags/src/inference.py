@@ -12,16 +12,25 @@ def read_csv_instances_from_gcs(bucket_name: str, file_path: str) -> List[Dict]:
     Assumes the CSV file has a header row.
     """
     storage_client = storage.Client()
-    bucket = storage_client.get_bucket(bucket_name)
-    blob = bucket.blob(file_path)
-    content = blob.download_as_text()
 
-    instances = []
-    reader = csv.DictReader(io.StringIO(content))
-    for row in reader:
-        instances.append(row)
-    
-    return instances
+    try:
+        bucket = storage_client.get_bucket(bucket_name)
+        blob = bucket.blob(file_path)
+        content = blob.download_as_text()
+
+        instances = []
+
+        with io.StringIO(content) as content_io:
+            reader = csv.DictReader(content_io)
+            for row in reader:
+                instances.append(row)
+
+        return instances
+
+    except Exception as e:
+        # Handle exceptions (e.g., FileNotFoundError, google.auth.exceptions.DefaultCredentialsError)
+        print(f"Error: {e}")
+        return []
 
 def predict_custom_trained_model_from_gcs(
     project: str,
@@ -70,7 +79,7 @@ def predict_custom_trained_model_from_gcs(
 bucket_name = "sepsis_pred_bucket"
 file_path = "/data/valid/valid.csv"
 predict_custom_trained_model_from_gcs(
-    project="497741562136",
+    project="sepsis-project-407922",
     endpoint_id="1974151137439252480",
     location="us-east1",
     bucket_name=bucket_name,

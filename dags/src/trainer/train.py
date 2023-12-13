@@ -2,13 +2,14 @@ from google.cloud import storage
 from datetime import datetime
 import pytz
 import pandas as pd
+import os
+os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 from tensorflow.keras.models import Sequential
 import joblib
 import gcsfs
-import os
 from dotenv import load_dotenv
 
 import pandas as pd
@@ -24,6 +25,7 @@ load_dotenv()
 fs = gcsfs.GCSFileSystem()
 storage_client = storage.Client()
 bucket_name = os.getenv("BUCKET_NAME")
+os.environ['AIP_STORAGE_URI'] = 'gs://sepsis_pred_bucket/model'
 MODEL_DIR = os.environ['AIP_STORAGE_URI']
 
 
@@ -255,6 +257,7 @@ def main():
     train_df,test_df=mean_imputation(train_df,test_df)
     X_train,X_test,y_train,y_test=training(train_df,test_df)
     model(X_train,X_test,y_train,y_test)
+    
 
     
     
