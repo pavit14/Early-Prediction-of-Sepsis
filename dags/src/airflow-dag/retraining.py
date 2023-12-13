@@ -26,11 +26,18 @@ dag = DAG(
 )
 
 
-pull_train_script = BashOperator(
-    task_id='pull_train_script',
+pull__train_script = BashOperator(
+    task_id='pull__train_script',
     bash_command=f'curl -o {LOCAL_TRAIN_FILE_PATH} {GITHUB_TRAIN_RAW_URL}',
     dag=dag,
 )
+
+pull_train_script = BashOperator(
+    task_id='pull_train_script',
+    bash_command=f'curl -o {LOCAL_TRAIN_FILE_PATH} {GITHUB_TRAIN_RAW_URL} && ls -l {LOCAL_TRAIN_FILE_PATH}',
+    dag=dag,
+)
+
 
 
 env = {
@@ -46,6 +53,15 @@ run_train_script = BashOperator(
     dag=dag,
 )
 
+list_tmp_contents = BashOperator(
+    task_id='list_tmp_contents',
+    bash_command='ls -l /tmp',
+    dag=dag,
+)
+
+pull_train_script >> list_tmp_contents
+
+
 # Setting up dependencies
-pull_train_script >> run_train_script
+#pull_train_script >> run_train_script
 
