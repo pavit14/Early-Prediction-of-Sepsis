@@ -96,7 +96,7 @@ if __name__ == "__main__":
     max_len = 50
     embedding_dim = 39 
 
-    pickle_file_path = 'D:\IE7374_MLOps\Project_Datasets\Practice\Files\Training_set_A/sepsis_df_mean_imput_train_test.pkl'
+    pickle_file_path = '/Users/pavithra/Desktop/xyz 2/sepsis_df_mean_imput_train_test.pkl'
 
     with open(pickle_file_path, 'rb') as file:
         loaded_data = pickle.load(file)

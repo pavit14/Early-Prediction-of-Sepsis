@@ -14,3 +14,13 @@ dags/data/my_valid_data_zero.csv
 dags/data/dvc
 mlruns
 sepsis_df_mean_imput_train_test.pkl
+.env
+sepsis_df_mean_imput_train_test.pkl
+mlops-project-407600-1f9741988fc9.json
+google-cloud-sdk
+1_test_df.pkl
+1_train_df.pkl
+1_valid_df.pkl
+test.csv
+train.csv
+valid.csv

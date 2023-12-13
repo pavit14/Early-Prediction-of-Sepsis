@@ -140,6 +140,8 @@ training_task = PythonOperator(
     python_callable=training,
     provide_context=True,
     dag=dag,
+    op_kwargs={'tf':'from tensorflow.keras.preprocessing.sequence import pad_sequences',
+               'tf1':'import tensorflow as tf'},
     execution_timeout=timedelta(minutes=360),
 )
 

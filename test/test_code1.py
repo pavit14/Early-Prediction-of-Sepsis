@@ -15,16 +15,16 @@ def load_train_files():
 
         i=0
         train_files = []
-        path = '/Users/pavithra/Desktop/xyz/dags/data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA'
+        path = '/Users/pavithra/Desktop/xyz2/dags/data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA'
         for f in os.listdir(path):
-            if i>10:
+            if i>200000:
                 break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 train_files.append(f)
                 i=i+1
 
         train_df = pd.DataFrame()
-        path = '/Users/pavithra/Desktop/xyz/dags/data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA'
+        path = '/Users/pavithra/Desktop/xyz2/dags/data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA'
         for filename in os.listdir(path):
             if filename.endswith('.psv') and filename in train_files:
                 file_path = os.path.join(path, filename)
@@ -39,22 +39,22 @@ def load_train_files():
         train_df.insert(0, tr_last_column.name, tr_last_column)
         #print(train_df.columns)
         print(train_df)
-
-        train_df.to_pickle('1_train_df.pkl')
-#load_train_files()
+        train_df.to_csv('train.csv')
+        #train_df.to_pickle('1_train_df.pkl')
+load_train_files()
 def load_test_file():
         i=0
         test_files = []
-        path = '/Users/pavithra/Desktop/xyz/dags/data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB'
+        path = '/Users/pavithra/Desktop/xyz2/dags/data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB'
         for f in os.listdir(path):
-            if i>10000:
+            if i>1000000:
                 break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 test_files.append(f)
                 i=i+1
 
         test_df = pd.DataFrame()
-        path = '/Users/pavithra/Desktop/xyz/dags/data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB'
+        path = '/Users/pavithra/Desktop/xyz2/dags/data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB'
         for filename in os.listdir(path):
             if filename.endswith('.psv') and filename in test_files:
                 file_path = os.path.join(path, filename)
@@ -62,13 +62,15 @@ def load_test_file():
                 file_id = os.path.splitext(filename)[0]
                 file_id=int(file_id[1:])
                 data['id'] = file_id
+                print(file_id)
                 test_df = pd.concat([test_df, data], ignore_index=True)
 
         ts_last_column = test_df.pop(test_df.columns[-1])  # Remove the last column
         test_df.insert(0, ts_last_column.name, ts_last_column)
-        test_df.to_pickle('1_test_df.pkl')
+        test_df.to_csv('test.csv')
+        #test_df.to_pickle('1_test_df.pkl')
 
-
+#load_test_file()
 def feature_engineering():
 
 

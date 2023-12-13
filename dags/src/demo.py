@@ -117,6 +117,7 @@ def mean_imputation(**kwargs):
     test_df = test_df.groupby(test_df['id'], group_keys=False).apply(select_last_50_or_all)
 
     mean_values = train_df.mean()
+    mean_values.to_csv('mean.csv')
     train_df = train_df.fillna(mean_values)
     test_df = test_df.fillna(mean_values)
     train_df = train_df.fillna(0)
