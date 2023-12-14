@@ -24,3 +24,7 @@ google-cloud-sdk
 test.csv
 train.csv
 valid.csv
+log
+dags/src/models
+dags/src/mean_values.pkl
+dags/src/scaler.pkl

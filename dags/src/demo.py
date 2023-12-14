@@ -14,7 +14,7 @@ def load_train_files(**kwargs):
         train_files = []
         path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setA')
         for f in os.listdir(path):
-            if i>20:
+            if i>18000:
                 break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 train_files.append(f)
@@ -44,7 +44,7 @@ def load_test_files(**kwargs):
         test_files = []
         path = os.path.join(os.path.dirname(__file__), '../data/Dataset/physionet.org/files/challenge-2019/1.0.0/training/training_setB')
         for f in os.listdir(path):
-            if i>10:
+            if i>10100:
                 break
             if os.path.isfile(os.path.join(path, f)) and not f.lower().startswith('.') and f.lower().endswith('psv'):
                 test_files.append(f)
@@ -225,8 +225,9 @@ def model(**kwargs):
     y_train = pickle.loads(y_train_data)
     y_test = pickle.loads(y_test_data)
 
-    from tensorflow.keras.preprocessing.sequence import pad_sequences
-    import tensorflow as tf
+    #import tensorflow as tf
+    #from tensorflow.keras.preprocessing.sequence import pad_sequences
+    
 
     if __name__ == "__main__":
         warnings.filterwarnings("ignore")

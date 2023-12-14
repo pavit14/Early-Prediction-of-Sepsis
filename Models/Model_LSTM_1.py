@@ -96,7 +96,7 @@ if __name__ == "__main__":
     max_len = 50
     embedding_dim = 39 
 
-    pickle_file_path = '/Users/pavithra/Desktop/xyz 2/sepsis_df_mean_imput_train_test.pkl'
+    pickle_file_path = '/Users/pavithra/Desktop/xyz2/sepsis_df_mean_imput_train_test.pkl'
 
     with open(pickle_file_path, 'rb') as file:
         loaded_data = pickle.load(file)
@@ -122,7 +122,7 @@ if __name__ == "__main__":
         model.add(LSTM(num_neurons, input_shape=(max_len, embedding_dim), return_sequences=True))
         model.add(Dropout(drop_rate))
         model.add(Dense(1, activation='sigmoid'))
-        model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=[tf.keras.metrics.Recall(), F1_score])
+        model.compile(optimizer=optimizer, loss='binary_crossentropy', metrics=[tf.keras.metrics.Recall()])
         model.fit(X_train, y_train, epochs=epochs, batch_size=batch_size, validation_data=(X_test, y_test))
 
 
@@ -170,6 +170,9 @@ if __name__ == "__main__":
             )
         else:
             mlflow.sklearn.log_model(model, "model", signature=signature)
+
+        model.save("/Users/pavithra/Desktop//modell.pkl")
+
 
 
 
